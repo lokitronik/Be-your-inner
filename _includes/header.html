@@ -6,7 +6,15 @@
   </div>
   
   <nav>
-    <a href="{{ '/claridad/' | relative_url }}">Claridad</a>
+    {% if page.lang == 'en' %}
+      <a href="{{ '/en/about/' | relative_url }}">About Me</a>
+      <a href="{{ '/en/clarity/' | relative_url }}">Clarity</a>
+      <a href="{{ '/en/contact/' | relative_url }}">Contact</a>
+    {% else %}
+      <a href="{{ '/sobre-mi/' | relative_url }}">Sobre Mí</a>
+      <a href="{{ '/claridad/' | relative_url }}">Claridad</a>
+      <a href="{{ '/contacto/' | relative_url }}">Contacto</a>
+    {% endif %}
     
     <div class="lang-selector">
       🌐 

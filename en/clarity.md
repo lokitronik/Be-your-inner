@@ -22,6 +22,23 @@ permalink: /en/clarity/
     <p>I use various tools to facilitate this process, the <strong>pendulum</strong> being one of them. We don't use it to predict the future, but as an amplifier of your own energy and internal wisdom, helping to visualize what the rational mind sometimes tries to hide.</p>
   </section>
 
+  <section>
+    <h2>Free Material</h2>
+    <p>I have created these resources so you can start your own path of inner listening today:</p>
+    <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+      <div style="flex: 1; min-width: 250px; padding: 2rem; background: rgba(74, 93, 78, 0.05); border-radius: 20px;">
+        <h3>Pendulum Guide</h3>
+        <p>Learn to use the pendulum as a bridge to your inner wisdom.</p>
+        <a href="{{ '/assets/docs/pendulum-guide.pdf' | relative_url }}" class="btn" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">Download Guide</a>
+      </div>
+      <div style="flex: 1; min-width: 250px; padding: 2rem; background: rgba(74, 93, 78, 0.05); border-radius: 20px;">
+        <h3>Reconnect with Yourself</h3>
+        <p>A recorded session to silence the noise and return to your center.</p>
+        <a href="#" class="btn" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">Access the Session</a>
+      </div>
+    </div>
+  </section>
+
   <section class="faq-section">
     <h2>Frequently Asked Questions</h2>
     
