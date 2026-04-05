@@ -6,9 +6,12 @@ lang: es
 ---
 
 <div class="container">
-  <h1>A veces solo necesitas un poco de claridad para escuchar lo que ya sabes.</h1>
+  <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Be Your Inner" class="logo">
+  <h1>El silencio es la brújula que te devuelve a tu propia voz.</h1>
   
-  <p>No estoy aquí para darte soluciones mágicas ni respuestas que no tengas tú ya. Lo que hago es acompañarte a silenciar el ruido para que tu intuición pueda hablar. Se trata de dejar de buscar fuera y empezar a confiar en lo que sientes dentro. Sin más.</p>
+  <p>En un mundo lleno de ruido, el reencuentro con uno mismo comienza en la quietud. Be Your Inner es un espejo, un espacio seguro y honesto donde la intuición se convierte en el lenguaje principal.</p>
   
-  <a href="{{ '/claridad/' | relative_url }}" class="btn">Entrar en la Claridad</a>
+  <p>No buscamos respuestas fuera; buscamos la claridad que ya habita en ti.</p>
+  
+  <a href="{{ '/servicios/' | relative_url }}" class="btn">Explorar el camino</a>
 </div>

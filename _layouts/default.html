@@ -18,7 +18,15 @@
   </style>
 </head>
 <body>
-  {% include header.html %}
+  <header>
+    <nav>
+      <a href="{{ '/' | relative_url }}">Inicio</a>
+      <a href="{{ '/servicios/' | relative_url }}">Claridad</a>
+      <a href="{{ '/faq/' | relative_url }}">FAQ</a>
+      <span style="opacity: 0.3">|</span>
+      <a href="{{ '/en/' | relative_url }}">English</a>
+    </nav>
+  </header>
 
   <main>
     {{ content }}
