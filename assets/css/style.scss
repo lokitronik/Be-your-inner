@@ -5,10 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 // Variables
-$bg-color: #F9F4F0; // Warm Cream / Sand
-$title-color: #6B7F6D; // Soft Forest Green (Used for accents/titles)
-$accent-color: #BC8A78; // Terracotta Earth
-$text-color: #424242; // Soft Charcoal Grey
+$bg-color: #FAF7F2; // Cream Soft
+$section-bg: #E9EDEA; // Soft Olive Green
+$title-color: #556B2F; // Forest Green Matte
+$accent-color: #B5835A; // Soft Terracotta
+$text-color: #424242; // Soft Charcoal
 $font-display: 'Cormorant Garamond', serif;
 $font-body: 'Lora', serif;
 
@@ -22,7 +23,6 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   min-height: 100vh;
 }
 
@@ -30,83 +30,122 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem 2rem; // Increased padding
+  padding: 5rem 2rem; // Lots of space
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  text-align: left;
+  
+  .header-logo img {
+    height: 100px; // Protagonist logo
+    transition: transform 0.3s ease;
+    &:hover { transform: scale(1.02); }
+  }
 }
 
-footer, main {
+footer {
   width: 100%;
-  max-width: 800px;
-  padding: 2rem;
+  padding: 6rem 2rem;
+  background-color: $section-bg;
   text-align: center;
+  margin-top: auto;
+}
+
+main {
+  width: 100%;
 }
 
 h1, h2, h3 {
   font-family: $font-display;
-  color: #4A5D4E; // Keeping a slightly darker green for titles for readability
-  font-weight: 300;
-  margin-bottom: 2rem;
+  color: $title-color;
+  font-weight: 500;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  line-height: 1.2;
 }
 
 h1 {
-  font-size: 3.5rem;
-  line-height: 1.2;
-  color: $title-color;
+  font-size: 4.5rem; // Increased size
+  text-align: center;
 }
 
 h2 {
-  font-size: 2.2rem;
-  margin-top: 3rem;
-  color: $title-color;
+  font-size: 3rem; // Increased size
+  text-align: center;
 }
 
 p {
   margin-bottom: 2rem;
   font-weight: 400;
-  color: $text-color;
 }
 
 .container {
-  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+// Section blocks
+.section-highlight {
+  background-color: $section-bg;
+  width: 100%;
+  padding: 8rem 0;
+}
+
+// Cards for Claridad
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.card {
+  background: white;
+  padding: 3.5rem;
+  border-radius: 20px;
+  border: 1px solid rgba(0,0,0,0.03);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.02);
+  transition: all 0.3s ease;
+  text-align: center;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.05);
+  }
+  
+  h3 {
+    margin-top: 0;
+    font-size: 2.2rem;
+  }
 }
 
 .btn {
   display: inline-block;
   padding: 1.2rem 3rem;
-  background-color: $title-color; // Default to Forest Green
-  color: #FDFCF5;
+  background-color: $title-color; // Forest Green Matte
+  color: white !important;
   text-decoration: none;
-  border-radius: 40px; // Rounded organic feel
-  font-weight: 500;
+  border-radius: 12px; // Rounded but structured
+  font-weight: 600;
   transition: all 0.3s ease;
-  margin-top: 1.5rem;
   border: none;
   font-family: $font-display;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   letter-spacing: 0.05em;
+  cursor: pointer;
 
   &:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    background-color: darken($title-color, 10%);
+    transform: scale(1.05);
   }
 
   &.btn-terracotta {
     background-color: $accent-color;
-  }
-  
-  &.btn-large {
-    font-size: 1.3rem;
-    padding: 1.5rem 4rem;
-    background-color: $accent-color; // Terracotta for the most "alive" button
-    box-shadow: 0 10px 20px rgba(188, 138, 120, 0.2);
+    &:hover { background-color: darken($accent-color, 10%); }
   }
 }
 
-// Bilingual navigation
+// Navigation
 nav {
   display: flex;
   align-items: center;
@@ -114,14 +153,34 @@ nav {
     margin: 0 1.5rem;
     text-decoration: none;
     color: $text-color;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    font-weight: 500;
+    letter-spacing: 0.2em;
+    font-weight: 600;
 
     &:hover {
       color: $title-color;
     }
+  }
+}
+
+.lang-selector {
+  margin-left: 2rem;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+// Social Icons
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  
+  a {
+    color: $title-color;
+    transition: transform 0.3s ease;
+    &:hover { transform: translateY(-3px); color: $accent-color; }
   }
 }
 
