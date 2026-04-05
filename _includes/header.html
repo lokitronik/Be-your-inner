@@ -1,0 +1,20 @@
+<header>
+  <div class="header-logo">
+    <a href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Be Your Inner" style="height: 60px;">
+    </a>
+  </div>
+  
+  <nav>
+    <a href="{{ '/claridad/' | relative_url }}">Claridad</a>
+    
+    <div class="lang-selector">
+      🌐 
+      {% if page.lang == 'en' %}
+        <a href="{{ '/' | relative_url }}">ES</a> | <strong>EN</strong>
+      {% else %}
+        <strong>ES</strong> | <a href="{{ '/en/' | relative_url }}">EN</a>
+      {% endif %}
+    </div>
+  </nav>
+</header>
