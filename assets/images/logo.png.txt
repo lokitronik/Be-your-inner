@@ -1,2 +1,0 @@
-# Logo placeholder
-# The actual logo should be placed here as logo.png
