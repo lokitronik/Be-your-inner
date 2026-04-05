@@ -158,38 +158,37 @@ const Layout = ({ children, lang, setLang }: { children: React.ReactNode, lang: 
 const HomePage = ({ lang }: { lang: Language }) => {
   const t = translations[lang];
   return (
-    <section className="relative pt-40 pb-20 md:pt-60 md:pb-40 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
+    <section className="relative pt-40 pb-40 md:pt-60 md:pb-60 overflow-hidden">
+      <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          className="max-w-4xl mx-auto"
+          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
         >
           <img 
             src={logoUrl} 
             alt="BeYourInner Brand" 
-            className="h-20 md:h-32 w-auto mx-auto mb-12 opacity-90"
+            className="h-24 md:h-40 w-auto mx-auto mb-16 opacity-90"
             referrerPolicy="no-referrer"
           />
-          <span className="inline-block text-[10px] uppercase tracking-[0.4em] mb-10 text-brand-primary/60 font-bold">
+          <span className="inline-block text-[10px] uppercase tracking-[0.5em] mb-12 text-brand-primary/50 font-bold">
             {t.hero.hook}
           </span>
-          <h1 className="text-5xl md:text-8xl font-display font-light leading-[1.1] mb-12 text-brand-primary">
+          <h1 className="text-5xl md:text-8xl font-display font-light leading-[1.1] mb-16 text-brand-primary">
             {t.hero.title}
           </h1>
-          <p className="text-lg md:text-xl text-brand-text/70 font-light leading-relaxed mb-16 max-w-2xl mx-auto italic">
+          <p className="text-xl md:text-2xl text-brand-text/70 font-light leading-relaxed mb-20 max-w-3xl mx-auto italic">
             {t.hero.subtitle}
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link to="/guidance" className="px-12 py-5 bg-brand-primary text-brand-bg rounded-full font-medium hover:bg-brand-primary/90 transition-all duration-500 flex items-center justify-center gap-3 group shadow-xl shadow-brand-primary/10">
+          <div className="flex justify-center">
+            <Link to="/guidance" className="px-16 py-6 bg-brand-primary text-brand-bg rounded-full font-medium hover:bg-brand-primary/90 transition-all duration-700 flex items-center justify-center gap-4 group shadow-2xl shadow-brand-primary/10 text-lg">
               {t.hero.cta}
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
             </Link>
           </div>
         </motion.div>
       </div>
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-brand-primary/3 rounded-full blur-[120px] -z-10" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[1200px] bg-brand-primary/2 rounded-full blur-[150px] -z-10" />
     </section>
   );
 };

@@ -16,9 +16,9 @@ export const translations = {
     },
     hero: {
       hook: "Vuelve a casa",
-      title: "El viaje hacia dentro comienza en el silencio",
-      subtitle: "Silencia el ruido externo para escuchar la verdad interna. La intuición no es un don, es tu brújula natural esperando ser escuchada.",
-      cta: "Explorar claridad",
+      title: "El silencio es la brújula que te devuelve a tu propia voz.",
+      subtitle: "En un mundo lleno de ruido, el reencuentro con uno mismo comienza en la quietud. Be Your Inner es un espejo, un espacio seguro y honesto donde la intuición se convierte en el lenguaje principal.",
+      cta: "Explorar el camino",
     },
     about: {
       title: "Recordar quién eres",
@@ -81,31 +81,23 @@ export const translations = {
     },
     faq: {
       title: "Claridad en el Camino",
-      subtitle: "Respuestas para quienes buscan entender el proceso de volver a casa.",
+      subtitle: "Respuestas breves para quienes buscan volver a casa.",
       items: [
         {
           question: "¿Qué es exactamente el acompañamiento intuitivo?",
-          answer: "Es un espacio de presencia pura. No se trata de darte respuestas externas, sino de crear un silencio lo suficientemente profundo para que puedas escuchar la voz que ya habita en ti. Mi papel es sostener ese espacio seguro donde la escucha activa y la intuición se convierten en el puente hacia tu propia verdad."
+          answer: "Es un espacio de presencia pura donde el silencio es tan importante como la palabra. A través de la escucha activa y la intuición, te acompaño a despejar el ruido externo para que puedas escuchar tu propia brújula."
         },
         {
           question: "Siento que he perdido mi brújula interna, ¿cómo me ayuda este espacio?",
-          answer: "Be Your Inner funciona como un espejo. A menudo, el ruido del día a día y las expectativas ajenas empañan nuestra visión. Aquí trabajamos para limpiar ese cristal, eliminando las interferencias externas para que vuelvas a reconocer lo que ya sabes en tu interior. No te doy una brújula nueva; te ayudo a recordar cómo leer la tuya."
+          answer: "Be Your Inner es un espejo que te ayuda a recordar lo que ya sabes, eliminando el ruido externo y devolviéndote a tu propia voz."
         },
         {
-          question: "¿Cómo se desarrolla una sesión de claridad?",
-          answer: "Desde la honestidad y el respeto absoluto al silencio. Comenzamos habitando el presente, permitiendo que surja lo que necesita ser visto. Hay tiempo para la escucha profunda y, si el proceso lo requiere, integramos herramientas que nos ayuden a aterrizar la energía, pero siempre respetando tu ritmo y tu propia sabiduría."
-        },
-        {
-          question: "¿Necesito tener experiencia previa en temas espirituales?",
-          answer: "En absoluto. Solo hace falta el deseo honesto de escucharte. Aquí no hay dogmas, ni rituales complejos, ni verdades absolutas impuestas. Solo hay presencia. El camino espiritual no es algo externo que debas aprender, sino un reencuentro con tu esencia que ya está ahí."
-        },
-        {
-          question: "Sobre las herramientas, ¿qué papel juegan?",
-          answer: "Son puentes, no destinos. El péndulo o cualquier otra herramienta vibracional son canales físicos que nos ayudan a aterrizar la intuición abstracta en algo tangible. Son útiles para confirmar lo que ya sientes, pero el corazón del proceso siempre eres tú y tu capacidad de sentir."
+          question: "¿Qué papel juegan las herramientas como el péndulo?",
+          answer: "Son puentes hacia tu interior. No son adivinación, sino espejos de tu propia sabiduría que te ayudan a materializar la claridad que ya tienes."
         },
         {
           question: "¿Qué significa realmente 'volver a casa'?",
-          answer: "Es el concepto central de este espacio. Significa dejar de huir de ti mismo y empezar a habitar tu propio cuerpo y mente con paz. Es ese estado de coherencia interna donde lo que piensas, sientes y haces nace de un lugar de calma y verdad, no de la reacción al mundo externo."
+          answer: "Es el reencuentro con tu propia voz, el silencio que te permite escucharte y la paz que surge cuando dejas de buscar respuestas fuera."
         }
       ]
     }
@@ -129,9 +121,9 @@ export const translations = {
     },
     hero: {
       hook: "Return home",
-      title: "The journey inward begins in silence",
-      subtitle: "Silence the external noise to hear the internal truth. Intuition is not a gift; it is your natural compass waiting to be heard.",
-      cta: "Explore clarity",
+      title: "Silence is the compass that returns you to your own voice.",
+      subtitle: "In a noise-filled world, the reunion with oneself begins in stillness. Be Your Inner is a mirror, a safe and honest space where intuition becomes the primary language.",
+      cta: "Explore the path",
     },
     about: {
       title: "Remembering who you are",
@@ -194,31 +186,23 @@ export const translations = {
     },
     faq: {
       title: "Clarity on the Path",
-      subtitle: "Answers for those seeking to understand the process of returning home.",
+      subtitle: "Brief answers for those seeking to return home.",
       items: [
         {
           question: "What exactly is intuitive guidance?",
-          answer: "It is a space of pure presence. It's not about giving you external answers, but about creating a silence deep enough for you to hear the voice that already dwells within you. My role is to hold that safe space where active listening and intuition become the bridge to your own truth."
+          answer: "It is a space of pure presence where silence is as important as the word. Through active listening and intuition, I accompany you in clearing the external noise so you can hear your own compass."
         },
         {
           question: "I feel like I've lost my inner compass, how does this space help me?",
-          answer: "Be Your Inner acts as a mirror. Often, the noise of daily life and others' expectations cloud our vision. Here, we work to clear that glass, removing external interference so you can recognize what you already know deep down. I don't give you a new compass; I help you remember how to read yours."
+          answer: "Be Your Inner is a mirror that helps you remember what you already know, eliminating external noise and returning you to your own voice."
         },
         {
-          question: "How does a clarity session unfold?",
-          answer: "From a place of absolute honesty and respect for silence. We begin by inhabiting the present, allowing what needs to be seen to emerge. There is time for deep listening and, if the process requires it, we integrate tools to help ground the energy, but always respecting your pace and your own wisdom."
-        },
-        {
-          question: "Do I need previous experience in spiritual matters?",
-          answer: "Not at all. All that's needed is an honest desire to listen to yourself. There are no dogmas here, no complex rituals, or absolute truths imposed. There is only presence. The spiritual path is not something external you must learn, but a reunion with your essence that is already there."
-        },
-        {
-          question: "About the tools, what role do they play?",
-          answer: "They are bridges, not destinations. The pendulum or any other vibrational tool are physical channels that help us ground abstract intuition into something tangible. They are useful for confirming what you already feel, but the heart of the process is always you and your ability to feel."
+          question: "What role do tools like the pendulum play?",
+          answer: "They are bridges to your interior. They are not divination, but mirrors of your own wisdom that help you materialize the clarity you already have."
         },
         {
           question: "What does 'returning home' really mean?",
-          answer: "It is the central concept of this space. It means stopping the flight from yourself and starting to inhabit your own body and mind with peace. It's that state of inner coherence where what you think, feel, and do is born from a place of calm and truth, not from reacting to the external world."
+          answer: "It is the reunion with your own voice, the silence that allows you to listen to yourself, and the peace that arises when you stop looking for answers outside."
         }
       ]
     }
