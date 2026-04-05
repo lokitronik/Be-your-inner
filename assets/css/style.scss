@@ -25,12 +25,25 @@ body {
   min-height: 100vh;
 }
 
-header, footer, main {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+footer, main {
   width: 100%;
   max-width: 800px;
   padding: 2rem;
   text-align: center;
 }
+
+// ... existing h1, h2, h3 styles ...
 
 h1, h2, h3 {
   font-family: $font-display;
@@ -76,12 +89,13 @@ p {
 
 // Bilingual navigation
 nav {
-  margin: 2rem 0;
+  display: flex;
+  align-items: center;
   a {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
     text-decoration: none;
     color: $text-color;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.2em;
 
@@ -91,14 +105,45 @@ nav {
   }
 }
 
-// FAQ Styles
-.faq-item {
-  margin-bottom: 3rem;
-  text-align: left;
+.lang-selector {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: $text-color;
+  opacity: 0.8;
+  margin-left: 1rem;
   
-  h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+  a {
+    margin: 0;
+    text-transform: none;
+    letter-spacing: normal;
+    color: inherit;
+    &:hover { color: $title-color; }
+  }
+}
+
+// FAQ Styles with Details/Summary
+details {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  cursor: pointer;
+  
+  summary {
+    font-family: $font-display;
+    font-size: 1.6rem;
+    color: $title-color;
+    font-weight: 500;
+    outline: none;
+    list-style: none;
+    &::-webkit-details-marker { display: none; }
+  }
+  
+  p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 0;
   }
 }
 

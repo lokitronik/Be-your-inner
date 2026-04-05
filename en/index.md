@@ -7,12 +7,9 @@ permalink: /en/
 ---
 
 <div class="container">
-  <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Be Your Inner" class="logo">
-  <h1>Silence is the compass that returns you to your own voice.</h1>
+  <h1>Sometimes you just need a little clarity to hear what you already know.</h1>
   
-  <p>In a noise-filled world, the reunion with oneself begins in stillness. Be Your Inner is a mirror, a safe and honest space where intuition becomes the primary language.</p>
+  <p>I'm not here to give you magic solutions or answers you don't already have. What I do is accompany you in silencing the noise so your intuition can speak. It's about stopping the search outside and starting to trust what you feel inside. Nothing more.</p>
   
-  <p>We don't look for answers outside; we look for the clarity that already lives within you.</p>
-  
-  <a href="{{ '/en/services/' | relative_url }}" class="btn">Explore the path</a>
+  <a href="{{ '/en/clarity/' | relative_url }}" class="btn">Enter into Clarity</a>
 </div>
