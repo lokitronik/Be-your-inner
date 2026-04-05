@@ -18,6 +18,6 @@ permalink: /en/services/
   <section>
     <h2>Tools for Self-Discovery</h2>
     <p>Bridges to your interior. The pendulum and other tools are not divination, but mirrors of your own wisdom. They help you materialize the clarity you already have, but that noise sometimes prevents you from seeing.</p>
-    <a href="/en/pendulum-guide/" class="btn">Explore tools</a>
+    <a href="{{ '/en/pendulum-guide/' | relative_url }}" class="btn">Explore tools</a>
   </section>
 </div>

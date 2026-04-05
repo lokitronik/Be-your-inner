@@ -27,4 +27,6 @@ lang: es
     <h3>¿Qué significa realmente "volver a casa"?</h3>
     <p>Es el reencuentro con tu propia voz, el silencio que te permite escucharte y la paz que surge cuando dejas de buscar respuestas fuera.</p>
   </div>
+  
+  <a href="{{ '/' | relative_url }}" class="btn">Volver al inicio</a>
 </div>

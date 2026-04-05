@@ -17,6 +17,6 @@ lang: es
   <section>
     <h2>Herramientas de Autodescubrimiento</h2>
     <p>Puentes hacia tu interior. El péndulo y otras herramientas no son adivinación, sino espejos de tu propia sabiduría. Te ayudan a materializar la claridad que ya tienes, pero que a veces el ruido no te deja ver.</p>
-    <a href="/guia-pendulo/" class="btn">Explorar herramientas</a>
+    <a href="{{ '/guia-pendulo/' | relative_url }}" class="btn">Explorar herramientas</a>
   </section>
 </div>

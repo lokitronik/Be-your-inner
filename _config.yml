@@ -1,8 +1,8 @@
 title: Be Your Inner
 email: zuritamanel@gmail.com
 description: Volver a casa. Intuición, escucha profunda y claridad interior.
-baseurl: ""
-url: "https://beyourinner.com"
+baseurl: "/Be-your-inner"
+url: "https://lokitronik.github.io"
 
 # Build settings
 theme: minima
@@ -16,5 +16,3 @@ permalink: /:title/
 # Language settings
 languages: ["es", "en"]
 default_lang: "es"
-
-# Collections or data for bilingual support could be added here

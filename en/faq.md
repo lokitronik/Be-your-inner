@@ -28,4 +28,6 @@ permalink: /en/faq/
     <h3>What does "returning home" really mean?</h3>
     <p>It is the reunion with your own voice, the silence that allows you to listen to yourself, and the peace that arises when you stop looking for answers outside.</p>
   </div>
+  
+  <a href="{{ '/en/' | relative_url }}" class="btn">Back to home</a>
 </div>

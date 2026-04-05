@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'es' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <style>
+    /* Inline critical styles or link to compiled CSS */
+    body { background-color: #FDFCF5; color: #6C757D; font-family: 'Lora', serif; line-height: 1.8; margin: 0; text-align: center; }
+    h1, h2, h3 { font-family: 'Cormorant Garamond', serif; color: #4A5D4E; font-weight: 300; }
+    .container { max-width: 800px; margin: 0 auto; padding: 5rem 2rem; }
+    nav { padding: 2rem; }
+    nav a { margin: 0 1rem; text-decoration: none; color: #6C757D; text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.8rem; }
+    .btn { display: inline-block; padding: 1rem 2.5rem; background-color: #4A5D4E; color: #FDFCF5; text-decoration: none; border-radius: 50px; margin-top: 2rem; }
+    .logo { height: 80px; margin-bottom: 2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="{{ '/' | relative_url }}">Inicio</a>
+      <a href="{{ '/servicios/' | relative_url }}">Claridad</a>
+      <a href="{{ '/faq/' | relative_url }}">FAQ</a>
+      <span style="opacity: 0.3">|</span>
+      <a href="{{ '/en/' | relative_url }}">English</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer style="padding: 4rem 2rem; opacity: 0.6; font-size: 0.8rem; letter-spacing: 0.1em;">
+    <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logo" style="height: 40px; margin-bottom: 1rem; opacity: 0.5;">
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+  </footer>
+</body>
+</html>
