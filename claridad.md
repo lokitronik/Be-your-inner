@@ -22,6 +22,23 @@ permalink: /claridad/
     <p>Utilizo diversas herramientas para facilitar este proceso, siendo el <strong>péndulo</strong> una de ellas. No lo usamos para adivinar el futuro, sino como un amplificador de tu propia energía y sabiduría interna, ayudando a visualizar lo que a veces la mente racional intenta ocultar.</p>
   </section>
 
+  <section>
+    <h2>Material Gratuito</h2>
+    <p>He creado estos recursos para que puedas empezar tu propio camino de escucha interior hoy mismo:</p>
+    <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+      <div style="flex: 1; min-width: 250px; padding: 2rem; background: rgba(74, 93, 78, 0.05); border-radius: 20px;">
+        <h3>Guía del Péndulo</h3>
+        <p>Aprende a usar el péndulo como un puente hacia tu sabiduría interna.</p>
+        <a href="{{ '/assets/docs/guia-pendulo.pdf' | relative_url }}" class="btn" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">Descargar Guía</a>
+      </div>
+      <div style="flex: 1; min-width: 250px; padding: 2rem; background: rgba(74, 93, 78, 0.05); border-radius: 20px;">
+        <h3>Reconecta Contigo</h3>
+        <p>Una sesión grabada para silenciar el ruido y volver a tu centro.</p>
+        <a href="#" class="btn" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">Acceder a la Sesión</a>
+      </div>
+    </div>
+  </section>
+
   <section class="faq-section">
     <h2>Preguntas Frecuentes</h2>
     
