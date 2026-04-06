@@ -1,24 +1,24 @@
 ---
 layout: default
-title: Claridad
+title: claridad
 ---
 
 <div class="container" style="margin-bottom: 0; padding-bottom: 20px;">
-  <h1>Espacios para tu Claridad</h1>
-  <p>Encontrar el camino no siempre significa avanzar rápido, a veces significa detenerse a mirar. Aquí tienes diferentes formas de recuperar tu centro.</p>
+  <h1>encuentra tu claridad</h1>
+  <p>A veces el camino no consiste en avanzar más rápido, sino en saber detenerse. Aquí tienes diferentes herramientas para recuperar tu centro, ya sea a través de mis guías o en sesiones de acompañamiento conmigo.</p>
 </div>
 
 <div class="card-grid">
 
   <div class="card">
-    <h3>Encuentros Individuales</h3>
-    <p>Un espacio de escucha profunda e intuición para despejar la niebla mental y emocional, permitiendo que tu propia sabiduría tome la palabra.</p>
+    <h3>acompañamiento individual</h3>
+    <p>Un espacio para profundizar y poner luz donde ahora hay confusión, permitiendo que tu propia sabiduría tome la palabra.</p>
     <a href="{{ site.baseurl }}/encuentros/" class="btn">SABER MÁS</a>
   </div>
 
   <div class="card">
-    <h3>Tu Brújula Interior</h3>
-    <p>Recursos y guías diseñadas para que la introspección forme parte de tu día a día. Herramientas sencillas para volver a ti.</p>
+    <h3>guías de autoconocimiento</h3>
+    <p>Recursos y guías diseñadas para que trabajes a tu propio ritmo. Recursos sencillos para volver a ti..</p>
     <a href="{{ site.baseurl }}/material-gratuito/" class="btn">EXPLORAR RECURSOS</a>
   </div>
 
