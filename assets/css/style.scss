@@ -84,35 +84,52 @@ h1 {
   text-align: center;
 }
 
-// ... (Resto de tus estilos de cards, botones, etc) ...
-
-// AJUSTES MÓVILES (ESTO ES LO QUE ARREGLA TU CAPTURA)
+// ... (Resto de tus estilos de cards, botones, 
+  /* Reducimos el relleno de los contenedores blancos para ganar espacio */
+  // --- AJUSTES PARA MÓVIL Y TABLET ---
 @media (max-width: 768px) {
   header {
-    flex-direction: column !important; /* Logo arriba, menú abajo */
-    padding: 1.5rem 1rem;
+    flex-direction: column !important; 
+    padding: 1.5rem 1rem !important;
   }
 
   .header-logo img {
-    height: 60px !important; /* Logo más pequeño */
+    height: 50px !important; /* Logo más discreto */
     margin-bottom: 1rem;
   }
 
   nav {
-    font-size: 0.75rem; /* Letra más pequeña */
+    font-size: 0.7rem !important; /* Letra pequeña para que quepa el menú */
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
     
     a { margin: 0 5px; }
   }
 
   h1 {
-    font-size: 2.2rem !important; /* El título "BeYourInner" ya no se corta */
+    font-size: 2rem !important; /* Título principal ajustado al ancho del iPhone */
+    line-height: 1.1;
+    margin-top: 1rem !important;
   }
 
   .container {
-    padding: 20px;
-    width: 95%;
+    padding: 25px 15px !important; /* Menos espacio interno para que el texto respire */
+    width: 95% !important;
+    border-radius: 20px !important;
+  }
+
+  // --- ARREGLO DE BOTONES PARA MÓVIL ---
+  .btn {
+    padding: 1rem 2rem !important; /* Reducimos el tamaño del botón */
+    font-size: 1rem !important;    /* Letra del botón más real */
+    width: auto;
+    display: inline-block;
+    letter-spacing: normal !important;
+  }
+
+  // Si usas Cards en Claridad, esto evita que se peguen a los bordes
+  .card {
+    padding: 2rem 1.5rem !important;
   }
 }
