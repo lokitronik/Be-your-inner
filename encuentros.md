@@ -217,7 +217,7 @@ permalink: /encuentros/
   <p class="byi-faq-title">Preguntas frecuentes</p>
   <div class="byi-faq-item">
     <p class="byi-faq-q">¿Cómo se realiza la sesión?</p>
-    <p class="byi-faq-a">Utilizamos Google Meet o Zoom. Recibirás el enlace de acceso una vez confirmes tu horario en la agenda.</p>
+    <p class="byi-faq-a">Conectaremos por Google Meet. Recibirás el enlace de acceso una vez confirmes tu horario en la agenda.</p>
   </div>
   <div class="byi-faq-item">
     <p class="byi-faq-q">¿Qué necesito preparar?</p>
