@@ -1,10 +1,9 @@
 ---
-# Este encabezado es necesario para que GitHub procese el diseño
+# Front matter para procesar el diseño
 ---
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Lora:wght@400;500&display=swap');
 
-// --- VARIABLES DE COLOR ---
 $verde-bosque: #556B2F;
 $texto: #424242;
 
@@ -28,14 +27,13 @@ header {
   padding: 1.5rem;
   background: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent);
   z-index: 100;
-  
   .header-logo img { height: 60px; filter: drop-shadow(0 2px 5px rgba(0,0,0,0.5)); }
 }
 
 nav {
   display: flex;
   gap: 15px;
-  a { color: white; text-decoration: none; font-weight: 600; font-size: 0.9rem; letter-spacing: 1px; }
+  a { color: white; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
 }
 
 .container {
@@ -44,13 +42,29 @@ nav {
   margin: 3rem auto;
   padding: 40px;
   background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
   border-radius: 25px;
   text-align: center;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
 }
 
-h1 { font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; color: $verde-bosque; margin-bottom: 1rem; }
+h1 { font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; color: $verde-bosque; }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  width: 90%;
+  max-width: 1100px;
+  margin: 2rem auto 5rem;
+}
+
+.card {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  h3 { color: $verde-bosque; font-size: 2.2rem; margin-top: 0; }
+}
 
 .btn {
   display: inline-block;
@@ -60,67 +74,15 @@ h1 { font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; color: $verde-
   text-decoration: none;
   border-radius: 50px;
   font-weight: bold;
-  margin-top: 20px;
-  transition: 0.3s;
-  &:hover { background: $verde-bosque; transform: translateY(-2px); }
 }
 
-/* --- ARREGLO PARA QUE LAS CARTAS NO SE MONTEN EN WEB --- */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Mínimo 350px para que no se compriman */
-  gap: 3rem; /* Más espacio entre cajas */
-  width: 90%;
-  max-width: 1100px;
-  margin: 2rem auto 5rem; /* Margen extra abajo */
-  align-items: stretch;
-}
-
-.card {
-  background: white;
-  padding: 3rem 2rem;
-  border-radius: 25px;
-  text-align: center;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  h3 { color: $verde-bosque; font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; margin-top: 0; }
-}
-
-// --- AJUSTE MÓVIL DEFINITIVO ---
+/* AJUSTE MÓVIL */
 @media (max-width: 768px) {
-  header { 
-    flex-direction: column !important; 
-    padding: 1rem !important; 
-  }
-  
-  .header-logo img { 
-    height: 45px !important; 
-    margin-bottom: 1rem; 
-  }
-  
-  nav { 
-    font-size: 0.75rem !important; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 8px;
-  }
-  
-  h1 { 
-    font-size: 1.8rem !important; 
-    margin: 1rem 0 !important;
-  }
-  
-  .container { 
-    padding: 25px 20px !important; 
-    width: 92% !important; 
-    margin: 1.5rem auto !important; 
-    border-radius: 20px !important;
-  }
-
-  .card-grid {
-    grid-template-columns: 1fr; /* Una sola columna en móvil */
-    gap: 2rem !important;
-    padding-bottom: 3rem;
-  }
+  header { flex-direction: column; padding: 1rem; }
+  .header-logo img { height: 45px; margin-bottom: 1rem; }
+  nav { font-size: 0.75rem; flex-wrap: wrap; justify-content: center; }
+  h1 { font-size: 1.8rem !important; }
+  .container { padding: 25px 20px; width: 95%; margin: 1.5rem auto; }
+  .card-grid { grid-template-columns: 1fr; }
+  .btn { width: 100%; box-sizing: border-box; }
+}
