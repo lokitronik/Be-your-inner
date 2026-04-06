@@ -1,33 +1,25 @@
 ---
 layout: default
-title: Contacto | Be Your Inner
-description: Ponte en contacto con Manel.
-lang: es
-permalink: /contacto/
+title: Claridad
 ---
 
-<div class="container">
-  <h1>Hablemos: Un espacio para ti.</h1>
-  
-  <p>Antes de escribir, toma un respiro. No tienes que tener las palabras perfectas, solo la intención de conectar. Cuéntame qué te ha traído hasta aquí y busquemos un momento para hablar.</p>
-  
-  <div style="margin: 4rem 0; text-align: left;">
-    <form action="https://formspree.io/f/manel@beyourinner.com" method="POST" style="display: flex; flex-direction: column; gap: 1.5rem;">
-      <div>
-        <label for="name" class="form-label">¿Cómo te llamas?</label>
-        <input type="text" id="name" name="name" required class="form-input">
-      </div>
-      <div>
-        <label for="email" class="form-label">¿A qué email puedo responderte?</label>
-        <input type="email" id="email" name="email" required class="form-input">
-      </div>
-      <div>
-        <label for="message" class="form-label">¿Qué sientes compartir hoy?</label>
-        <textarea id="message" name="message" rows="5" required class="form-input"></textarea>
-      </div>
-      <button type="submit" class="btn btn-submit">ENVIAR CON AMOR</button>
-    </form>
+<div class="container" style="margin-bottom: 0; padding-bottom: 20px;">
+  <h1>Espacios para tu Claridad</h1>
+  <p>Encontrar el camino no siempre significa avanzar rápido, a veces significa detenerse a mirar. Aquí tienes diferentes formas de recuperar tu centro.</p>
+</div>
+
+<div class="card-grid">
+
+  <div class="card">
+    <h3>Encuentros Individuales</h3>
+    <p>Un espacio de escucha profunda e intuición para despejar la niebla mental y emocional, permitiendo que tu propia sabiduría tome la palabra.</p>
+    <a href="{{ site.baseurl }}/encuentros/" class="btn">SABER MÁS</a>
   </div>
-  
-  <p style="opacity: 0.6; font-size: 0.9rem;">También puedes escribirme directamente a <a href="mailto:manel@beyourinner.com" style="color: inherit;">manel@beyourinner.com</a></p>
+
+  <div class="card">
+    <h3>Tu Brújula Interior</h3>
+    <p>Recursos y guías diseñadas para que la introspección forme parte de tu día a día. Herramientas sencillas para volver a ti.</p>
+    <a href="{{ site.baseurl }}/material-gratuito/" class="btn">EXPLORAR RECURSOS</a>
+  </div>
+
 </div>
