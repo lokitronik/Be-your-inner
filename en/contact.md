@@ -11,7 +11,7 @@ permalink: /en/contact/
   
   <p>If you feel it is the time to start listening to yourself, or if you simply have any questions, I will be happy to read from you.</p>
   
-  <div style="margin: 4rem 0; padding: 3rem; background: rgba(74, 93, 78, 0.05); border-radius: 30px; text-align: left;">
+  <div style="margin: 4rem 0; text-align: left;">
     <form action="https://formspree.io/f/manel@beyourinner.com" method="POST" style="display: flex; flex-direction: column; gap: 1.5rem;">
       <div>
         <label for="name" style="display: block; margin-bottom: 0.5rem; font-family: 'Cormorant Garamond', serif; font-size: 1.2rem;">Name</label>
