@@ -7,25 +7,25 @@ permalink: /contacto/
 ---
 
 <div class="container">
-  <h1>Hablemos: Un espacio para ti.</h1>
+  <h1>Hablemos: Un puente hacia tu interior</h1>
   
-  <p>Si sientes que es el momento de buscar claridad o simplemente quieres hacerme una consulta, estoy aquí para escucharte. Escríbeme y caminemos juntos.</p>
+  <p>Antes de escribir, toma un respiro. No tienes que tener las palabras perfectas, solo la intención de conectar. Cuéntame qué te ha traído hasta aquí y busquemos un momento para hablar.</p>
   
   <div style="margin: 4rem 0; text-align: left;">
     <form action="https://formspree.io/f/manel@beyourinner.com" method="POST" style="display: flex; flex-direction: column; gap: 1.5rem;">
       <div>
-        <label for="name" style="display: block; margin-bottom: 0.5rem; font-family: 'Cormorant Garamond', serif; font-size: 1.2rem;">Nombre</label>
-        <input type="text" id="name" name="name" required style="width: 100%; padding: 1rem; border: 1px solid rgba(58, 77, 63, 0.2); border-radius: 15px; background: rgba(255, 255, 255, 0.5); font-family: inherit; outline: none;">
+        <label for="name" class="form-label">¿Cómo te llamas?</label>
+        <input type="text" id="name" name="name" required class="form-input">
       </div>
       <div>
-        <label for="email" style="display: block; margin-bottom: 0.5rem; font-family: 'Cormorant Garamond', serif; font-size: 1.2rem;">Email</label>
-        <input type="email" id="email" name="email" required style="width: 100%; padding: 1rem; border: 1px solid rgba(58, 77, 63, 0.2); border-radius: 15px; background: rgba(255, 255, 255, 0.5); font-family: inherit; outline: none;">
+        <label for="email" class="form-label">¿A qué email puedo responderte?</label>
+        <input type="email" id="email" name="email" required class="form-input">
       </div>
       <div>
-        <label for="message" style="display: block; margin-bottom: 0.5rem; font-family: 'Cormorant Garamond', serif; font-size: 1.2rem;">Mensaje</label>
-        <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 1rem; border: 1px solid rgba(58, 77, 63, 0.2); border-radius: 15px; background: rgba(255, 255, 255, 0.5); font-family: inherit; outline: none;"></textarea>
+        <label for="message" class="form-label">¿Qué sientes compartir hoy?</label>
+        <textarea id="message" name="message" rows="5" required class="form-input"></textarea>
       </div>
-      <button type="submit" class="btn" style="border: none; cursor: pointer; width: fit-content; align-self: center; background-color: #3A4D3F;">Enviar</button>
+      <button type="submit" class="btn btn-submit" style="width: 100%; background-color: #3A4D3F;">ENVIAR CON AMOR</button>
     </form>
   </div>
   

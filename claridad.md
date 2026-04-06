@@ -8,20 +8,23 @@ permalink: /claridad/
 
 <div class="strip">
   <div class="container">
-    <h1>Sesiones de claridad emocional con Beyourinner.</h1>
-    
-    <div class="card-grid">
-      <div class="card">
-        <h3>Recursos</h3>
-        <p>Te invito a explorar herramientas sencillas que te ayudarán a iniciar tu propio proceso de escucha y reconexión.</p>
-        <a href="{{ '/material-gratuito/' | relative_url }}" class="btn">GUIAS GRATUITAS</a>
-      </div>
+    <h1>Espacios para tu Claridad</h1>
+    <p>Encontrar el camino no siempre significa avanzar rápido, a veces significa detenerse a mirar. Aquí tienes diferentes formas de recuperar tu centro, ya sea a través de un acompañamiento compartido o de herramientas para tu propia práctica.</p>
+  </div>
 
-      <div class="card">
-        <h3>Reconecta contigo</h3>
-        <p>Un acompañamiento cercano diseñado para que puedas silenciar el ruido y volver a escuchar tu propia voz.</p>
-        <a href="{{ '/encuentros/' | relative_url }}" class="btn">SABER MÁS</a>
-      </div>
+  <div class="container">
+    <h2>Encuentros Individuales</h2>
+    <p>Un espacio de escucha profunda e intuición para despejar la niebla mental y emocional, permitiendo que tu propia sabiduría tome la palabra.</p>
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="{{ site.baseurl }}/encuentros/" class="btn">SABER MÁS SOBRE LOS ENCUENTROS</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Brújula Interior: Guías y Material</h2>
+    <p>Recursos diseñados para que la introspección forme parte de tu día a día. Herramientas sencillas para volver a ti cuando el mundo exterior se vuelve demasiado ruidoso.</p>
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="{{ site.baseurl }}/material-gratuito/" class="btn">EXPLORAR RECURSOS GRATUITOS</a>
     </div>
   </div>
 </div>

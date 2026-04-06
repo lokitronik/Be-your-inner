@@ -7,13 +7,7 @@ permalink: /sobre-mi/
 ---
 
 <div class="container">
-  <h1>Manel: El alma detrás de Be Your Inner</h1>
+  <h1>Bienvenido a Beyourinner</h1>
   
-  <p>Soy Manel, y Be Your Inner es el resultado de mi propio viaje de retorno a casa. Un viaje que comenzó cuando decidí dejar de buscar respuestas fuera y empecé a escuchar el silencio que habita en mi interior.</p>
-  
-  <p>Mi propósito es acompañarte en ese mismo proceso. No como un guía que sabe el camino, sino como alguien que sostiene el espejo para que tú mismo puedas ver la claridad que ya tienes.</p>
-  
-  <p>Creo profundamente en la intuición como nuestra brújula más honesta y en la energía como el lenguaje sutil que nos conecta con todo lo que somos.</p>
-  
-  <a href="{{ '/claridad/' | relative_url }}" class="btn">Explorar el camino</a>
+  <p>Soy Manel, y mi propósito es acompañarte a recordar quién eres más allá de las máscaras y del ruido del día a día. Mi propio viaje interior me enseñó que el verdadero cambio no viene de afuera, sino del reencuentro con lo que siempre estuvo dentro de nosotros. Así nació Beyourinner: un espacio para quienes buscan vivir con más autenticidad, conciencia y conexión con su alma. En mi camino he descubierto que cada persona tiene una energía única y un proceso propio. Por eso, mi manera de acompañar se basa en la escucha, la intuición y en herramientas espirituales y energéticas que nos ayudan a soltar lo que ya no necesitamos y abrirnos a lo nuevo. La transformación no se impone: se permite. Si estas palabras resuenan contigo, este espacio también es tuyo.</p>
 </div>
