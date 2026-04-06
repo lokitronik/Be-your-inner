@@ -3,7 +3,7 @@ layout: default
 title: About Me | Be Your Inner
 description: I am Manel, and my purpose is to accompany you in remembering who you are beyond the masks and the daily noise.
 lang: en
-permalink: /en/
+permalink: /en/about-me/
 ---
 
 <div class="strip">
