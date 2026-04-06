@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About Me | Be Your Inner
-description: Meet Manel, the soul behind Be Your Inner.
+description: Meet Manel, the soul behind BEYOURINNER.
 lang: en
 permalink: /en/about/
 ---
