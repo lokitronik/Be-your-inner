@@ -5,31 +5,110 @@ description: Un espacio de silencio para reconectar con tu brújula interna y tu
 lang: es
 ---
 
+<style>
+  .home-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #B5835A;
+    margin-bottom: 1.2rem;
+    font-weight: 400;
+  }
+
+  .home-h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 1.5rem;
+  }
+
+  .home-lead {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 1.2rem;
+  }
+
+  .home-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.45rem;
+    border-left: 2px solid #B5835A;
+    padding-left: 1.5rem;
+    margin: 2.5rem 0;
+    color: #556B2F;
+    line-height: 1.5;
+  }
+
+  .home-divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 3rem 0;
+  }
+
+  .home-ctas {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3.5rem;
+  }
+
+  .btn-secondary {
+    display: inline-block;
+    border: 1px solid #556B2F;
+    color: #556B2F;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0.85rem 2rem;
+    border-radius: 2px;
+    text-decoration: none;
+    background: transparent;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .btn-secondary:hover {
+    background: #556B2F;
+    color: #fff;
+  }
+
+  @media (max-width: 560px) {
+    .home-h1 { font-size: 2.1rem; }
+  }
+</style>
+
 <div class="strip">
-  <div class="container" style="max-width: 750px; margin: 0 auto;">
-    
-    <h1 style="margin-bottom: 2.5rem; line-height: 1.3;">BeYourInner: descubre tu paz interior</h1>
-    
-    <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 2rem;">
-      <strong>Un viaje hacia dentro.</strong> Un espacio donde el ruido se apaga y la voz de tu alma comienza a escucharse. 
+  <div class="container" style="max-width: 680px; margin: 0 auto;">
+
+    <p class="home-label">Bienvenido</p>
+
+    <h1 class="home-h1">Un espacio para volver a ti</h1>
+
+    <p class="home-lead">
+      Aquí el ruido se apaga y la voz de tu alma comienza a escucharse. No vienes a buscar fuera lo que falta — vienes a recordar que dentro de ti ya está todo lo que necesitas.
     </p>
 
-    <p>Aquí no vienes a buscar fuera lo que falta. Aquí vienes a recordar que dentro de ti ya está todo lo que necesitas.</p>
-
-    <p style="margin: 2.5rem 0; font-style: italic; color: #555; border-left: 3px solid #eee; padding-left: 1.5rem;">
-      La calma, la claridad, la fuerza y el amor que tantas veces buscaste en otros lugares siempre estuvieron contigo.
+    <p class="home-lead">
+      La calma, la claridad y la fuerza que tantas veces buscaste en otros lugares siempre estuvieron contigo. Cada paso hacia dentro es un regreso a tu centro, a tu esencia, a ese lugar donde simplemente puedes ser.
     </p>
 
-    <p>Cada paso hacia dentro es un regreso. Un regreso a tu centro, a tu esencia, a ese lugar donde no hay máscaras ni exigencias, donde simplemente puedes ser.</p>
+    <blockquote class="home-quote">
+      "La transformación no se impone: se permite."
+    </blockquote>
 
-    <p>Permítete entrar. Permítete sentir.</p>
+    <p class="home-lead">
+      <strong>BeYourInner</strong> es un acompañamiento sincero y humano para que descubras que la claridad, la paz y la fuerza que buscas ya habitan en ti.
+    </p>
 
-    <p><strong>BeYourInner</strong> nació como un refugio, un lugar para volver a ti mismo cuando el mundo exterior se vuelve demasiado. Es una invitación a mirar hacia dentro, a escuchar lo que tu alma ya sabe y a reconectar con esa sabiduría que siempre estuvo contigo, esperando ser recordada.</p>
+    <hr class="home-divider">
 
-    <p style="margin-top: 2rem;">No es un espacio de respuestas prefabricadas ni de fórmulas mágicas. Es un acompañamiento sincero y humano, creado para que descubras que la claridad, la paz y la fuerza que buscas ya habitan en ti.</p>
-    
-    <div style="text-align: center; margin-top: 4rem;">
-      <a href="{{ site.baseurl }}/contacto/" class="btn" style="padding: 1.2rem 2.5rem;">CONECTA CONMIGO</a>
+    <div class="home-ctas">
+      <a href="{{ site.baseurl }}/sobre-mi/" class="btn">Conoce a Manel</a>
+      <a href="{{ site.baseurl }}/contacto/" class="btn-secondary">Escríbeme</a>
     </div>
+
   </div>
 </div>
