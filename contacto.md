@@ -1,25 +1,34 @@
 ---
 layout: default
-title: Claridad
+title: Contacto | Be Your Inner
+permalink: /contacto/
 ---
 
-<div class="container" style="margin-bottom: 0; padding-bottom: 20px;">
-  <h1>Espacios para tu Claridad</h1>
-  <p>Encontrar el camino no siempre significa avanzar rápido, a veces significa detenerse a mirar. Aquí tienes diferentes formas de recuperar tu centro.</p>
-</div>
+<div class="container">
 
-<div class="card-grid">
+  <h1>Hablemos: Un puente hacia tu interior</h1>
 
-  <div class="card">
-    <h3>Encuentros Individuales</h3>
-    <p>Un espacio de escucha profunda e intuición para despejar la niebla mental y emocional, permitiendo que tu propia sabiduría tome la palabra.</p>
-    <a href="{{ site.baseurl }}/encuentros/" class="btn">SABER MÁS</a>
-  </div>
+  <p>Antes de escribir, toma un respiro. No tienes que tener las palabras perfectas, solo la intención de conectar. Cuéntame qué te ha traído hasta aquí y busquemos un momento para hablar.</p>
 
-  <div class="card">
-    <h3>Tu Brújula Interior</h3>
-    <p>Recursos y guías diseñadas para que la introspección forme parte de tu día a día. Herramientas sencillas para volver a ti.</p>
-    <a href="{{ site.baseurl }}/material-gratuito/" class="btn">EXPLORAR RECURSOS</a>
-  </div>
+  <form action="https://formspree.io/f/TU_ID_AQUÍ" method="POST" style="margin-top: 3rem;">
+    
+    <div style="margin-bottom: 2rem;">
+      <label class="form-label" for="name">¿Cómo te llamas?</label>
+      <input class="form-input" type="text" name="name" id="name" placeholder="Tu nombre..." required>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+      <label class="form-label" for="email">¿A qué email puedo responderte?</label>
+      <input class="form-input" type="email" name="_replyto" id="email" placeholder="tu@email.com" required>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+      <label class="form-label" for="message">¿Qué sientes compartir hoy?</label>
+      <textarea class="form-input" name="message" id="message" placeholder="Escribe aquí lo que necesites..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-submit">ENVIAR CON AMOR</button>
+
+  </form>
 
 </div>
