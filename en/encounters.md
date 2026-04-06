@@ -26,7 +26,7 @@ permalink: /en/encounters/
     </div>
     
     <div style="text-align: center; margin-top: 4rem;">
-      <a href="https://calendly.com/beyourinner" class="btn btn-terracotta">Book your session</a>
+      <a href="https://buy.stripe.com/cNi28j8hsaAu24kdkm2go00" class="btn btn-terracotta">Book your session</a>
     </div>
   </div>
 </div>
