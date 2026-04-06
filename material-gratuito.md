@@ -11,12 +11,11 @@ permalink: /material-gratuito/
   
   <p>He creado estos recursos para que puedas empezar tu propio camino de escucha interior hoy mismo:</p>
   
-  <div class="card-grid">
-    <!-- Guía Activa -->
+ <div class="card-grid">
     <div class="card">
       <h3>Guía del Péndulo</h3>
-      <p>Aprende a usar el péndulo como un puente hacia tu sabiduría interna.</p>
-      <a href="{{ '/assets/docs/guia-pendulo/' | relative_url }}" class="btn btn-terracotta">Ver Guía Digital</a>
+      <p>Una herramienta sencilla para empezar a conectar con tu intuición hoy mismo. Aprende a usar el péndulo como un puente hacia tu sabiduría interna.</p>
+      <a href="{{ '/assets/docs/guia-pendulo.pdf' | relative_url }}" class="btn" download>DESCARGAR GUÍA</a>
     </div>
 
     <!-- Guía Próximamente 1 -->
