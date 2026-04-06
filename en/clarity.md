@@ -14,7 +14,7 @@ permalink: /en/clarity/
       <div class="card">
         <h3>Resources</h3>
         <p>I invite you to explore simple tools that will help you start your own process of listening and reconnection.</p>
-        <a href="{{ '/en/pendulum-guide/' | relative_url }}" class="btn">FREE GUIDES</a>
+        <a href="{{ '/assets/docs/pendulum-guide/' | relative_url }}" class="btn">FREE GUIDES</a>
       </div>
 
       <div class="card">

@@ -16,7 +16,7 @@ permalink: /material-gratuito/
     <div class="card">
       <h3>Guía del Péndulo</h3>
       <p>Aprende a usar el péndulo como un puente hacia tu sabiduría interna.</p>
-      <a href="{{ '/assets/docs/guia-pendulo.pdf' | relative_url }}" class="btn btn-terracotta">Descargar Guía</a>
+      <a href="{{ '/assets/docs/guia-pendulo/' | relative_url }}" class="btn btn-terracotta">Ver Guía Digital</a>
     </div>
 
     <!-- Guía Próximamente 1 -->

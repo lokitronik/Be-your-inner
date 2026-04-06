@@ -3,7 +3,7 @@ layout: default
 title: Pendulum Guide | Be Your Inner
 description: Connect with your intuition and listen to your soul through the pendulum.
 lang: en
-permalink: /en/pendulum-guide/
+permalink: /assets/docs/pendulum-guide/
 ---
 
 <div class="container">

@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Guía para usar el Péndulo | Be Your Inner
+title: Guía del Péndulo | Be Your Inner
 description: Conecta con tu intuición y escucha tu alma a través del péndulo.
 lang: es
-permalink: /guia-pendulo/
+permalink: /assets/docs/guia-pendulo/
 ---
 
 <div class="container">
