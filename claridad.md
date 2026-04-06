@@ -18,7 +18,7 @@ title: claridad
 
   <div class="card">
     <h3>guías de autoconocimiento</h3>
-    <p>Recursos y guías diseñadas para que trabajes a tu propio ritmo. Recursos sencillos para volver a ti..</p>
+    <p>Recursos y guías diseñadas para que trabajes a tu propio ritmo. Recursos sencillos para volver a ti.</p>
     <a href="{{ site.baseurl }}/material-gratuito/" class="btn">EXPLORAR RECURSOS</a>
   </div>
 
