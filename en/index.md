@@ -27,7 +27,7 @@ permalink: /en/
     <hr class="home-divider">
 
     <div class="home-ctas">
-      <a href="{{ site.baseurl }}/en/encounters/" class="btn">Guidance sessions</a>
+      <a href="{{ site.baseurl }}/en/clarity/" class="btn">Clarity</a>
     </div>
 
   </div>
