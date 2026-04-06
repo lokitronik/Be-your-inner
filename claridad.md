@@ -3,9 +3,10 @@ layout: default
 title: Claridad
 ---
 
-# Espacios para tu Claridad
-
-Encontrar el camino no siempre significa avanzar rápido, a veces significa detenerse a mirar. Aquí tienes diferentes formas de recuperar tu centro.
+<div class="container" style="margin-bottom: 0; padding-bottom: 20px;">
+  <h1>Espacios para tu Claridad</h1>
+  <p>Encontrar el camino no siempre significa avanzar rápido, a veces significa detenerse a mirar. Aquí tienes diferentes formas de recuperar tu centro.</p>
+</div>
 
 <div class="card-grid">
 
