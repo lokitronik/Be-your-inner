@@ -6,37 +6,226 @@ lang: es
 permalink: /encuentros/
 ---
 
-<div class="container" style="max-width: 700px;">
- <h1>Sesiones de acompañamiento: un espacio para tu verdad</h1>
-  
-  <div style="font-family: 'Lora', serif; font-size: 1.15rem; line-height: 1.8; color: #424242; margin-bottom: 3rem;">
-    <p>A veces, lo único que necesitamos es <strong>silencio para volver a escucharnos.</strong></p>
-    
-    <p>Estas sesiones son una pausa necesaria. Un acompañamiento cercano donde tu energía y tu momento actual marcan el único camino posible.</p>
-    
-    <p>Aquí puedes soltar lo que ya no necesitas, mirar con claridad el presente y reconectar con la fuerza que ya habita en ti.</p>
-  </div>
+<style>
+  .byi-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #B5835A;
+    margin-bottom: 1.2rem;
+    font-weight: 400;
+  }
 
-  <blockquote style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.6rem; border-left: 2px solid #B5835A; padding-left: 1.5rem; margin: 3rem auto; color: #556B2F; max-width: 500px; text-align: left;">
-    "Más que una sesión, es un reencuentro con tu esencia y con la guía interior que siempre está presente."
+  .byi-h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 2.5rem;
+    color: #1a1a1a;
+  }
+
+  .byi-body {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    line-height: 1.85;
+    color: #424242;
+    margin-bottom: 1.5rem;
+  }
+
+  .byi-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.6rem;
+    border-left: 2px solid #B5835A;
+    padding-left: 1.5rem;
+    margin: 3rem 0;
+    color: #556B2F;
+    line-height: 1.4;
+  }
+
+  .byi-divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 3rem 0;
+  }
+
+  .byi-how-title,
+  .byi-faq-title {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #B5835A;
+    margin-bottom: 1.5rem;
+  }
+
+  .byi-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .byi-step {
+    background: #faf9f7;
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid #f0efed;
+  }
+
+  .byi-step-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: #B5835A;
+    line-height: 1;
+    margin-bottom: 0.6rem;
+  }
+
+  .byi-step-text {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .byi-pricing {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .byi-price-old {
+    font-family: 'Lora', serif;
+    text-decoration: line-through;
+    color: #bbb;
+    font-size: 1.2rem;
+  }
+
+  .byi-price-new {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4.5rem;
+    color: #556B2F;
+    line-height: 1;
+    margin: 0.5rem 0;
+  }
+
+  .byi-price-tag {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #B5835A;
+    margin-bottom: 0.5rem;
+  }
+
+  .byi-price-note {
+    font-size: 0.85rem;
+    color: #999;
+    margin-bottom: 2.5rem;
+    font-style: italic;
+  }
+
+  .byi-btn {
+    display: inline-block;
+    background: #556B2F;
+    color: #fff !important;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 1.1rem 3rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+
+  .byi-btn:hover { background: #3e5020; }
+
+  .byi-after {
+    font-size: 0.8rem;
+    color: #ccc;
+    margin-top: 1.2rem;
+    font-style: italic;
+  }
+
+  .byi-faq-item {
+    border-top: 1px solid #eee;
+    padding: 1.2rem 0;
+  }
+
+  .byi-faq-q {
+    font-family: 'Lora', serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+
+  .byi-faq-a {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 600px) {
+    .byi-steps { grid-template-columns: 1fr; gap: 1rem; }
+    .byi-h1 { font-size: 2.1rem; }
+    .byi-price-new { font-size: 3.5rem; }
+    .byi-step { padding: 1.2rem; }
+  }
+</style>
+
+<div class="container" style="max-width: 750px; margin-top: 4rem; margin-bottom: 6rem;">
+
+  <p class="byi-label">Acompañamiento personal</p>
+
+  <h1 class="byi-h1">Sesiones de acompañamiento:<br>un espacio para tu verdad</h1>
+
+  <p class="byi-body">El reencuentro más importante es aquel que sucede cuando decides <strong>hacer silencio para volver a escucharte.</strong></p>
+  <p class="byi-body">Estas sesiones son una pausa necesaria. Un acompañamiento donde tu propia sabiduría marca el ritmo, permitiéndote soltar el ruido y mirar el presente con absoluta nitidez.</p>
+
+  <blockquote class="byi-quote">
+    "Tu esencia ya conoce el camino; aquí simplemente le damos el espacio y la calma para hablar."
   </blockquote>
 
-  <div style="text-align: center; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #eee;">
-    
-    <div style="margin-bottom: 2rem;">
-      <span style="text-decoration: line-through; color: #999; font-size: 1.2rem; font-family: 'Lora', serif;">55€</span>
-      <div style="font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; color: #556B2F; line-height: 1; margin: 0.5rem 0;">
-        44€
-      </div>
-      <p style="font-size: 0.85rem; letter-spacing: 2px; color: #B5835A; text-transform: uppercase; margin-top: 5px;">
-        Sesión Individual (60 min)
-      </p>
-    </div>
+  <hr class="byi-divider">
 
-    <a href="https://buy.stripe.com/cNi28j8hsaAu24kdkm2go00" class="btn">RESERVAR MI SESIÓN</a>
-    
-    <p style="font-size: 0.8rem; color: #999; margin-top: 1.5rem; font-style: italic;">
-      Al finalizar el pago, podrás agendar tu cita automáticamente.
-    </p>
+  <p class="byi-how-title">El proceso</p>
+  <div class="byi-steps">
+    <div class="byi-step">
+      <div class="byi-step-num">01</div>
+      <div class="byi-step-text"><strong>Reserva.</strong> Tras completar el pago, recibirás el enlace para elegir tu horario en el calendario.</div>
+    </div>
+    <div class="byi-step">
+      <div class="byi-step-num">02</div>
+      <div class="byi-step-text"><strong>Encuentro.</strong> Conectamos por videollamada durante 60 minutos de escucha plena y presencia.</div>
+    </div>
+    <div class="byi-step">
+      <div class="byi-step-num">03</div>
+      <div class="byi-step-text"><strong>Claridad.</strong> Te llevas la paz de haberte escuchado y la fuerza para dar tu siguiente paso.</div>
+    </div>
   </div>
+
+  <hr class="byi-divider">
+
+  <div class="byi-pricing">
+    <span class="byi-price-old">55€</span>
+    <div class="byi-price-new">44€</div>
+    <p class="byi-price-tag">Sesión individual · 60 min · Online</p>
+    <p class="byi-price-note">Aportación especial de lanzamiento.</p>
+    <a href="https://buy.stripe.com/cNi28j8hsaAu24kdkm2go00" class="byi-btn">Reservar mi sesión — 44€</a>
+    <p class="byi-after">Pago seguro vía Stripe · Reprogramación con 24h de antelación</p>
+  </div>
+
+  <hr class="byi-divider" style="margin-top: 4rem;">
+
+  <p class="byi-faq-title">Preguntas frecuentes</p>
+  <div class="byi-faq-item">
+    <p class="byi-faq-q">¿Cómo se realiza la sesión?</p>
+    <p class="byi-faq-a">Utilizamos Google Meet o Zoom. Recibirás el enlace de acceso una vez confirmes tu horario en la agenda.</p>
+  </div>
+  <div class="byi-faq-item">
+    <p class="byi-faq-q">¿Qué necesito preparar?</p>
+    <p class="byi-faq-a">Busca un lugar cómodo y privado donde te sientas segura. No hace falta que traigas nada más que tu presencia.</p>
+  </div>
+  <div class="byi-faq-item">
+    <p class="byi-faq-q">¿Es para tratar temas específicos?</p>
+    <p class="byi-faq-a">Puedes venir con una inquietud concreta o simplemente con el deseo de encontrar orden y paz interior.</p>
+  </div>
+
 </div>
