@@ -6,27 +6,37 @@ lang: es
 permalink: /encuentros/
 ---
 
-<div class="strip strip-olive">
-  <div class="container" style="max-width: 650px;">
-    <h1>Sesiones de Acompañamiento: un espacio para tu verdad</h1>
+<div class="container" style="max-width: 700px;">
+  <h1>un espacio para tu verdad</h1>
+  
+  <div style="font-family: 'Lora', serif; font-size: 1.15rem; line-height: 1.8; color: #424242; margin-bottom: 3rem;">
+    <p>A veces, lo único que necesitamos es <strong>silencio para volver a escucharnos.</strong></p>
     
-    <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; line-height: 1.8; color: #424242;">
-      
-      <p><strong>A veces, lo único que necesitamos es silencio para volver a escucharnos.</strong></p>
-
-      <p>Estas sesiones son una pausa en medio del ruido cotidiano. No busco aplicarte un método rígido, sino ofrecerte un acompañamiento cercano donde tu energía y tu momento actual marcan el camino.</p>
-      
-      <p>Aquí puedes soltar lo que ya no necesitas, mirar con claridad lo que estás viviendo y reconectar con la fuerza que ya habita en ti.</p>
-      
-      <blockquote style="font-style: italic; border-left: 3px solid #B5835A; padding-left: 2rem; margin: 3rem 0; color: #556B2F;">
-        "Más que una sesión, es un reencuentro con tu esencia y con la guía interior que siempre está presente."
-      </blockquote>
-
-      <p>Cada proceso es único porque tú lo eres. El objetivo no es cumplir expectativas externas, sino abrir un espacio auténtico para que te sientas en calma y alineado contigo mismo.</p>
-    </div>
+    <p>Estas sesiones son una pausa necesaria. Un acompañamiento cercano donde tu energía y tu momento actual marcan el único camino posible.</p>
     
-    <div style="text-align: center; margin-top: 4rem;">
-      <a href="https://buy.stripe.com/cNi28j8hsaAu24kdkm2go00" class="btn btn-terracotta">Reserva tu sesión</a>
+    <p>Aquí puedes soltar lo que ya no necesitas, mirar con claridad el presente y reconectar con la fuerza que ya habita en ti.</p>
+  </div>
+
+  <blockquote style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.6rem; border-left: 2px solid #B5835A; padding-left: 1.5rem; margin: 3rem auto; color: #556B2F; max-width: 500px; text-align: left;">
+    "Más que una sesión, es un reencuentro con tu esencia y con la guía interior que siempre está presente."
+  </blockquote>
+
+  <div style="text-align: center; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #eee;">
+    
+    <div style="margin-bottom: 2rem;">
+      <span style="text-decoration: line-through; color: #999; font-size: 1.2rem; font-family: 'Lora', serif;">55€</span>
+      <div style="font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; color: #556B2F; line-height: 1; margin: 0.5rem 0;">
+        44€
+      </div>
+      <p style="font-size: 0.85rem; letter-spacing: 2px; color: #B5835A; text-transform: uppercase; margin-top: 5px;">
+        Sesión Individual (60 min)
+      </p>
     </div>
+
+    <a href="https://buy.stripe.com/cNi28j8hsaAu24kdkm2go00" class="btn">RESERVAR MI SESIÓN</a>
+    
+    <p style="font-size: 0.8rem; color: #999; margin-top: 1.5rem; font-style: italic;">
+      Al finalizar el pago, podrás agendar tu cita automáticamente.
+    </p>
   </div>
 </div>
