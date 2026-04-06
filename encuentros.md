@@ -7,7 +7,7 @@ permalink: /encuentros/
 ---
 
 <div class="container" style="max-width: 700px;">
-  <h1>un espacio para tu verdad</h1>
+ <h1>Sesiones de acompañamiento: un espacio para tu verdad</h1>
   
   <div style="font-family: 'Lora', serif; font-size: 1.15rem; line-height: 1.8; color: #424242; margin-bottom: 3rem;">
     <p>A veces, lo único que necesitamos es <strong>silencio para volver a escucharnos.</strong></p>
