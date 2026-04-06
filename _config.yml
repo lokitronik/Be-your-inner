@@ -1,18 +1,20 @@
 title: Be Your Inner
-email: zuritamanel@gmail.com
+email: manel@beyourinner.com
 description: "Acompañamiento intuitivo, claridad emocional, reconexión con la esencia y energía."
-baseurl: "/Be-your-inner"
-url: "https://lokitronik.github.io"
 
-# Build settings
+# CAMBIA ESTO: Déjalo vacío entre las comillas
+baseurl: ""
+
+# CAMBIA ESTO: Pon tu nuevo dominio profesional
+url: "https://beyourinner.com"
+
+# El resto déjalo igual
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Clean URLs
 permalink: /:title/
 
-# Language settings
 languages: ["es", "en"]
 default_lang: "es"
