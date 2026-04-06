@@ -8,7 +8,7 @@ permalink: /en/
 
 <div class="strip">
   <div class="container">
-    <h1>Welcome to BEYOURINNER</h1>
+<h1>Welcome to BeYourInner: Guidance for Your Inner Journey</h1>
     
     <p>I also felt lost for a long time, trying to find outside what I had not yet cultivated within... My own inner journey taught me that true change does not come from the outside, but from the reunion with what was always inside us.</p>
 
