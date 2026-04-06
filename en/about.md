@@ -1,19 +1,29 @@
 ---
 layout: default
 title: About Me | Be Your Inner
-description: Meet Manel, the soul behind BEYOURINNER.
+description: I am Manel, and my purpose is to accompany you in remembering who you are beyond the masks and the daily noise.
 lang: en
-permalink: /en/about/
+permalink: /en/
 ---
 
-<div class="container">
-  <h1>Manel: The soul behind Be Your Inner</h1>
-  
-  <p>I am Manel, and Be Your Inner is the result of my own journey of returning home. A journey that began when I decided to stop looking for answers outside and started listening to the silence that lives within me.</p>
-  
-  <p>My purpose is to accompany you in that same process. Not as a guide who knows the way, but as someone who holds the mirror so that you yourself can see the clarity you already have.</p>
-  
-  <p>I deeply believe in intuition as our most honest compass and in energy as the subtle language that connects us with everything we are.</p>
-  
-  <a href="{{ '/en/clarity/' | relative_url }}" class="btn">Explore the path</a>
+<div class="strip">
+  <div class="container">
+    <h1>Welcome to BEYOURINNER</h1>
+    
+    <p>I also felt lost for a long time, trying to find outside what I had not yet cultivated within... My own inner journey taught me that true change does not come from the outside, but from the reunion with what was always inside us.</p>
+
+    <p>That is how <strong>BeYourInner</strong> was born: a space for those seeking to live with more authenticity, awareness, and connection with their soul. I am Manel, and my purpose is to accompany you in remembering who you are beyond the masks and the noise of everyday life.</p>
+
+    <p>On my path, I have discovered that every person has a unique energy and their own process. That is why my way of accompanying is based on listening, intuition, and spiritual and energetic tools that help us release what we no longer need and open ourselves to the new.</p>
+
+    <blockquote style="text-align: center; font-style: italic; margin: 2rem 0; font-size: 1.2rem;">
+      "Transformation is not imposed: it is allowed."
+    </blockquote>
+
+    <p>If these words resonate with you, this space is also yours. Welcome to BeYourInner.</p>
+    
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="{{ site.baseurl }}/en/contact/" class="btn">CONNECT WITH ME</a>
+    </div>
+  </div>
 </div>
