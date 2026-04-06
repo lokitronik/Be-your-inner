@@ -33,25 +33,28 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 3rem 2rem; /* Aumentamos un poco el aire */
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  background: transparent;
+  position: relative;
+  z-index: 100;
+  // ESTE ES EL SOMBREADO DEL HEADING
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
   
   .header-logo {
-    max-height: 65px;
+    max-height: 80px; /* Un poco más grande para que luzca */
     display: flex;
     align-items: center;
     img {
-      height: 65px;
-      background: transparent;
+      height: 80px;
+      background: transparent !important;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.5));
       transition: transform 0.3s ease;
       &:hover { transform: scale(1.02); }
     }
   }
 }
-
 footer {
   width: 100%;
   height: 80px;
