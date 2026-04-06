@@ -7,22 +7,22 @@
   
   <nav>
     {% if page.lang == 'en' %}
-      <a href="{{ '/en/about/' | relative_url }}">About Me</a>
-      <a href="{{ '/en/clarity/' | relative_url }}">Clarity</a>
-      <a href="{{ '/en/contact/' | relative_url }}">Contact</a>
+      <a href="{{ '/en/about/' | relative_url }}">ABOUT ME</a> |
+      <a href="{{ '/en/clarity/' | relative_url }}">CLARITY</a> |
+      <a href="{{ '/en/contact/' | relative_url }}">CONTACT</a>
     {% else %}
-      <a href="{{ '/sobre-mi/' | relative_url }}">Sobre Mí</a>
-      <a href="{{ '/claridad/' | relative_url }}">Claridad</a>
-      <a href="{{ '/contacto/' | relative_url }}">Contacto</a>
+      <a href="{{ '/sobre-mi/' | relative_url }}">SOBRE MÍ</a> |
+      <a href="{{ '/claridad/' | relative_url }}">CLARIDAD</a> |
+      <a href="{{ '/contacto/' | relative_url }}">CONTACTO</a>
     {% endif %}
     
-    <div class="lang-selector">
-      🌐 
+    <span class="lang-selector">
+      | 🌐 
       {% if page.lang == 'en' %}
-        <a href="{{ '/' | relative_url }}">ES</a> | <strong>EN</strong>
+        <a href="{{ '/' | relative_url }}">ES</a>
       {% else %}
-        <strong>ES</strong> | <a href="{{ '/en/' | relative_url }}">EN</a>
+        <a href="{{ '/en/' | relative_url }}">EN</a>
       {% endif %}
-    </div>
+    </span>
   </nav>
 </header>

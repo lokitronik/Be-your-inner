@@ -12,13 +12,13 @@ permalink: /claridad/
     
     <div class="card-grid">
       <div class="card">
-        <h3>Material Gratuito</h3>
+        <h3>MATERIAL GRATUITO</h3>
         <p>Te invito a explorar herramientas sencillas que te ayudarán a iniciar tu propio proceso de escucha y reconexión.</p>
-        <a href="{{ '/material-gratuito/' | relative_url }}" class="btn btn-terracotta">Guías Gratuitas</a>
+        <a href="{{ '/material-gratuito/' | relative_url }}" class="btn">Guías Gratuitas</a>
       </div>
 
       <div class="card">
-        <h3>Reconecta Contigo</h3>
+        <h3>RECONECTA CONTIGO</h3>
         <p>Un acompañamiento cercano diseñado para que puedas silenciar el ruido y volver a escuchar tu propia voz.</p>
         <a href="{{ '/encuentros/' | relative_url }}" class="btn">Saber Más</a>
       </div>
