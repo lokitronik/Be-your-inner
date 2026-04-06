@@ -1,27 +1,24 @@
 ---
 layout: default
-title: Clarity | Be Your Inner
-description: My method combines intuition and energy to accompany you in finding your own answers.
-lang: en
-permalink: /en/clarity/
+title: Clarity
 ---
 
-<div class="strip">
-  <div class="container">
-    <h1>Emotional clarity sessions with Beyourinner.</h1>
-    
-    <div class="card-grid">
-      <div class="card">
-        <h3>Resources</h3>
-        <p>I invite you to explore simple tools that will help you start your own process of listening and reconnection.</p>
-        <a href="{{ '/assets/docs/pendulum-guide/' | relative_url }}" class="btn">FREE GUIDES</a>
-      </div>
+# Spaces for your Clarity
 
-      <div class="card">
-        <h3>Reconnect with yourself</h3>
-        <p>A close accompaniment designed so you can silence the noise and listen to your own voice again.</p>
-        <a href="{{ '/en/encounters/' | relative_url }}" class="btn">LEARN MORE</a>
-      </div>
-    </div>
+Finding the path doesn't always mean moving fast; sometimes it means stopping to look. Here are different ways to regain your center.
+
+<div class="card-grid">
+
+  <div class="card">
+    <h3>Individual Encounters</h3>
+    <p>A space of deep listening and intuition to clear the mental and emotional fog, allowing your own wisdom to take the lead.</p>
+    <a href="{{ site.baseurl }}/en/encounters/" class="btn">LEARN MORE</a>
   </div>
+
+  <div class="card">
+    <h3>Your Inner Compass</h3>
+    <p>Resources and guides designed to make introspection a part of your daily life. Simple tools to return to yourself.</p>
+    <a href="{{ site.baseurl }}/en/pendulum-guide/" class="btn">EXPLORAR RESOURCES</a>
+  </div>
+
 </div>
