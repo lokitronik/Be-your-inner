@@ -3,7 +3,7 @@ layout: default
 title: Sessions | Be Your Inner
 description: A personal space to listen to yourself again.
 lang: en
-permalink: /en/sessions/
+permalink: /en/encounters/
 ---
 
 <div class="strip strip-olive">
