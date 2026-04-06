@@ -83,17 +83,55 @@ h1 { font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; color: $verde-
   h3 { color: $verde-bosque; font-family: 'Cormorant Garamond', serif; font-size: 2rem; }
 }
 
-// --- AJUSTE MÓVIL (LO QUE ARREGLA EL TAMAÑO) ---
+// --- AJUSTE MÓVIL DEFINITIVO ---
 @media (max-width: 768px) {
-  header { flex-direction: column; padding: 1rem; }
-  .header-logo img { height: 45px; margin-bottom: 1rem; }
-  nav { font-size: 0.75rem; flex-wrap: wrap; justify-content: center; }
+  header { 
+    flex-direction: column !important; 
+    padding: 1rem !important; 
+  }
   
-  h1 { font-size: 2rem !important; }
+  .header-logo img { 
+    height: 45px !important; 
+    margin-bottom: 1rem; 
+  }
   
-  .container { padding: 25px 15px; width: 95%; margin: 1rem auto; }
+  nav { 
+    font-size: 0.75rem !important; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 8px;
+  }
   
-  .btn { width: 100%; box-sizing: border-box; padding: 1rem; }
+  h1 { 
+    font-size: 1.8rem !important; 
+    margin: 1rem 0 !important;
+  }
   
-  .card-grid { grid-template-columns: 1fr; width: 95%; }
+  // Esto arregla que las cajas blancas no se peguen entre sí
+  .container { 
+    padding: 25px 20px !important; 
+    width: 92% !important; 
+    margin: 1.5rem auto !important; /* Espacio entre la cabecera y la primera caja */
+    border-radius: 20px !important;
+  }
+
+  // Esto separa las tarjetas de "acompañamiento" y "guías"
+  .card-grid {
+    gap: 1.5rem !important;
+    padding-bottom: 2rem;
+  }
+
+  .card {
+    padding: 2rem 1.5rem !important;
+    margin: 0 auto !important;
+    width: 92% !important;
+    box-sizing: border-box;
+  }
+  
+  .btn { 
+    width: 100% !important; 
+    box-sizing: border-box; 
+    padding: 1rem !important;
+    font-size: 1.1rem !important;
+  }
 }
