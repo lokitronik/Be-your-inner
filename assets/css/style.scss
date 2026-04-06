@@ -6,11 +6,11 @@
 
 $font-display: 'Cormorant Garamond', serif;
 $font-body: 'Lora', serif;
-$title-color: #3A4D3F; // Verde Musgo Oscuro
+$title-color: #3A4D3F;
 $text-color: #2C362E;
 $accent-color: #3A4D3F;
 
-// 2. ESTRUCTURA BASE (INMERSIÓN TOTAL)
+// 2. ESTRUCTURA BASE
 body {
   margin: 0;
   padding: 0;
@@ -24,7 +24,7 @@ body {
   min-height: 100vh;
 }
 
-// 3. HEADER Y LOGO (TRANSPARENTE)
+// 3. HEADER Y LOGO
 header {
   width: 100%;
   max-width: 1100px;
@@ -40,13 +40,14 @@ header {
       height: 75px;
       background: transparent !important;
       border: none !important;
+      display: block;
       transition: transform 0.3s ease;
       &:hover { transform: scale(1.05); }
     }
   }
 }
 
-// 4. CONTENIDO CENTRAL (GLASSMORPHISM)
+// 4. CONTENIDO CENTRAL
 main {
   flex: 1;
   display: flex;
@@ -60,7 +61,7 @@ main {
   max-width: 850px;
   margin: 2rem auto;
   padding: 60px;
-  background: rgba(255, 255, 255, 0.94); // Blanco elegante con transparencia
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border-radius: 40px;
@@ -70,7 +71,7 @@ main {
   box-sizing: border-box;
 }
 
-// 5. TIPOGRAFÍA DETALLADA
+// 5. TIPOGRAFÍA
 h1, h2, h3 {
   font-family: $font-display;
   color: $title-color;
@@ -83,7 +84,7 @@ h1 { font-size: 3.5rem; margin-bottom: 1.5rem; }
 h2 { font-size: 2.5rem; margin-bottom: 1.2rem; }
 p { font-size: 1.15rem; margin-bottom: 1.5rem; }
 
-// 6. BOTONES SÓLIDOS (ESTILO PRIO-SANERING)
+// 6. BOTONES
 .btn, .button, a[href*="contacto"], a[href*="claridad"] {
   display: inline-block;
   background-color: $accent-color !important;
@@ -101,17 +102,16 @@ p { font-size: 1.15rem; margin-bottom: 1.5rem; }
   box-shadow: 0 4px 15px rgba(58, 77, 63, 0.2);
 
   &:hover {
-    background-color: lighten($accent-color, 8%) !important;
+    background-color: #4a5d4f !important;
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(58, 77, 63, 0.3);
   }
 }
 
-// 7. NAVEGACIÓN (SOBRE EL BOSQUE)
+// 7. NAVEGACIÓN
 nav {
   display: flex;
   align-items: center;
-  
   a {
     margin: 0 1rem;
     text-decoration: none;
@@ -119,29 +119,49 @@ nav {
     font-weight: 600;
     font-size: 0.9rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-    transition: opacity 0.3s;
-
     &:hover { opacity: 0.8; }
   }
 }
 
-// 8. FOOTER MÍNIMO
+// 8. FOOTER
 footer {
   width: 100%;
   padding: 3rem 1rem;
   background: transparent;
   text-align: center;
   margin-top: auto;
-  
   .social-links {
     display: flex;
     justify-content: center;
     gap: 2.5rem;
     margin-bottom: 1rem;
-    
     a { 
       color: #ffffff; 
       transition: transform 0.3s;
-      &:hover { transform: translateY
+      &:hover { transform: translateY(-3px); }
+      svg { width: 28px; height: 28px; filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.5)); }
+    }
+  }
+  p {
+    font-size: 0.8rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+  }
+}
+
+// 9. RESPONSIVO (Arreglado)
+@media (max-width: 768px) {
+  h1 { font-size: 2.2rem; }
+  .container { padding: 30px; margin: 1rem; }
+  header { 
+    flex-direction: column; 
+    gap: 1.5rem; 
+    padding: 1rem;
+  }
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    a { margin: 0.5rem; }
+  }
+}
