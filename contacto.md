@@ -7,7 +7,7 @@ permalink: /contacto/
 ---
 
 <div class="container">
-  <h1>Hablemos: Un puente hacia tu interior</h1>
+  <h1>Hablemos: Un espacio para ti.</h1>
   
   <p>Antes de escribir, toma un respiro. No tienes que tener las palabras perfectas, solo la intención de conectar. Cuéntame qué te ha traído hasta aquí y busquemos un momento para hablar.</p>
   
@@ -25,7 +25,7 @@ permalink: /contacto/
         <label for="message" class="form-label">¿Qué sientes compartir hoy?</label>
         <textarea id="message" name="message" rows="5" required class="form-input"></textarea>
       </div>
-      <button type="submit" class="btn btn-submit" style="width: 100%; background-color: #3A4D3F;">ENVIAR CON AMOR</button>
+      <button type="submit" class="btn btn-submit">ENVIAR CON AMOR</button>
     </form>
   </div>
   
