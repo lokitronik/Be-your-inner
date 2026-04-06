@@ -7,25 +7,25 @@ permalink: /contacto/
 ---
 
 <div class="container">
-  <h1>Hablemos: Un espacio para escucharte</h1>
+  <h1>Hablemos: Un espacio para ti.</h1>
   
-  <p>Si sientes que es el momento de empezar a escucharte, o si simplemente tienes alguna duda, estaré encantado de leerte.</p>
+  <p>Si sientes que es el momento de buscar claridad o simplemente quieres hacerme una consulta, estoy aquí para escucharte. Escríbeme y caminemos juntos.</p>
   
   <div style="margin: 4rem 0; text-align: left;">
     <form action="https://formspree.io/f/manel@beyourinner.com" method="POST" style="display: flex; flex-direction: column; gap: 1.5rem;">
       <div>
         <label for="name" style="display: block; margin-bottom: 0.5rem; font-family: 'Cormorant Garamond', serif; font-size: 1.2rem;">Nombre</label>
-        <input type="text" id="name" name="name" required style="width: 100%; padding: 1rem; border: 1px solid rgba(74, 93, 78, 0.2); border-radius: 10px; background: transparent; font-family: inherit;">
+        <input type="text" id="name" name="name" required style="width: 100%; padding: 1rem; border: 1px solid rgba(58, 77, 63, 0.2); border-radius: 15px; background: rgba(255, 255, 255, 0.5); font-family: inherit; outline: none;">
       </div>
       <div>
         <label for="email" style="display: block; margin-bottom: 0.5rem; font-family: 'Cormorant Garamond', serif; font-size: 1.2rem;">Email</label>
-        <input type="email" id="email" name="email" required style="width: 100%; padding: 1rem; border: 1px solid rgba(74, 93, 78, 0.2); border-radius: 10px; background: transparent; font-family: inherit;">
+        <input type="email" id="email" name="email" required style="width: 100%; padding: 1rem; border: 1px solid rgba(58, 77, 63, 0.2); border-radius: 15px; background: rgba(255, 255, 255, 0.5); font-family: inherit; outline: none;">
       </div>
       <div>
         <label for="message" style="display: block; margin-bottom: 0.5rem; font-family: 'Cormorant Garamond', serif; font-size: 1.2rem;">Mensaje</label>
-        <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 1rem; border: 1px solid rgba(74, 93, 78, 0.2); border-radius: 10px; background: transparent; font-family: inherit;"></textarea>
+        <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 1rem; border: 1px solid rgba(58, 77, 63, 0.2); border-radius: 15px; background: rgba(255, 255, 255, 0.5); font-family: inherit; outline: none;"></textarea>
       </div>
-      <button type="submit" class="btn" style="border: none; cursor: pointer; width: fit-content; align-self: center;">Enviar Mensaje</button>
+      <button type="submit" class="btn" style="border: none; cursor: pointer; width: fit-content; align-self: center; background-color: #3A4D3F;">Enviar</button>
     </form>
   </div>
   

@@ -8,19 +8,19 @@ permalink: /en/clarity/
 
 <div class="strip">
   <div class="container">
-    <h1>Clarity: Intuitive accompaniment encounters.</h1>
+    <h1>Emotional clarity sessions with Beyourinner.</h1>
     
     <div class="card-grid">
       <div class="card">
-        <h3>Free material</h3>
+        <h3>Resources</h3>
         <p>I invite you to explore simple tools that will help you start your own process of listening and reconnection.</p>
-        <a href="{{ '/en/pendulum-guide/' | relative_url }}" class="btn">Free Guides</a>
+        <a href="{{ '/en/pendulum-guide/' | relative_url }}" class="btn">FREE GUIDES</a>
       </div>
 
       <div class="card">
         <h3>Reconnect with yourself</h3>
         <p>A close accompaniment designed so you can silence the noise and listen to your own voice again.</p>
-        <a href="{{ '/en/encounters/' | relative_url }}" class="btn">Learn More</a>
+        <a href="{{ '/en/encounters/' | relative_url }}" class="btn">LEARN MORE</a>
       </div>
     </div>
   </div>
