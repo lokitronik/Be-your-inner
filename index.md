@@ -7,7 +7,6 @@ permalink: /
 ---
 
 <style>
-  /* ... (mantenemos el estilo anterior igual) ... */
   .home-ctas {
     display: flex;
     gap: 1rem;
@@ -38,7 +37,7 @@ permalink: /
     <hr class="home-divider">
 
     <div class="home-ctas">
-      <a href="{{ site.baseurl }}/encuentros/" class="btn">Sesiones de acompañamiento</a>
+      <a href="{{ site.baseurl }}/claridad/" class="btn">Claridad</a>
     </div>
 
   </div>
