@@ -1,33 +1,93 @@
 ---
 layout: default
 title: Contact | Be Your Inner
-description: Get in touch with Manel.
-lang: en
 permalink: /en/contact/
 ---
 
-<div class="container">
-  <h1>Let's talk: A space for you.</h1>
-  
-  <p>Before writing, take a breath. You don't have to have the perfect words, just the intention to connect. Tell me what has brought you here and let's find a moment to talk.</p>
-  
-  <div style="margin: 4rem 0; text-align: left;">
-    <form action="https://formspree.io/f/manel@beyourinner.com" method="POST" style="display: flex; flex-direction: column; gap: 1.5rem;">
-      <div>
-        <label for="name" class="form-label">What is your name?</label>
-        <input type="text" id="name" name="name" required class="form-input">
-      </div>
-      <div>
-        <label for="email" class="form-label">Which email can I reply to?</label>
-        <input type="email" id="email" name="email" required class="form-input">
-      </div>
-      <div>
-        <label for="message" class="form-label">What do you feel like sharing today?</label>
-        <textarea id="message" name="message" rows="5" required class="form-input"></textarea>
-      </div>
-      <button type="submit" class="btn btn-submit">SEND WITH LOVE</button>
-    </form>
-  </div>
-  
-  <p style="opacity: 0.6; font-size: 0.9rem;">You can also write to me directly at <a href="mailto:manel@beyourinner.com" style="color: inherit;">manel@beyourinner.com</a></p>
-</div>
+<style>
+  .contact-label {
+    font-family: 'Lora', serif;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #B5835A;
+    display: block;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 0.8rem 0;
+    border: none;
+    border-bottom: 1px solid #eee;
+    background: transparent;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    color: #424242;
+    outline: none;
+    transition: border-color 0.3s;
+    border-radius: 0;
+  }
+
+  .form-input:focus {
+    border-bottom-color: #B5835A;
+  }
+
+  textarea.form-input {
+    min-height: 100px;
+    resize: none;
+  }
+
+  .contact-hint {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 0.4rem;
+    font-style: italic;
+  }
+
+  .contact-alt {
+    font-size: 0.85rem;
+    color: #999;
+    margin-top: 4rem;
+    text-align: center;
+    border-top: 1px solid #f9f9f9;
+    padding-top: 2rem;
+  }
+
+  .contact-alt a {
+    color: #B5835A;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .contact-after {
+    font-size: 0.8rem;
+    color: #bbb;
+    margin-top: 1.5rem;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .btn-submit {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+    background: #556B2F;
+    color: #fff !important;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 1.1rem 3rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+
+  .btn-submit:hover { background: #3e5020; }
+</style>
+
+<div class="container" style="max-width: 650px; margin-top: 4rem; margin-bottom: 6rem;">
+
+  <p style="font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
