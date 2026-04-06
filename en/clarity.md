@@ -8,7 +8,7 @@ permalink: /en/clarity/
 
 <div class="strip">
   <div class="container">
-    <h1>Clarity</h1>
+    <h1>Clarity: Intuitive accompaniment encounters.</h1>
     
     <div class="card-grid">
       <div class="card">

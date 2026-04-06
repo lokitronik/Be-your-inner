@@ -7,7 +7,7 @@ permalink: /sobre-mi/
 ---
 
 <div class="container">
-  <h1>Sobre Mí</h1>
+  <h1>Manel: El alma detrás de Be Your Inner</h1>
   
   <p>Soy Manel, y Be Your Inner es el resultado de mi propio viaje de retorno a casa. Un viaje que comenzó cuando decidí dejar de buscar respuestas fuera y empecé a escuchar el silencio que habita en mi interior.</p>
   

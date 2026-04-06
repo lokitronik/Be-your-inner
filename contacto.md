@@ -7,7 +7,7 @@ permalink: /contacto/
 ---
 
 <div class="container">
-  <h1>Contacto</h1>
+  <h1>Hablemos: Un espacio para escucharte</h1>
   
   <p>Si sientes que es el momento de empezar a escucharte, o si simplemente tienes alguna duda, estaré encantado de leerte.</p>
   

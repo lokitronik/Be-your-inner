@@ -8,7 +8,7 @@ permalink: /en/encounters/
 
 <div class="strip strip-olive">
   <div class="container" style="max-width: 700px;">
-    <h1>Encounters</h1>
+    <h1>Pause and Listen: A moment for you</h1>
     
     <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; line-height: 1.8; color: #424242; text-align: left; margin-bottom: 4rem;">
       <p>These encounters are a moment of pause in the middle of everyday noise, a personal space created so you can listen to yourself again.</p>

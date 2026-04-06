@@ -7,7 +7,7 @@ permalink: /material-gratuito/
 ---
 
 <div class="container">
-  <h1>Material Gratuito</h1>
+  <h1>Recursos: Herramientas para tu camino</h1>
   
   <p>He creado estos recursos para que puedas empezar tu propio camino de escucha interior hoy mismo:</p>
   

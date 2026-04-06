@@ -7,7 +7,7 @@ permalink: /en/about/
 ---
 
 <div class="container">
-  <h1>About Me</h1>
+  <h1>Manel: The soul behind Be Your Inner</h1>
   
   <p>I am Manel, and Be Your Inner is the result of my own journey of returning home. A journey that began when I decided to stop looking for answers outside and started listening to the silence that lives within me.</p>
   

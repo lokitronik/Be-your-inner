@@ -8,7 +8,7 @@ permalink: /encuentros/
 
 <div class="strip strip-olive">
   <div class="container" style="max-width: 700px;">
-    <h1>Encuentros</h1>
+    <h1>Pausa y Escucha: Un momento para ti</h1>
     
     <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; line-height: 1.8; color: #424242; text-align: left; margin-bottom: 4rem;">
       <p>Estos encuentros son un momento de pausa en medio del ruido cotidiano, un espacio personal creado para que puedas volver a escucharte.</p>

@@ -7,7 +7,7 @@ lang: es
 
 <div class="strip">
   <div class="container">
-    <h1>A veces solo necesitas un poco de claridad para escuchar lo que ya sabes.</h1>
+    <h1>Be Your Inner: Claridad e Intuición para conectar contigo.</h1>
     
     <p>No estoy aquí para darte soluciones mágicas ni respuestas que no tengas tú ya. Lo que hago es acompañarte a silenciar el ruido para que tu intuición pueda hablar. Se trata de dejar de buscar fuera y empezar a confiar en lo que sientes dentro. Sin más.</p>
     

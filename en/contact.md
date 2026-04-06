@@ -7,7 +7,7 @@ permalink: /en/contact/
 ---
 
 <div class="container">
-  <h1>Contact</h1>
+  <h1>Let's talk: A space to listen to you</h1>
   
   <p>If you feel it is the time to start listening to yourself, or if you simply have any questions, I will be happy to read from you.</p>
   
