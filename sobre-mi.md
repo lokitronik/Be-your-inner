@@ -8,7 +8,7 @@ permalink: /sobre-mi/
 
 <div class="strip">
   <div class="container">
-    <h1>Bienvenido a BeYourInner: Acompañamiento para tu Viaje Interior</h1>
+<h1>Bienvenido a BeYourInner: acompañamiento para tu viaje interior</h1>
     
     <p><strong>Soy Manel</strong>, y mi propósito es acompañarte a recordar quién eres más allá de las máscaras y del ruido del día a día.</p>
 
