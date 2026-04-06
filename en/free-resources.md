@@ -15,7 +15,7 @@ permalink: /en/free-resources/
     <div class="card">
       <h3>Pendulum Guide</h3>
       <p>A simple tool to start connecting with your intuition today. Learn how to use the pendulum as a bridge to your inner wisdom.</p>
-      <a href="{{ '/assets/docs/guia-pendulo.pdf' | relative_url }}" class="btn" download>DOWNLOAD GUIDE</a>
+      <a href="{{ '/assets/docs/pendulum-guide.pdf' | relative_url }}" class="btn" download>DOWNLOAD GUIDE</a>
     </div>
 
     <div class="card" style="opacity: 0.7; filter: grayscale(0.3);">
