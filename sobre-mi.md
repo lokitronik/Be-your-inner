@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Sobre Mí | Be Your Inner
-description: Conoce a Manel, el alma detrás de Be Your Inner.
+description: Conoce a Manel, el alma detrás de BEYOURINNER.
 lang: es
 permalink: /sobre-mi/
 ---
