@@ -8,7 +8,7 @@ permalink: /
 
 <div class="strip">
   <div class="container">
-    <h1>Bienvenido a BeYourInner</h1>
+    <h1>Bienvenido a BeYourInner: Acompañamiento para tu Viaje Interior</h1>
     
     <p>Yo también estuve perdido durante mucho tiempo, intentando buscar fuera lo que aún no había cultivado por dentro... Mi propio viaje interior me enseñó que el verdadero cambio no viene de afuera, sino del reencuentro con lo que siempre estuvo dentro de nosotros.</p>
 
