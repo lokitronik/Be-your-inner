@@ -1,11 +1,13 @@
 ---
 layout: default
-title: Clarity
+title: Clarity | Be Your Inner
+permalink: /en/clarity/
 ---
 
-# Spaces for your Clarity
-
-Finding the path doesn't always mean moving fast; sometimes it means stopping to look. Here are different ways to regain your center.
+<div class="container" style="margin-bottom: 0; padding-bottom: 20px;">
+  <h1>Spaces for your Clarity</h1>
+  <p>Finding the path doesn't always mean moving fast; sometimes it means stopping to look. Here are different ways to regain your center.</p>
+</div>
 
 <div class="card-grid">
 
@@ -18,7 +20,7 @@ Finding the path doesn't always mean moving fast; sometimes it means stopping to
   <div class="card">
     <h3>Your Inner Compass</h3>
     <p>Resources and guides designed to make introspection a part of your daily life. Simple tools to return to yourself.</p>
-    <a href="{{ site.baseurl }}/en/pendulum-guide/" class="btn">EXPLORAR RESOURCES</a>
+    <a href="{{ site.baseurl }}/en/free-resources/" class="btn">EXPLORE RESOURCES</a>
   </div>
 
 </div>
