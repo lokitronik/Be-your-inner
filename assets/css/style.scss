@@ -1,86 +1,78 @@
 ---
 ---
 
-// 1. TIPOGRAFÍA Y VARIABLES
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Lora:wght@400;700&display=swap');
 
-$font-display: 'Cormorant Garamond', serif;
-$font-body: 'Lora', serif;
-$title-color: #3A4D3F;
-$text-color: #2C362E;
-$accent-color: #3A4D3F;
-
-// 2. ESTRUCTURA BASE
 body {
   margin: 0;
   padding: 0;
   background: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=2560') no-repeat center center fixed;
   background-size: cover;
-  font-family: $font-body;
-  color: $text-color;
+  font-family: 'Lora', serif;
+  color: #2C362E;
   line-height: 1.8;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-// 3. HEADER Y LOGO
-
 header {
   width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  /* Degradado sutil para que el logo y el menú se vean perfectos */
-  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, transparent 100%);
   position: relative;
-  z-index: 10;
+  z-index: 100;
+}
 
-  .header-logo img {
-    height: 80px; 
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)); /* Sombra para el logo */
-  }
+header .header-logo img {
+  height: 85px;
+  background: transparent !important;
+  border: none !important;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.5));
+  display: block;
 }
 
 nav a {
-  /* Forzamos que el texto del menú sea blanco puro y resalte */
+  margin: 0 1rem;
+  text-decoration: none;
   color: #ffffff !important;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.8) !important;
   font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.8) !important;
 }
 
-// 4. CONTENIDO CENTRAL (CAPSULA AUTOMÁTICA)
 main {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 2rem;
-  
-  // 
-  // 
-  > div, .container, .wrapper, article {
-    width: 100%;
-    max-width: 850px;
-    margin: 2rem auto;
-    padding: 60px;
-    background: rgba(255, 255, 255, 0.94);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border-radius: 40px;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    text-align: center;
-    box-sizing: border-box;
-  }
 }
 
-// 5. TIPOGRAFÍA
+main > div, .container, .wrapper, article, .post-content, .page-content {
+  width: 100%;
+  max-width: 850px;
+  margin: 2rem auto;
+  padding: 60px;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 40px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  box-sizing: border-box;
+}
+
 h1, h2, h3 {
-  font-family: $font-display;
-  color: $title-color;
+  font-family: 'Cormorant Garamond', serif;
+  color: #3A4D3F;
   margin-top: 0;
   font-weight: 600;
   line-height: 1.2;
@@ -88,86 +80,51 @@ h1, h2, h3 {
 
 h1 { font-size: 3.5rem; margin-bottom: 1.5rem; }
 h2 { font-size: 2.5rem; margin-bottom: 1.2rem; }
-p { font-size: 1.15rem; margin-bottom: 1.5rem; }
 
-// 6. BOTONES
-.btn, .button, a[href*="contacto"], a[href*="claridad"] {
+.btn, .button, a[href*="contacto"], a[href*="claridad"], a[href*="encuentros"] {
   display: inline-block;
-  background-color: $accent-color !important;
+  background-color: #3A4D3F !important;
   color: #ffffff !important;
   padding: 18px 45px;
   border-radius: 60px;
   text-decoration: none !important;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 0.9rem;
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(58, 77, 63, 0.2);
-
-  &:hover {
-    background-color: #4a5d4f !important;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(58, 77, 63, 0.3);
-  }
 }
 
-// 7. NAVEGACIÓN
-nav {
-  display: flex;
-  align-items: center;
-  a {
-    margin: 0 1rem;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-    &:hover { opacity: 0.8; }
-  }
+.btn:hover, .button:hover {
+  background-color: #4a5d4f !important;
+  transform: translateY(-3px);
 }
 
-// 8. FOOTER
 footer {
   width: 100%;
   padding: 3rem 1rem;
   background: transparent;
   text-align: center;
   margin-top: auto;
-  .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-    margin-bottom: 1rem;
-    a { 
-      color: #ffffff; 
-      transition: transform 0.3s;
-      &:hover { transform: translateY(-3px); }
-      svg { width: 28px; height: 28px; filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.5)); }
-    }
-  }
-  p {
-    font-size: 0.8rem;
-    color: #ffffff;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
-  }
 }
 
-// 9. RESPONSIVO (Arreglado)
+footer .social-links a {
+  color: #ffffff;
+  margin: 0 1rem;
+  text-decoration: none;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+footer p {
+  font-size: 0.8rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
+
 @media (max-width: 768px) {
   h1 { font-size: 2.2rem; }
-  .container { padding: 30px; margin: 1rem; }
-  header { 
-    flex-direction: column; 
-    gap: 1.5rem; 
-    padding: 1rem;
-  }
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    a { margin: 0.5rem; }
-  }
+  main > div, .container { padding: 30px; }
+  header { flex-direction: column; gap: 1.5rem; }
+  nav { flex-wrap: wrap; justify-content: center; }
+  nav a { margin: 0.5rem; font-size: 0.8rem; }
 }
