@@ -328,4 +328,32 @@ textarea.form-input {
 .btn-submit {
   width: 100%;
   margin-top: 1rem;
+  }
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column; /* Pone el menú debajo del logo */
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .header-logo img {
+    max-width: 150px; /* Reduce el tamaño del logo en el móvil */
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    font-size: 14px; /* Hace la letra del menú un pelín más pequeña para que quepa */
+    display: flex;
+    flex-wrap: wrap; /* Si no caben en una línea, saltan a la siguiente sin romperse */
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  h1 {
+    font-size: 28px !important; /* Ajusta el título gigante "BeYourInner" */
+  }
 }
+
