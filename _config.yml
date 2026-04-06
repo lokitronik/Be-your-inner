@@ -2,13 +2,14 @@ title: Be Your Inner
 email: manel@beyourinner.com
 description: "Acompañamiento intuitivo, claridad emocional, reconexión con la esencia y energía."
 
-# CAMBIA ESTO: Déjalo vacío entre las comillas
+
 baseurl: ""
 
-# CAMBIA ESTO: Pon tu nuevo dominio profesional
+
 url: "https://beyourinner.com"
 
-# El resto déjalo igual
+favicon: "/assets/images/favicon.ico"
+
 theme: minima
 plugins:
   - jekyll-feed
