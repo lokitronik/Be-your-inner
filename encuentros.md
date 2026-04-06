@@ -26,7 +26,7 @@ permalink: /encuentros/
     </div>
     
     <div style="text-align: center; margin-top: 4rem;">
-      <a href="https://calendly.com/beyourinner" class="btn btn-terracotta">Reserva tu sesión</a>
+      <a href="https://buy.stripe.com/cNi28j8hsaAu24kdkm2go00" class="btn btn-terracotta">Reserva tu sesión</a>
     </div>
   </div>
 </div>
