@@ -7,267 +7,123 @@ permalink: /en/sessions/
 ---
 
 <style>
-  /* Optimized Container */
-  .byi-container {
+  /* White Capsule / Card Container */
+  .byi-card-container {
     width: 100%;
-    max-width: 750px;
+    max-width: 800px;
     margin: 4rem auto 6rem;
-    padding: 0 1.5rem;
+    background: rgba(255, 255, 255, 0.95); /* The capsule with slight transparency */
+    padding: 4rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px); /* Soft glass effect */
     box-sizing: border-box;
   }
 
-  .byi-label {
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #B5835A;
-    margin-bottom: 1.2rem;
-    font-weight: 400;
-  }
-
+  /* Typography for maximum readability */
   .byi-h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 2.8rem;
-    font-weight: 400;
-    line-height: 1.2;
-    margin: 0 0 2.5rem;
     color: #1a1a1a;
+    line-height: 1.2;
+    margin-bottom: 2rem;
   }
 
   .byi-body {
     font-family: 'Lora', serif;
     font-size: 1.1rem;
-    line-height: 1.85;
-    color: #424242;
-    margin-bottom: 1.5rem;
+    color: #333;
+    line-height: 1.8;
   }
 
   .byi-quote {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     font-size: 1.6rem;
-    border-left: 2px solid #B5835A;
+    border-left: 3px solid #B5835A;
     padding-left: 1.5rem;
-    margin: 3.5rem 0;
-    color: #556B2F;
-    line-height: 1.4;
+    margin: 3rem 0;
+    color: #4a5944; /* Organic dark green */
   }
 
-  .byi-divider {
-    border: none;
-    border-top: 1px solid #eee;
-    margin: 3.5rem 0;
-  }
-
-  .byi-section-title {
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #B5835A;
-    margin-bottom: 2rem;
-  }
-
-  /* Steps Grid - Optimized */
+  /* Steps and Pricing inside the capsule */
   .byi-steps {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    margin-top: 2rem;
   }
 
   .byi-step {
-    background: #faf9f7;
+    background: #fcfbf9;
+    padding: 1.5rem;
     border-radius: 12px;
-    padding: 1.8rem;
-    border: 1px solid #f0efed;
-    display: flex;
-    flex-direction: column;
+    border: 1px solid #eee;
   }
 
-  .byi-step-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.2rem;
-    color: #B5835A;
-    line-height: 1;
-    margin-bottom: 0.8rem;
-  }
-
-  .byi-step-text {
-    font-size: 0.9rem;
-    color: #555;
-    line-height: 1.6;
-  }
-
-  /* Pricing Block - Improved for mobile */
   .byi-pricing {
     text-align: center;
-    padding: 2rem 0;
-    background: #fdfdfd;
-    border-radius: 20px;
-  }
-
-  .byi-price-old {
-    font-family: 'Lora', serif;
-    text-decoration: line-through;
-    color: #bbb;
-    font-size: 1.2rem;
-    display: block;
-  }
-
-  .byi-price-new {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 5rem;
-    color: #556B2F;
-    line-height: 1;
-    margin: 0.5rem 0;
-  }
-
-  .byi-price-tag {
-    font-size: 0.9rem;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: #B5835A;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-  }
-
-  .byi-price-note {
-    font-size: 0.85rem;
-    color: #999;
-    margin-bottom: 2.5rem;
-    font-style: italic;
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid #eee;
   }
 
   .byi-btn {
     display: inline-block;
-    background: #556B2F;
-    color: #fff !important;
-    font-size: 0.85rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    background: #4a5944;
+    color: white !important;
     padding: 1.2rem 2.5rem;
     border-radius: 50px;
     text-decoration: none;
-    transition: all 0.3s ease;
-    width: auto;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    transition: 0.3s;
   }
 
-  .byi-btn:hover { 
-    background: #3e5020;
-    transform: translateY(-2px);
-  }
-
-  .byi-after {
-    font-size: 0.75rem;
-    color: #bbb;
-    margin-top: 1.5rem;
-    font-style: italic;
-  }
-
-  /* FAQ */
-  .byi-faq-item {
-    border-bottom: 1px solid #f5f5f5;
-    padding: 1.5rem 0;
-  }
-
-  .byi-faq-q {
-    font-family: 'Lora', serif;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.6rem;
-    color: #333;
-  }
-
-  .byi-faq-a {
-    font-size: 0.95rem;
-    color: #666;
-    line-height: 1.7;
-  }
-
-  /* --- MOBILE MEDIA QUERIES --- */
+  /* Mobile Optimization */
   @media (max-width: 768px) {
-    .byi-container { margin-top: 2rem; margin-bottom: 4rem; }
-    
+    .byi-card-container {
+      margin: 2rem 1rem;
+      padding: 2.5rem 1.5rem;
+    }
     .byi-h1 { font-size: 2.2rem; }
-    
-    .byi-steps { 
-      grid-template-columns: 1fr; 
-      gap: 1rem; 
-    }
-
-    .byi-price-new { font-size: 4rem; }
-    
-    .byi-btn { 
-      display: block; 
-      padding: 1.2rem 1rem; 
-    }
-
-    .byi-quote {
-      font-size: 1.4rem;
-      margin: 2.5rem 0;
-    }
+    .byi-steps { grid-template-columns: 1fr; }
   }
 </style>
 
-<div class="byi-container">
+<div class="byi-card-container">
 
-  <p class="byi-label">Personal Support</p>
+  <p style="color: #B5835A; letter-spacing: 3px; text-transform: uppercase; font-size: 0.7rem; margin-bottom: 1rem;">Personal Support</p>
 
   <h1 class="byi-h1">One-on-One Sessions:<br>A space for your truth</h1>
 
   <p class="byi-body">The most important reunion happens when you decide to <strong>quiet the noise and start listening to yourself again.</strong></p>
-  <p class="byi-body">These sessions are a necessary pause. A safe space where your own rhythm leads the way, allowing you to let go of the clutter and see the present with total clarity.</p>
+  <p class="byi-body">These sessions are a necessary pause. A space where your own wisdom leads the way, allowing you to let go of the clutter and see the present with clarity.</p>
 
   <blockquote class="byi-quote">
     "You already know the way; here, we simply give you the space and the quiet to hear it."
   </blockquote>
 
-  <hr class="byi-divider">
-
-  <p class="byi-section-title">The Process</p>
   <div class="byi-steps">
     <div class="byi-step">
-      <div class="byi-step-num">01</div>
-      <div class="byi-step-text"><strong>Booking.</strong> After completing the payment, you will receive a link to choose your preferred time on the calendar.</div>
+      <div style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: #B5835A;">01</div>
+      <div style="font-size: 0.9rem; color: #555;"><strong>Booking.</strong> Choose your preferred time on the calendar after payment.</div>
     </div>
     <div class="byi-step">
-      <div class="byi-step-num">02</div>
-      <div class="byi-step-text"><strong>Encounter.</strong> We connect via video call for 60 minutes of full presence and attentive listening.</div>
+      <div style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: #B5835A;">02</div>
+      <div style="font-size: 0.9rem; color: #555;"><strong>Encounter.</strong> 60 minutes of presence and attentive listening via video call.</div>
     </div>
     <div class="byi-step">
-      <div class="byi-step-num">03</div>
-      <div class="byi-step-text"><strong>Clarity.</strong> You leave with the peace of having been heard and the strength to take your next step.</div>
+      <div style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: #B5835A;">03</div>
+      <div style="font-size: 0.9rem; color: #555;"><strong>Clarity.</strong> Leave with the peace of having truly listened to yourself.</div>
     </div>
   </div>
-
-  <hr class="byi-divider">
 
   <div class="byi-pricing">
-    <span class="byi-price-old">55€</span>
-    <div class="byi-price-new">44€</div>
-    <p class="byi-price-tag">Individual Session · 60 min · Online</p>
-    <p class="byi-price-note">Special launch pricing.</p>
-    <a href="https://buy.stripe.com/cNi28j8hsaAu24kdkm2go00" class="byi-btn">Book my session — 44€</a>
-    <p class="byi-after">Secure payment via Stripe · Rescheduling available with 24h notice</p>
-  </div>
-
-  <hr class="byi-divider" style="margin-top: 4rem;">
-
-  <p class="byi-section-title">Frequently Asked Questions</p>
-  <div class="byi-faq-item">
-    <p class="byi-faq-q">How does the session take place?</p>
-    <p class="byi-faq-a">We will connect via Google Meet. You will receive the access link once you confirm your time in the booking calendar.</p>
-  </div>
-  <div class="byi-faq-item">
-    <p class="byi-faq-q">What do I need to prepare?</p>
-    <p class="byi-faq-a">Just find a comfortable, private place where you feel at ease. You don't need to bring anything but yourself.</p>
-  </div>
-  <div class="byi-faq-item">
-    <p class="byi-faq-q">What if I don't know where to start?</p>
-    <p class="byi-faq-a">Don't worry about not having the perfect opening. I'm not here to give you "magic" answers, but to accompany you while you clear your head. Often, things just start to click when you give yourself room to talk without pressure.</p>
-  </div>
-  <div class="byi-faq-item">
-    <p class="byi-faq-q">How do I know if this is for me?</p>
-    <p class="byi-faq-a">If you feel like you're running on autopilot or if you feel a nudge to slow down but don't know how, then it's the right time. You don't need a specific "crisis" to book—just the intention to check in with yourself.</p>
+    <div style="font-family: 'Cormorant Garamond', serif; font-size: 5rem; color: #4a5944; line-height: 1;">44€</div>
+    <p style="color: #B5835A; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; margin: 1rem 0;">Individual Session · 60 min</p>
+    <a href="https://buy.stripe.com/cNi28j8hsaAu24kdkm2go00" class="byi-btn">Book session</a>
   </div>
 
 </div>
