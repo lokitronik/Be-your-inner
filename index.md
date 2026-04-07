@@ -5,17 +5,79 @@ description: Un espacio de silencio para reconectar con tu brújula interna y tu
 lang: es
 permalink: /
 ---
-
 <style>
+  /* 1. Contenedor base: evita que nada toque los bordes del móvil */
+  .container {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 1.5rem; /* Margen interno de seguridad */
+    box-sizing: border-box;
+  }
+
+  /* 2. Tipografías responsivas */
+  .home-h1, .byi-h1, .sobre-h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem; /* Tamaño para escritorio */
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+  }
+
+  /* 3. El cuerpo de texto */
+  .home-lead, .byi-body, .sobre-body {
+    font-family: 'Lora', serif;
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: #424242;
+    margin-bottom: 1.5rem;
+    text-align: left; /* Alineación más legible */
+  }
+
+  /* 4. El Botón: elegante y centrado */
   .home-ctas {
     display: flex;
-    gap: 1rem;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 3.5rem;
+    padding: 2rem 0;
+  }
+
+  .btn {
+    display: inline-block;
+    background: #4a5944; /* El verde de tu captura */
+    color: #fff !important;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 1.1rem 3rem;
+    border-radius: 50px; /* Bordes redondeados como en tu captura */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    text-align: center;
+    min-width: 200px;
+  }
+
+  /* 5. MEDIA QUERY: El "médico" para el móvil */
+  @media (max-width: 600px) {
+    .container {
+      padding: 0 1.2rem; /* Un poco menos de margen en móviles muy pequeños */
+    }
+    .home-h1, .byi-h1, .sobre-h1 {
+      font-size: 2rem; /* Título más pequeño para que no se corte */
+    }
+    .home-lead, .byi-body, .sobre-body {
+      font-size: 1rem; /* Texto base un poco más pequeño */
+    }
+    .btn {
+      width: 100%; /* Botón a ancho completo en móvil */
+      max-width: 300px;
+    }
+    .byi-steps { /* Para la página de Claridad */
+      grid-template-columns: 1fr !important; 
+    }
   }
 </style>
-
 <div class="strip">
   <div class="container" style="max-width: 680px; margin: 0 auto;">
 
