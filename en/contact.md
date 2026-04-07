@@ -1,10 +1,34 @@
----
-layout: default
-title: Contact | Be Your Inner
-permalink: /en/contact/
----
-
 <style>
+  /* Base Container - Safeguard for mobile */
+  .container {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 1.5rem; 
+    box-sizing: border-box;
+  }
+
+  /* Headings */
+  .contact-h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem; 
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+  }
+  
+  /* Body Text */
+  .contact-body {
+    font-family: 'Lora', serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 3.5rem;
+    text-align: left; 
+  }
+
+  /* Form Styles */
   .contact-label {
     font-family: 'Lora', serif;
     font-size: 0.92rem;
@@ -26,7 +50,8 @@ permalink: /en/contact/
     color: #424242;
     outline: none;
     transition: border-color 0.3s;
-    border-radius: 0;
+    border-radius: 0; /* Important for iOS */
+    box-sizing: border-box;
   }
 
   .form-input:focus {
@@ -45,6 +70,41 @@ permalink: /en/contact/
     font-style: italic;
   }
 
+  /* Button Styles */
+  .btn-container {
+    text-align: center;
+    margin-top: 3.5rem;
+  }
+
+  .btn-submit {
+    display: inline-block;
+    background: #4a5944; 
+    color: #fff !important;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 1.1rem 3rem;
+    border-radius: 50px; 
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .btn-submit:hover {
+    background: #3e4a39;
+  }
+
+  .contact-after {
+    font-size: 0.8rem;
+    color: #bbb;
+    margin-top: 1.2rem;
+    font-style: italic;
+  }
+
   .contact-alt {
     font-size: 0.85rem;
     color: #999;
@@ -60,34 +120,19 @@ permalink: /en/contact/
     font-weight: 500;
   }
 
-  .contact-after {
-    font-size: 0.8rem;
-    color: #bbb;
-    margin-top: 1.5rem;
-    font-style: italic;
-    text-align: center;
+  /* Mobile Adjustments */
+  @media (max-width: 600px) {
+    .container {
+      padding: 0 1.2rem; 
+    }
+    .contact-h1 {
+      font-size: 2.2rem; 
+    }
+    .contact-body {
+      margin-bottom: 2.5rem;
+    }
+    .btn-submit {
+      width: 100%; 
+    }
   }
-
-  .btn-submit {
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    max-width: 300px;
-    display: inline-block;
-    background: #556B2F;
-    color: #fff !important;
-    font-size: 0.85rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 1.1rem 3rem;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-  }
-
-  .btn-submit:hover { background: #3e5020; }
 </style>
-
-<div class="container" style="max-width: 650px; margin-top: 4rem; margin-bottom: 6rem;">
-
-  <p style="font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
