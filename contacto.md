@@ -3,92 +3,74 @@ layout: default
 title: Contacto | Be Your Inner
 permalink: /contacto/
 ---
-
 <style>
-  .contact-label {
-    font-family: 'Lora', serif;
-    font-size: 0.92rem;
-    font-weight: 600;
-    color: #B5835A;
-    display: block;
-    margin-bottom: 0.5rem;
-    letter-spacing: 0.5px;
+  .container {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 1.5rem; 
+    box-sizing: border-box;
   }
 
-  .form-input {
-    width: 100%;
-    padding: 0.8rem 0;
-    border: none;
-    border-bottom: 1px solid #eee;
-    background: transparent;
+  .home-h1, .byi-h1, .sobre-h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem; 
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+  }
+  
+  .home-lead, .byi-body, .sobre-body {
     font-family: 'Lora', serif;
-    font-size: 1rem;
+    font-size: 1.05rem;
+    line-height: 1.85;
     color: #424242;
-    outline: none;
-    transition: border-color 0.3s;
-    border-radius: 0; /* Evita bordes redondeados en iOS */
+    margin-bottom: 1.5rem;
+    text-align: left; 
+  }
+  
+  .home-ctas {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
   }
 
-  .form-input:focus {
-    border-bottom-color: #B5835A;
-  }
-
-  textarea.form-input {
-    min-height: 100px;
-    resize: none;
-  }
-
-  .contact-hint {
-    font-size: 0.8rem;
-    color: #aaa;
-    margin-top: 0.4rem;
-    font-style: italic;
-  }
-
-  .contact-alt {
-    font-size: 0.85rem;
-    color: #999;
-    margin-top: 4rem;
-    text-align: center;
-    border-top: 1px solid #f9f9f9;
-    padding-top: 2rem;
-  }
-
-  .contact-alt a {
-    color: #B5835A;
-    text-decoration: none;
-    font-weight: 500;
-  }
-
-  .contact-after {
-    font-size: 0.8rem;
-    color: #bbb;
-    margin-top: 1.5rem;
-    font-style: italic;
-    text-align: center;
-  }
-
-  /* Ajuste para que el botón se vea igual que en el resto de la web */
-  .btn-submit {
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    max-width: 300px;
+  .btn {
     display: inline-block;
-    background: #556B2F;
+    background: #4a5944; 
     color: #fff !important;
     font-size: 0.85rem;
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 1.1rem 3rem;
-    border-radius: 4px;
+    border-radius: 50px; 
     text-decoration: none;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
+    border: none;
+    text-align: center;
+    min-width: 200px;
   }
 
-  .btn-submit:hover { background: #3e5020; }
+  @media (max-width: 600px) {
+    .container {
+      padding: 0 1.2rem; 
+    }
+    .home-h1, .byi-h1, .sobre-h1 {
+      font-size: 2rem; 
+    }
+    .home-lead, .byi-body, .sobre-body {
+      font-size: 1rem;
+    }
+    .btn {
+      width: 100%; 
+      max-width: 300px;
+    }
+    .byi-steps {
+      grid-template-columns: 1fr !important; 
+    }
+  }
 </style>
-
 <div class="container" style="max-width: 650px; margin-top: 4rem; margin-bottom: 6rem;">
 
   <p style="font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #B5835A; margin-bottom: 1.2rem;">Escríbeme</p>
