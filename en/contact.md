@@ -1,5 +1,12 @@
+---
+layout: default
+title: Contact | Be Your Inner
+lang: en
+permalink: /en/contact/
+---
+
 <style>
-  /* Base Container - Safeguard for mobile */
+  /* Base Container - Mobile Safeguard */
   .container {
     width: 100%;
     max-width: 750px;
@@ -8,7 +15,7 @@
     box-sizing: border-box;
   }
 
-  /* Headings */
+  /* Headings & Body Text */
   .contact-h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 2.8rem; 
@@ -18,7 +25,6 @@
     color: #1a1a1a;
   }
   
-  /* Body Text */
   .contact-body {
     font-family: 'Lora', serif;
     font-size: 1.05rem;
@@ -50,7 +56,7 @@
     color: #424242;
     outline: none;
     transition: border-color 0.3s;
-    border-radius: 0; /* Important for iOS */
+    border-radius: 0; /* iOS reset */
     box-sizing: border-box;
   }
 
@@ -136,3 +142,48 @@
     }
   }
 </style>
+
+<div class="container" style="margin-top: 4rem; margin-bottom: 6rem;">
+
+  <p style="font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #B5835A; margin-bottom: 1.2rem;">Write to me</p>
+
+  <h1 class="contact-h1">Let's talk</h1>
+
+  <div class="contact-body">
+    <p>Before writing, take a breath. You don't need to have the perfect words, just the intention to connect.</p>
+    <p>Tell me what brought you here, and let's find a moment to talk.</p>
+  </div>
+
+  <form action="https://formspree.io/f/mlgozrlj" method="POST">
+
+    <div style="margin-bottom: 2.5rem;">
+      <label class="contact-label" for="name">What is your name?</label>
+      <input class="form-input" type="text" name="name" id="name" placeholder="Your name..." required>
+    </div>
+
+    <div style="margin-bottom: 2.5rem;">
+      <label class="contact-label" for="email">Which email can I reply to?</label>
+      <input class="form-input" type="email" name="_replyto" id="email" placeholder="you@email.com" required>
+    </div>
+
+    <div style="margin-bottom: 2.5rem;">
+      <label class="contact-label" for="message">What would you like to share?</label>
+      <textarea class="form-input" name="message" id="message" placeholder="Write whatever you need here..." required></textarea>
+      <p class="contact-hint">It doesn't have to be perfect. A few lines are enough.</p>
+    </div>
+
+    <input type="hidden" name="_subject" value="New message from web — Be Your Inner">
+
+    <div class="btn-container">
+      <button type="submit" class="btn-submit">Send message</button>
+      <p class="contact-after">I usually respond within 1–2 days</p>
+    </div>
+
+  </form>
+
+  <p class="contact-alt">
+    Or if you prefer, write to me directly at<br>
+    <a href="mailto:manel@beyourinner.com">manel@beyourinner.com</a>
+  </p>
+
+</div>
