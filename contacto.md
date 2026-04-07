@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Contact | Be Your Inner
-lang: en
-permalink: /en/contact/
+title: Contacto | Be Your Inner
+lang: es
+permalink: /contacto/
 ---
 
 <style>
-  /* Base Container - Safeguard for mobile */
+  /* Contenedor Base - Seguridad para móvil */
   .container {
     width: 100%;
     max-width: 750px;
@@ -15,7 +15,7 @@ permalink: /en/contact/
     box-sizing: border-box;
   }
 
-  /* Headings */
+  /* Títulos */
   .contact-h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 2.8rem; 
@@ -25,7 +25,7 @@ permalink: /en/contact/
     color: #1a1a1a;
   }
   
-  /* Body Text */
+  /* Cuerpo de texto */
   .contact-body {
     font-family: 'Lora', serif;
     font-size: 1.05rem;
@@ -35,7 +35,7 @@ permalink: /en/contact/
     text-align: left; 
   }
 
-  /* Form Styles */
+  /* Estilos del Formulario */
   .contact-label {
     font-family: 'Lora', serif;
     font-size: 0.92rem;
@@ -57,7 +57,7 @@ permalink: /en/contact/
     color: #424242;
     outline: none;
     transition: border-color 0.3s;
-    border-radius: 0; /* Important for iOS */
+    border-radius: 0; /* Importante para iOS */
     box-sizing: border-box;
   }
 
@@ -77,7 +77,7 @@ permalink: /en/contact/
     font-style: italic;
   }
 
-  /* Button Styles */
+  /* Estilos del Botón */
   .btn-container {
     text-align: center;
     margin-top: 3.5rem;
@@ -94,65 +94,3 @@ permalink: /en/contact/
     border-radius: 50px; 
     text-decoration: none;
     transition: all 0.3s ease;
-    border: none;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .btn-submit:hover {
-    background: #3e4a39;
-  }
-
-  .contact-after {
-    font-size: 0.8rem;
-    color: #bbb;
-    margin-top: 1.2rem;
-    font-style: italic;
-  }
-
-  .contact-alt {
-    font-size: 0.85rem;
-    color: #999;
-    margin-top: 4rem;
-    text-align: center;
-    border-top: 1px solid #f9f9f9;
-    padding-top: 2rem;
-  }
-
-  .contact-alt a {
-    color: #B5835A;
-    text-decoration: none;
-    font-weight: 500;
-  }
-
-  /* Mobile Adjustments */
-  @media (max-width: 600px) {
-    .container {
-      padding: 0 1.2rem; 
-    }
-    .contact-h1 {
-      font-size: 2.2rem; 
-    }
-    .contact-body {
-      margin-bottom: 2.5rem;
-    }
-    .btn-submit {
-      width: 100%; 
-    }
-  }
-</style>
-
-<div class="container" style="margin-top: 4rem; margin-bottom: 6rem;">
-
-  <p style="font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #B5835A; margin-bottom: 1.2rem;">Write to me</p>
-
-  <h1 class="contact-h1">Let's talk</h1>
-
-  <div class="contact-body">
-    <p>Before writing, take a breath. You don't need to have the perfect words, just the intention to connect.</p>
-    <p>Tell me what brought you here, and let's find a moment to talk.</p>
-  </div>
-
-  <form action="https://formspree.io/f/mlgozrlj" method="POST">
