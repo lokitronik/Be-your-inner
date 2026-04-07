@@ -3,7 +3,7 @@ layout: default
 title: Sessions | Be Your Inner
 description: A personal space to reconnect with yourself.
 lang: en
-permalink: /en/sessions/
+permalink: /en/encounters/
 ---
 
 <style>
