@@ -82,13 +82,13 @@ permalink: /en/clarity/
   <div class="card">
     <h3>individual accompaniment</h3>
     <p>A space to go deeper and bring light where there is confusion, allowing your own inner wisdom to take the lead.</p>
-    <a href="{{ site.baseurl }}/en/about/" class="btn">LEARN MORE</a>
+    <a href="{{ site.baseurl }}/en/encounters/" class="btn">LEARN MORE</a>
   </div>
 
   <div class="card">
     <h3>self-knowledge guides</h3>
     <p>Tools to connect with your intuition and clari-faculties through the pendulum, energy work, and deep listening. Resources to work at your own pace.</p>
-    <a href="{{ site.baseurl }}/en/contact/" class="btn">EXPLORE RESOURCES</a>
+    <a href="{{ site.baseurl }}/en/free-resources/" class="btn">EXPLORE RESOURCES</a>
   </div>
 
 </div>
