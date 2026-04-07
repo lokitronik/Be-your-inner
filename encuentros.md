@@ -7,6 +7,15 @@ permalink: /encuentros/
 ---
 
 <style>
+  /* Contenedor optimizado */
+  .byi-container {
+    width: 100%;
+    max-width: 750px;
+    margin: 4rem auto 6rem;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+  }
+
   .byi-label {
     font-size: 11px;
     letter-spacing: 3px;
@@ -18,7 +27,7 @@ permalink: /encuentros/
 
   .byi-h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     font-weight: 400;
     line-height: 1.2;
     margin: 0 0 2.5rem;
@@ -39,7 +48,7 @@ permalink: /encuentros/
     font-size: 1.6rem;
     border-left: 2px solid #B5835A;
     padding-left: 1.5rem;
-    margin: 3rem 0;
+    margin: 3.5rem 0;
     color: #556B2F;
     line-height: 1.4;
   }
@@ -47,18 +56,18 @@ permalink: /encuentros/
   .byi-divider {
     border: none;
     border-top: 1px solid #eee;
-    margin: 3rem 0;
+    margin: 3.5rem 0;
   }
 
-  .byi-how-title,
-  .byi-faq-title {
+  .byi-section-title {
     font-size: 11px;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #B5835A;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
 
+  /* Grid de Pasos - Optimizado */
   .byi-steps {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -68,27 +77,32 @@ permalink: /encuentros/
   .byi-step {
     background: #faf9f7;
     border-radius: 12px;
-    padding: 1.5rem;
+    padding: 1.8rem;
     border: 1px solid #f0efed;
+    display: flex;
+    flex-direction: column;
   }
 
   .byi-step-num {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #B5835A;
     line-height: 1;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.8rem;
   }
 
   .byi-step-text {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: #555;
     line-height: 1.6;
   }
 
+  /* Bloque de Precio - Mejorado para móvil */
   .byi-pricing {
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
+    background: #fdfdfd;
+    border-radius: 20px;
   }
 
   .byi-price-old {
@@ -96,22 +110,24 @@ permalink: /encuentros/
     text-decoration: line-through;
     color: #bbb;
     font-size: 1.2rem;
+    display: block;
   }
 
   .byi-price-new {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 4.5rem;
+    font-size: 5rem;
     color: #556B2F;
     line-height: 1;
     margin: 0.5rem 0;
   }
 
   .byi-price-tag {
-    font-size: 0.85rem;
-    letter-spacing: 2px;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     color: #B5835A;
     margin-bottom: 0.5rem;
+    font-weight: 600;
   }
 
   .byi-price-note {
@@ -128,49 +144,71 @@ permalink: /encuentros/
     font-size: 0.85rem;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 1.1rem 3rem;
-    border-radius: 4px;
+    padding: 1.2rem 2.5rem;
+    border-radius: 50px;
     text-decoration: none;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
+    width: auto;
   }
 
-  .byi-btn:hover { background: #3e5020; }
+  .byi-btn:hover { 
+    background: #3e5020;
+    transform: translateY(-2px);
+  }
 
   .byi-after {
-    font-size: 0.8rem;
-    color: #ccc;
-    margin-top: 1.2rem;
+    font-size: 0.75rem;
+    color: #bbb;
+    margin-top: 1.5rem;
     font-style: italic;
   }
 
+  /* FAQ */
   .byi-faq-item {
-    border-top: 1px solid #eee;
-    padding: 1.2rem 0;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 1.5rem 0;
   }
 
   .byi-faq-q {
     font-family: 'Lora', serif;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
     color: #333;
   }
 
   .byi-faq-a {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: #666;
     line-height: 1.7;
   }
 
-  @media (max-width: 600px) {
-    .byi-steps { grid-template-columns: 1fr; gap: 1rem; }
-    .byi-h1 { font-size: 2.1rem; }
-    .byi-price-new { font-size: 3.5rem; }
-    .byi-step { padding: 1.2rem; }
+  /* --- MEDIA QUERIES MÓVIL --- */
+  @media (max-width: 768px) {
+    .byi-container { margin-top: 2rem; margin-bottom: 4rem; }
+    
+    .byi-h1 { font-size: 2.2rem; }
+    
+    .byi-steps { 
+      grid-template-columns: 1fr; 
+      gap: 1rem; 
+    }
+
+    .byi-price-new { font-size: 4rem; }
+    
+    .byi-btn { 
+      display: block; 
+      padding: 1.2rem 1rem; 
+    }
+
+    .byi-quote {
+      font-size: 1.4rem;
+      margin: 2.5rem 0;
+    }
   }
 </style>
 
-<div class="container" style="max-width: 750px; margin-top: 4rem; margin-bottom: 6rem;">
+<div class="byi-container">
 
   <p class="byi-label">Acompañamiento personal</p>
 
@@ -185,7 +223,7 @@ permalink: /encuentros/
 
   <hr class="byi-divider">
 
-  <p class="byi-how-title">El proceso</p>
+  <p class="byi-section-title">El proceso</p>
   <div class="byi-steps">
     <div class="byi-step">
       <div class="byi-step-num">01</div>
@@ -214,7 +252,7 @@ permalink: /encuentros/
 
   <hr class="byi-divider" style="margin-top: 4rem;">
 
-  <p class="byi-faq-title">Preguntas frecuentes</p>
+  <p class="byi-section-title">Preguntas frecuentes</p>
   <div class="byi-faq-item">
     <p class="byi-faq-q">¿Cómo se realiza la sesión?</p>
     <p class="byi-faq-a">Conectaremos por Google Meet. Recibirás el enlace de acceso una vez confirmes tu horario en la agenda.</p>
@@ -224,8 +262,12 @@ permalink: /encuentros/
     <p class="byi-faq-a">Busca un lugar cómodo y privado donde te sientas segura. No hace falta que traigas nada más que tu presencia.</p>
   </div>
   <div class="byi-faq-item">
-    <p class="byi-faq-q">¿Es para tratar temas específicos?</p>
-    <p class="byi-faq-a">Puedes venir con una inquietud concreta o simplemente con el deseo de encontrar orden y paz interior.</p>
+    <p class="byi-faq-q">¿Qué pasa si no sé por dónde empezar a hablar?</p>
+    <p class="byi-faq-a">No te preocupes por no saber cómo empezar. No estoy aquí para darte respuestas mágicas, sino para acompañarte mientras pones en claro tus propias ideas. Al final, cuando dejas de intentar controlarlo todo, las cosas empiezan a encajar por sí solas.</p>
+  </div>
+  <div class="byi-faq-item">
+    <p class="byi-faq-q">¿Cómo sé si este encuentro es para mí?</p>
+    <p class="byi-faq-a">Si sientes que estás funcionando en "piloto automático" o si notas una llamada interna hacia la calma pero no sabes cómo llegar a ella, entonces es el momento. No hace falta que traigas palabras perfectas, solo la intención de conectar contigo.</p>
   </div>
 
 </div>
