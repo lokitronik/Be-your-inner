@@ -1,9 +1,12 @@
 ---
 layout: default
-title: Contacto | Be Your Inner
-permalink: /contacto/
+title: Contact | Be Your Inner
+lang: en
+permalink: /en/contact/
 ---
+
 <style>
+  /* Base Container - Safeguard for mobile */
   .container {
     width: 100%;
     max-width: 750px;
@@ -12,31 +15,75 @@ permalink: /contacto/
     box-sizing: border-box;
   }
 
-  .home-h1, .byi-h1, .sobre-h1 {
+  /* Headings */
+  .contact-h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 2.8rem; 
     font-weight: 400;
     line-height: 1.2;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     color: #1a1a1a;
   }
   
-  .home-lead, .byi-body, .sobre-body {
+  /* Body Text */
+  .contact-body {
     font-family: 'Lora', serif;
     font-size: 1.05rem;
-    line-height: 1.85;
-    color: #424242;
-    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 3.5rem;
     text-align: left; 
   }
-  
-  .home-ctas {
-    display: flex;
-    justify-content: center;
-    padding: 2rem 0;
+
+  /* Form Styles */
+  .contact-label {
+    font-family: 'Lora', serif;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #B5835A;
+    display: block;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
   }
 
-  .btn {
+  .form-input {
+    width: 100%;
+    padding: 0.8rem 0;
+    border: none;
+    border-bottom: 1px solid #eee;
+    background: transparent;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    color: #424242;
+    outline: none;
+    transition: border-color 0.3s;
+    border-radius: 0; /* Important for iOS */
+    box-sizing: border-box;
+  }
+
+  .form-input:focus {
+    border-bottom-color: #B5835A;
+  }
+
+  textarea.form-input {
+    min-height: 100px;
+    resize: none;
+  }
+
+  .contact-hint {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 0.4rem;
+    font-style: italic;
+  }
+
+  /* Button Styles */
+  .btn-container {
+    text-align: center;
+    margin-top: 3.5rem;
+  }
+
+  .btn-submit {
     display: inline-block;
     background: #4a5944; 
     color: #fff !important;
@@ -49,69 +96,63 @@ permalink: /contacto/
     transition: all 0.3s ease;
     border: none;
     text-align: center;
-    min-width: 200px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
   }
 
+  .btn-submit:hover {
+    background: #3e4a39;
+  }
+
+  .contact-after {
+    font-size: 0.8rem;
+    color: #bbb;
+    margin-top: 1.2rem;
+    font-style: italic;
+  }
+
+  .contact-alt {
+    font-size: 0.85rem;
+    color: #999;
+    margin-top: 4rem;
+    text-align: center;
+    border-top: 1px solid #f9f9f9;
+    padding-top: 2rem;
+  }
+
+  .contact-alt a {
+    color: #B5835A;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  /* Mobile Adjustments */
   @media (max-width: 600px) {
     .container {
       padding: 0 1.2rem; 
     }
-    .home-h1, .byi-h1, .sobre-h1 {
-      font-size: 2rem; 
+    .contact-h1 {
+      font-size: 2.2rem; 
     }
-    .home-lead, .byi-body, .sobre-body {
-      font-size: 1rem;
+    .contact-body {
+      margin-bottom: 2.5rem;
     }
-    .btn {
+    .btn-submit {
       width: 100%; 
-      max-width: 300px;
-    }
-    .byi-steps {
-      grid-template-columns: 1fr !important; 
     }
   }
 </style>
-<div class="container" style="max-width: 650px; margin-top: 4rem; margin-bottom: 6rem;">
 
-  <p style="font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #B5835A; margin-bottom: 1.2rem;">Escríbeme</p>
+<div class="container" style="margin-top: 4rem; margin-bottom: 6rem;">
 
-  <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; font-weight: 400; line-height: 1.2; margin: 0 0 1.5rem;">Hablemos</h1>
+  <p style="font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #B5835A; margin-bottom: 1.2rem;">Write to me</p>
 
-  <div style="font-family: 'Lora', serif; font-size: 1.05rem; line-height: 1.8; color: #555; margin-bottom: 3.5rem;">
-    <p>Antes de escribir, toma un respiro. No tienes que tener las palabras perfectas, solo la intención de conectar.</p>
-    <p>Cuéntame qué te ha traído hasta aquí y busquemos un momento para hablar.</p>
+  <h1 class="contact-h1">Let's talk</h1>
+
+  <div class="contact-body">
+    <p>Before writing, take a breath. You don't need to have the perfect words, just the intention to connect.</p>
+    <p>Tell me what brought you here, and let's find a moment to talk.</p>
   </div>
 
   <form action="https://formspree.io/f/mlgozrlj" method="POST">
-
-    <div style="margin-bottom: 2.5rem;">
-      <label class="contact-label" for="name">¿Cómo te llamas?</label>
-      <input class="form-input" type="text" name="name" id="name" placeholder="Tu nombre..." required>
-    </div>
-
-    <div style="margin-bottom: 2.5rem;">
-      <label class="contact-label" for="email">¿A qué email puedo responderte?</label>
-      <input class="form-input" type="email" name="_replyto" id="email" placeholder="tu@email.com" required>
-    </div>
-
-    <div style="margin-bottom: 2.5rem;">
-      <label class="contact-label" for="message">¿Qué quieres compartir?</label>
-      <textarea class="form-input" name="message" id="message" placeholder="Escribe aquí lo que necesites..." required></textarea>
-      <p class="contact-hint">No hace falta que sea perfecto. Unas pocas líneas bastan.</p>
-    </div>
-
-    <input type="hidden" name="_subject" value="Nuevo mensaje desde la web — Be Your Inner">
-
-    <div style="text-align: center; margin-top: 3.5rem;">
-      <button type="submit" class="btn-submit">Enviar mensaje</button>
-      <p class="contact-after">Suelo responder en 1–2 días</p>
-    </div>
-
-  </form>
-
-  <p class="contact-alt">
-    O si lo prefieres, escríbeme directamente a<br>
-    <a href="mailto:manel@beyourinner.com">manel@beyourinner.com</a>
-  </p>
-
-</div>
