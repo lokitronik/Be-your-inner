@@ -6,55 +6,43 @@ permalink: /en/clarity/
 ---
 
 <style>
-  /* Sin fondos externos para que se vea tu imagen de los árboles */
+  /* El CSS es idéntico, solo cambian los textos */
   .claridad-wrapper {
     width: 100%;
-    max-width: 950px;
+    max-width: 850px;
     margin: 0 auto;
     padding: 4rem 1.2rem;
   }
 
-  /* EL BOCADILLO SUPERIOR (Look de tu 3ª imagen: Título + Texto en paralelo) */
   .hero-card {
     background: #ffffff;
-    padding: clamp(2.5rem, 6vw, 4.5rem);
+    padding: clamp(2.5rem, 6vw, 4rem);
     border-radius: 40px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.05);
     margin-bottom: 2.5rem;
-    display: flex;
-    align-items: center; /* Centrado vertical entre ellos */
-    gap: clamp(2rem, 5vw, 4rem); /* Espacio entre título y párrafo */
-    text-align: left;
-  }
-
-  .hero-title-group {
-    flex: 1; /* Ocupa el espacio necesario para el título */
-  }
-
-  .hero-text-group {
-    flex: 1.5; /* Ocupa un poco más de espacio para el párrafo */
+    text-align: center;
   }
 
   .byi-h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(2.2rem, 5vw, 3.2rem);
     font-weight: 400;
-    line-height: 1.1;
+    line-height: 1.2;
     color: #1a1a1a;
     text-transform: lowercase;
     font-style: italic;
-    margin: 0;
+    margin-bottom: 1.5rem;
   }
   
   .byi-body {
     font-family: 'Lora', serif;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     line-height: 1.7;
     color: #424242;
-    margin: 0;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
-  /* LAS TARJETAS DE ABAJO */
   .card-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -105,27 +93,18 @@ permalink: /en/clarity/
 
   .btn:hover { transform: translateY(-2px); }
 
-  /* MÓVIL: En pantallas pequeñas se apilan uno arriba de otro */
-  @media (max-width: 850px) {
-    .hero-card {
-      flex-direction: column;
-      text-align: center;
-      padding: 3rem 2rem;
-    }
+  @media (max-width: 768px) {
     .card-grid { grid-template-columns: 1fr; }
+    .hero-card { padding: 3rem 1.5rem; }
   }
 </style>
 
 <div class="claridad-wrapper">
   <header class="hero-card">
-    <div class="hero-title-group">
-      <h1 class="byi-h1">find your <br> clarity</h1>
-    </div>
-    <div class="hero-text-group">
-      <p class="byi-body">
-        Sometimes the path isn't about moving faster, but about knowing how to stop. Here you will find tools to return to your center and listen to your own voice.
-      </p>
-    </div>
+    <h1 class="byi-h1">find your clarity</h1>
+    <p class="byi-body">
+      Sometimes the path isn't about moving faster, but about knowing how to stop. Here you will find tools to return to your center and listen to your own voice.
+    </p>
   </header>
 
   <div class="card-grid">
@@ -140,9 +119,9 @@ permalink: /en/clarity/
     <div class="card">
       <div>
         <h3>self-knowledge guides</h3>
-        <p>Tools to connect with your intuition and inner self. Resources and guides designed for you to work at your own pace.</p>
+        <p>Resources and guides designed for you to work at your own pace. Simple resources to return to yourself naturally.</p>
       </div>
-      <a href="{{ site.baseurl }}/en/free-resources/" class="btn">Explore resources</a>
+      <a href="{{ site.baseurl }}/en/free-resources/" class="btn">Explore</a>
     </div>
   </div>
 </div>
