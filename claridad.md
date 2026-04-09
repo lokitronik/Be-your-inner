@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Claridad | Be Your Inner
+lang: es
+permalink: /claridad/
+---
 ---
 
 <style>
