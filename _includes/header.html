@@ -1,6 +1,5 @@
 <header class="site-header">
   <div class="header-container">
-    
     <div class="header-logo">
       <a href="{{ '/' | relative_url }}">
         <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Beyourinner">
@@ -60,7 +59,7 @@
 
   /* ESTILOS ESCRITORIO (PC) */
   .nav-desktop { 
-    display: flex !important; /* Forzamos que se vea en PC */
+    display: flex !important;
     gap: 25px; 
   }
   
@@ -72,20 +71,18 @@
     font-weight: 500;
   }
 
-  /* Escondemos el botón hamburguesa y el overlay en PC */
-  .menu-toggle { display: none; }
-  .nav-overlay { display: none; }
+  .menu-toggle, .nav-overlay { display: none; }
 
-  /* ESTILOS MÓVIL */
+  /* ESTILOS MÓVIL (CORREGIDOS PARA PANEL LATERAL) */
   @media (max-width: 768px) {
-    .nav-desktop { display: none !important; } /* Escondemos el menú horizontal en móvil */
+    .nav-desktop { display: none !important; }
     
     .menu-toggle {
       display: flex;
       flex-direction: column;
       background: transparent;
       border: none;
-      z-index: 1005;
+      z-index: 1005; /* Asegura que el botón esté por encima de la caja blanca */
       cursor: pointer;
     }
 
@@ -97,25 +94,43 @@
       transition: 0.4s;
     }
 
+    /* EL CAMBIO: Panel lateral derecho en lugar de pantalla completa */
     .nav-overlay {
-      display: flex; /* Se activa con la clase .active */
+      display: flex;
       position: fixed;
       top: 0;
-      right: -100%;
-      width: 100%;
+      right: -280px; /* Escondido fuera a la derecha */
+      width: 280px;  /* Ancho mucho más pequeño y elegante */
       height: 100vh;
       background: white;
-      justify-content: center;
-      align-items: center;
-      transition: 0.5s;
+      box-shadow: -5px 0 15px rgba(0,0,0,0.05); /* Sombra suave para dar profundidad */
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 100px 40px; /* Aire arriba y a los lados */
+      box-sizing: border-box;
+      transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
       z-index: 1004;
     }
 
-    .nav-overlay.active { right: 0; }
+    .nav-overlay.active { 
+      right: 0; /* Desliza al frente */
+    }
     
-    .nav-list { list-style: none; padding: 0; text-align: center; }
+    .nav-list { 
+      list-style: none; 
+      padding: 0; 
+      text-align: left; /* Alineación a la izquierda como el ejemplo */
+    }
+    
     .nav-list li { margin: 25px 0; }
-    .nav-list a { font-size: 1.5rem; font-family: 'Cormorant Garamond', serif; text-decoration: none; color: #424242; }
+    
+    .nav-list a { 
+      font-size: 1.2rem; 
+      font-family: 'Cormorant Garamond', serif; 
+      text-decoration: none; 
+      color: #424242;
+      letter-spacing: 1px;
+    }
 
     /* Animación del botón a X */
     .menu-toggle.active .bar:nth-child(1) { transform: rotate(-45deg) translate(-6px, 7px); }
