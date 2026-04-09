@@ -6,7 +6,6 @@ permalink: /en/clarity/
 ---
 
 <style>
-  /* El CSS es idéntico para mantener la coherencia */
   .claridad-wrapper {
     width: 100%;
     max-width: 850px;
@@ -15,23 +14,26 @@ permalink: /en/clarity/
     text-align: center;
   }
 
+  /* EL BOCADILLO BLANCO: Protege todo el contenido para que sea legible */
   .hero-card {
     background: #ffffff;
-    padding: 3rem 2rem;
+    padding: clamp(2.5rem, 6vw, 4rem);
     border-radius: 40px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.05);
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
   }
 
+  /* H1 DENTRO: Centrado, sin cursiva y estructurado */
   .byi-h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2.8rem;
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
     font-weight: 400;
+    font-style: normal; /* Cero cursiva */
     line-height: 1.2;
     color: #1a1a1a;
     text-transform: lowercase;
-    font-style: italic;
-    margin-bottom: 1.5rem;
+    margin: 0 0 1.5rem 0; /* Espacio con el texto de abajo */
   }
   
   .byi-body {
@@ -43,6 +45,7 @@ permalink: /en/clarity/
     margin: 0 auto;
   }
 
+  /* LAS DOS TARJETAS DE ABAJO */
   .card-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -60,9 +63,10 @@ permalink: /en/clarity/
     min-height: 300px;
   }
 
-  .card h3 {
+  .card h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.6rem;
+    font-weight: 400;
     margin-bottom: 1rem;
     color: #1a1a1a;
     text-transform: lowercase;
@@ -80,10 +84,10 @@ permalink: /en/clarity/
     display: inline-block;
     background: #4a5944; 
     color: #ffffff !important;
-    font: 600 0.8rem 'Lora', serif;
+    font: 600 0.85rem 'Lora', serif;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 1rem 2.5rem;
+    padding: 1.1rem 2.5rem;
     border-radius: 100px;
     text-decoration: none;
     transition: transform 0.3s ease;
@@ -96,7 +100,7 @@ permalink: /en/clarity/
 
   @media (max-width: 768px) {
     .card-grid { grid-template-columns: 1fr; }
-    .byi-h1 { font-size: 2rem; }
+    .hero-card { padding: 3rem 1.5rem; }
   }
 </style>
 
@@ -111,7 +115,7 @@ permalink: /en/clarity/
   <div class="card-grid">
     <div class="card">
       <div>
-        <h3>individual accompaniment</h3>
+        <h2>individual accompaniment</h2>
         <p>A space to go deeper and bring light where there is confusion, allowing your own inner wisdom to take the lead.</p>
       </div>
       <a href="{{ site.baseurl }}/en/encounters/" class="btn">Learn more</a>
@@ -119,7 +123,7 @@ permalink: /en/clarity/
 
     <div class="card">
       <div>
-        <h3>self-knowledge guides</h3>
+        <h2>self-knowledge guides</h2>
         <p>Resources and guides designed for you to work at your own pace. Simple resources to return to yourself naturally.</p>
       </div>
       <a href="{{ site.baseurl }}/en/free-resources/" class="btn">Explore</a>
