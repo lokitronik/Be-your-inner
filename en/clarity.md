@@ -6,13 +6,21 @@ permalink: /en/clarity/
 ---
 
 <style>
-  /* Sin fondo de sección: respeta el background general de tu web */
   .claridad-wrapper {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    padding: clamp(3rem, 8vw, 5rem) 1.2rem;
+    padding: clamp(2rem, 5vw, 4rem) 1.2rem;
     text-align: center;
+  }
+
+  /* WHITE BOX FOR HEADER LEGIBILITY */
+  .hero-card {
+    background: #ffffff;
+    padding: clamp(2rem, 5vw, 3.5rem);
+    border-radius: 32px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
   }
 
   .byi-h1 {
@@ -20,21 +28,19 @@ permalink: /en/clarity/
     font-size: clamp(2.2rem, 5vw, 3rem);
     font-weight: 400;
     line-height: 1.2;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: #1a1a1a;
     text-transform: lowercase;
-    font-style: italic; /* Toque elegante de tu marca */
+    font-style: italic;
   }
   
   .byi-body {
     font-family: 'Lora', serif;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     line-height: 1.7;
     color: #424242;
-    margin-bottom: 3.5rem;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 
   .card-grid {
@@ -43,13 +49,11 @@ permalink: /en/clarity/
     gap: 2rem;
   }
 
-  /* EL BOCADILLO BLANCO: Único recuadro que resalta */
   .card {
     background: #ffffff; 
     padding: clamp(2rem, 5vw, 3rem);
     border-radius: 32px; 
-    box-shadow: 0 12px 35px rgba(0,0,0,0.04); /* Sombra muy sutil */
-    border: 1px solid #f0f0f0;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -73,43 +77,35 @@ permalink: /en/clarity/
     margin-bottom: 2rem;
   }
 
-  /* Botón fino y limpio */
   .btn {
     display: inline-block;
     background: #4a5944; 
     color: #ffffff !important;
-    font-family: 'Lora', serif;
-    font-size: 0.8rem;
+    font: 600 0.8rem 'Lora', serif;
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 1rem 2rem;
     border-radius: 100px;
     text-decoration: none;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease;
     align-self: center;
   }
 
-  .btn:hover {
-    transform: translateY(-2px);
-    background: #3d4b39;
-    box-shadow: 0 8px 15px rgba(74, 89, 68, 0.15);
-  }
+  .btn:hover { transform: translateY(-2px); }
 
   @media (max-width: 768px) {
-    .card-grid {
-      grid-template-columns: 1fr;
-      padding: 0 0.5rem;
-    }
-    .byi-h1 { font-size: 2rem; }
-    .btn { width: 100%; box-sizing: border-box; }
+    .card-grid { grid-template-columns: 1fr; }
+    .hero-card { padding: 2rem 1.5rem; }
   }
 </style>
 
 <div class="claridad-wrapper">
-  <h1 class="byi-h1">find your clarity</h1>
-  <p class="byi-body">
-    Sometimes the path isn't about moving faster, but about knowing how to stop. Here you will find different tools to return to your center.
-  </p>
+  <header class="hero-card">
+    <h1 class="byi-h1">find your clarity</h1>
+    <p class="byi-body">
+      Sometimes the path isn't about moving faster, but about knowing how to stop. Here you will find tools to return to your center and listen to your own voice.
+    </p>
+  </header>
 
   <div class="card-grid">
     <div class="card">
@@ -123,9 +119,9 @@ permalink: /en/clarity/
     <div class="card">
       <div>
         <h3>self-knowledge guides</h3>
-        <p>Tools to connect with your intuition and inner self. Resources and guides designed for you to work at your own pace.</p>
+        <p>Resources and guides designed for you to work at your own pace. Simple resources to return to yourself naturally.</p>
       </div>
-      <a href="{{ site.baseurl }}/en/free-resources/" class="btn">Explore resources</a>
+      <a href="{{ site.baseurl }}/en/free-resources/" class="btn">Explore</a>
     </div>
   </div>
 </div>
