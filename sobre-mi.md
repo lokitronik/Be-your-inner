@@ -48,7 +48,7 @@ permalink: /sobre-mi/
   <div class="sobre-block">
     <p class="sobre-block-label">Be Your Inner</p>
     <p class="sobre-body">
-      Be Your Inner no va de superación personal. Va de ver a través de todo lo que te enseñaron a ser para que puedas volver a lo que ya está ahí. Sin fórmulas, sin roles en los que encajar y sin la presión de convertirte en alguien.
+      Be Your Inner no va de convertirte en una mejor versión de ti. Va de soltar todo lo que te dijeron que fueras, para reconectar con lo que siempre estuvo ahí. Sin fórmulas. Sin moldes en los que encajar. Sin la presión de convertirte en nada. Solo en quien eres realmente.
     </p>
   </div>
 
