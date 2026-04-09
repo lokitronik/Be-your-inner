@@ -1,3 +1,4 @@
+
 ---
 layout: default
 title: Clarity | Be Your Inner
@@ -6,6 +7,7 @@ permalink: /en/clarity/
 ---
 
 <style>
+  /* El CSS es idéntico para mantener la coherencia */
   .container {
     width: 100%;
     max-width: 800px;
