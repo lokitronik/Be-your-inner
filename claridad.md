@@ -6,19 +6,26 @@ permalink: /claridad/
 ---
 
 <style>
+  main, .site-content, .wrapper, .site-main { 
+    background: transparent !important; 
+    box-shadow: none !important;
+    border: none !important;
+  }
+
   .container {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
     padding: 3rem 1.2rem;
     text-align: center;
+    background: transparent !important;
   }
 
   .hero-bocadillo {
     background: #ffffff;
-    padding: 3rem 2rem;
+    padding: 3.5rem 2.5rem;
     border-radius: 40px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.06);
     margin-bottom: 3rem;
   }
 
@@ -26,7 +33,7 @@ permalink: /claridad/
     font-family: 'Cormorant Garamond', serif;
     font-size: 2.8rem;
     font-weight: 400;
-    font-style: normal;
+    font-style: normal; 
     line-height: 1.2;
     margin-bottom: 1.5rem;
     color: #1a1a1a;
@@ -41,6 +48,7 @@ permalink: /claridad/
     max-width: 550px;
     margin: 0 auto;
   }
+
   .card-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -50,7 +58,7 @@ permalink: /claridad/
   }
 
   .card {
-    background: #ffffff; /* Blanco puro */
+    background: #ffffff;
     padding: 2.5rem 1.5rem;
     border-radius: 35px;
     text-align: center;
@@ -78,7 +86,6 @@ permalink: /claridad/
     margin-bottom: 1.5rem;
   }
 
-  /* 3. Tu Botón Original Pulido */
   .btn {
     display: inline-block;
     background: #4a5944; 
