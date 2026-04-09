@@ -1,122 +1,130 @@
 ---
 layout: default
-title: Volver a casa | Be Your Inner
-description: Un espacio de silencio para reconectar con tu brújula interna y tu propia voz.
+title: Claridad | Be Your Inner
 lang: es
-permalink: /
+permalink: /claridad/
 ---
 
 <style>
-  :root {
-    /* Eliminamos cualquier rastro de blanco roto */
-    --text-main: #1a1a1a;
-    --text-muted: #424242;
-    --accent: #4a5944;
-    --white-pure: #ffffff;
-    --radius-pill: 100px;
-  }
-
-  /* Contenedor principal sin fondos de color */
-  .main-wrapper {
-    padding: 60px 20px;
-    background: transparent; /* O el fondo general de tu web si es blanco */
-    display: flex;
-    justify-content: center;
-  }
-
-  /* TU RECUADRO BLANCO (Único protagonista) */
-  .card-home {
-    background: var(--white-pure);
+  .container {
     width: 100%;
-    max-width: 700px;
-    padding: clamp(2rem, 8vw, 4rem);
-    border-radius: 40px; /* Bordes redondeados suaves */
-    box-shadow: 0 15px 40px rgba(0,0,0,0.04); /* Sombra muy sutil para dar relieve */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 1.2rem;
     text-align: center;
   }
 
-  .home-label {
-    font-family: 'Lora', serif;
-    font-size: 0.75rem;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 1.5rem;
-    display: block;
+  .hero-bocadillo {
+    background: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 40px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    margin-bottom: 3rem;
   }
 
-  .home-h1 {
+  .byi-h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2.2rem, 5vw, 3rem);
+    font-size: 2.8rem;
     font-weight: 400;
-    font-style: italic; /* Como en tu captura */
+    font-style: normal;
     line-height: 1.2;
-    color: var(--text-main);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+    text-transform: lowercase;
   }
-
-  .home-lead {
+  
+  .byi-body {
     font-family: 'Lora', serif;
     font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--text-muted);
+    line-height: 1.7;
+    color: #424242;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 850px;
+    margin: 0 auto 4rem;
+  }
+
+  .card {
+    background: #ffffff; /* Blanco puro */
+    padding: 2.5rem 1.5rem;
+    border-radius: 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #f0f0f0;
+    min-height: 280px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  }
+
+  .card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: lowercase;
+    color: #1a1a1a;
+  }
+
+  .card p {
+    font-family: 'Lora', serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
     margin-bottom: 1.5rem;
   }
 
-  .home-divider {
-    border: 0;
-    height: 1px;
-    background: linear-gradient(to right, transparent, #e0e0e0, transparent);
-    margin: 2.5rem auto;
-    width: 60%;
-  }
-
-  .btn-primary {
+  /* 3. Tu Botón Original Pulido */
+  .btn {
     display: inline-block;
-    background: var(--accent);
+    background: #4a5944; 
     color: #fff !important;
     font-family: 'Lora', serif;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 1.1rem 3.5rem;
-    border-radius: var(--radius-pill);
+    padding: 0.9rem 2rem;
+    border-radius: 50px;
     text-decoration: none;
-    transition: all 0.3s ease;
-    margin-top: 1rem;
+    transition: transform 0.2s ease;
   }
 
-  .btn-primary:hover {
+  .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(74, 89, 68, 0.2);
-    filter: brightness(1.1);
   }
 
-  @media (max-width: 600px) {
-    .card-home {
-      padding: 2.5rem 1.5rem;
-      border-radius: 25px;
-    }
+  @media (max-width: 768px) {
+    .byi-h1 { font-size: 2rem; }
+    .card-grid { grid-template-columns: 1fr; gap: 1.5rem; padding: 0 1rem; }
+    .hero-bocadillo { padding: 2.5rem 1.5rem; }
   }
 </style>
 
-<div class="main-wrapper">
-  <div class="card-home">
-    <span class="home-label">Bienvenido</span>
-    <h1 class="home-h1">Un espacio para volver a ti</h1>
+<div class="container">
+  <div class="hero-bocadillo">
+    <h1 class="byi-h1">Encuentra tu claridad</h1>
+    <p class="byi-body">A veces el camino no consiste en avanzar más rápido, sino en saber detenerse. Aquí tienes diferentes herramientas para recuperar tu centro, ya sea a través de mis guías o en sesiones de acompañamiento conmigo.</p>
+  </div>
 
-    <p class="home-lead">
-      Aquí el ruido se apaga y la voz de tu alma comienza a escucharse. No vienes a buscar fuera lo que falta — vienes a recordar que dentro de ti ya está todo lo que necesitas.
-    </p>
+  <div class="card-grid">
+    <div class="card">
+      <div>
+        <h3>Acompañamiento individual</h3>
+        <p>Un espacio para profundizar y poner luz donde ahora hay confusión, permitiendo que tu propia sabiduría tome la palabra.</p>
+      </div>
+      <a href="{{ site.baseurl }}/encuentros/" class="btn">SABER MÁS</a>
+    </div>
 
-    <p class="home-lead">
-      La calma, la claridad y la fuerza que tantas veces buscaste siempre estuvieron contigo.
-    </p>
-
-    <hr class="home-divider">
-
-    <div class="home-ctas">
-      <a href="{{ site.baseurl }}/claridad/" class="btn-primary">Claridad</a>
+    <div class="card">
+      <div>
+        <h3>Guías de autoconocimiento</h3>
+        <p>Recursos y guías diseñadas para que trabajes a tu propio ritmo. Recursos sencillos para volver a ti de forma natural.</p>
+      </div>
+      <a href="{{ site.baseurl }}/material-gratuito/" class="btn">EXPLORAR RECURSOS</a>
     </div>
   </div>
 </div>
