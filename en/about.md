@@ -160,7 +160,7 @@ permalink: /en/about/
   <div class="sobre-block">
     <p class="sobre-block-label">My presence</p>
     <p class="sobre-body">
-      I’m not here to guide you towards a goal. I’m here to help you see clearly. To question what you believe you are, and to let go of what doesn’t feel true anymore.
+I won’t tell you what to do. I won’t give you answers. I’m here to help you see clearly. To question what you believe you are, and to let go of what doesn't feel true anymore.
     </p>
   </div>
 
@@ -169,7 +169,7 @@ permalink: /en/about/
   </blockquote>
 
   <p class="sobre-body" style="text-align: center; color: #888; font-style: italic;">
-    If this resonates, you don’t need convincing. You already feel it.
+    If this feels uncomfortable, it’s probably real. If it resonates, you already know why you’re here.
   </p>
 
   <div class="sobre-ctas">
