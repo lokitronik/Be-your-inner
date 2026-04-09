@@ -19,13 +19,36 @@
     {{ content }}
   </main>
 
-  <footer style="text-align: center; padding: 2rem; color: white;">
-    <div style="margin-bottom: 1rem;">
-      <a href="https://www.instagram.com/beyourinner" target="_blank" style="color: white; margin: 0 10px; text-decoration: none;">Instagram</a>
-      <a href="https://www.tiktok.com/@beyourinner" target="_blank" style="color: white; margin: 0 10px; text-decoration: none;">TikTok</a>
+  <footer style="text-align: center; padding: 4rem 2rem; color: #B5835A;">
+    <div style="margin-bottom: 1.5rem;">
+      <a href="https://www.instagram.com/beyourinner" target="_blank" style="color: #B5835A; margin: 0 15px; text-decoration: none; font-size: 0.9rem; letter-spacing: 1px;">INSTAGRAM</a>
+      <a href="https://www.tiktok.com/@beyourinner" target="_blank" style="color: #B5835A; margin: 0 15px; text-decoration: none; font-size: 0.9rem; letter-spacing: 1px;">TIKTOK</a>
     </div>
-    <p style="font-size: 0.8rem; opacity: 0.8;">&copy; 2026 be your inner</p>
+    <p style="font-size: 0.75rem; opacity: 0.7; letter-spacing: 2px; text-transform: uppercase;">&copy; 2026 be your inner</p>
   </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const overlay = document.getElementById('nav-overlay');
+
+    if (toggleBtn && overlay) {
+      toggleBtn.addEventListener('click', () => {
+        toggleBtn.classList.toggle('active');
+        overlay.classList.toggle('active');
+        // Bloquea el scroll del fondo cuando el menú está abierto
+        document.body.style.overflow = overlay.classList.contains('active') ? 'hidden' : 'auto';
+      });
+
+      // Cerrar el menú automáticamente al hacer clic en un enlace
+      document.querySelectorAll('.nav-list a').forEach(link => {
+        link.addEventListener('click', () => {
+          toggleBtn.classList.remove('active');
+          overlay.classList.remove('active');
+          document.body.style.overflow = 'auto';
+        });
+      });
+    }
+  </script>
 
 </body>
 </html>
