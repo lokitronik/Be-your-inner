@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: Clarity | Be Your Inner
@@ -7,7 +6,6 @@ permalink: /en/clarity/
 ---
 
 <style>
-  /* El CSS es idéntico para mantener la coherencia */
   .container {
     width: 100%;
     max-width: 800px;
@@ -28,7 +26,7 @@ permalink: /en/clarity/
     font-family: 'Cormorant Garamond', serif;
     font-size: 2.8rem;
     font-weight: 400;
-    font-style: normal;
+    font-style: normal; /* Asegurado: Sin cursiva */
     line-height: 1.2;
     margin-bottom: 1.5rem;
     color: #1a1a1a;
@@ -108,14 +106,14 @@ permalink: /en/clarity/
 
 <div class="container">
   <div class="hero-bocadillo">
-    <h1 class="byi-h1">Find your clarity</h1>
+    <h1 class="byi-h1">find your clarity</h1>
     <p class="byi-body">Sometimes the path isn't about moving faster, but about knowing how to stop. Here you will find different tools to return to your center, through my guides or in one-on-one sessions with me.</p>
   </div>
 
   <div class="card-grid">
     <div class="card">
       <div>
-        <h3>Individual accompaniment</h3>
+        <h3>individual accompaniment</h3>
         <p>A space to go deeper and bring light where there is confusion, allowing your own inner wisdom to take the lead.</p>
       </div>
       <a href="{{ site.baseurl }}/en/encounters/" class="btn">LEARN MORE</a>
@@ -123,7 +121,7 @@ permalink: /en/clarity/
 
     <div class="card">
       <div>
-        <h3>Self-knowledge guides</h3>
+        <h3>self-knowledge guides</h3>
         <p>Tools to connect with your intuition and inner self. Resources and guides designed for you to work at your own pace.</p>
       </div>
       <a href="{{ site.baseurl }}/en/free-resources/" class="btn">EXPLORE RESOURCES</a>
