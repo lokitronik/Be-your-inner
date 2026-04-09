@@ -17,12 +17,11 @@ permalink: /en/
 
   .main-wrapper {
     padding: 60px 20px;
-    background: transparent; 
+    background: transparent;
     display: flex;
     justify-content: center;
   }
 
-  /* TU RECUADRO BLANCO (Único protagonista) */
   .card-home {
     background: var(--white-pure);
     width: 100%;
@@ -47,10 +46,11 @@ permalink: /en/
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(2.2rem, 5vw, 3rem);
     font-weight: 400;
-    font-style: italic;
+    font-style: normal; 
     line-height: 1.2;
     color: var(--text-main);
     margin-bottom: 2rem;
+    text-align: center;
   }
 
   .home-lead {
@@ -101,14 +101,14 @@ permalink: /en/
 <div class="main-wrapper">
   <div class="card-home">
     <span class="home-label">Welcome</span>
-    <h1 class="home-h1">A space to return to yourself</h1>
+    <h1 class="home-h1">BE YOUR INNER | A space to return to yourself</h1>
 
     <p class="home-lead">
       Here, the noise fades away and the voice of your soul begins to be heard. You do not come to search outside for what is missing — you come to remember that everything you need is already within you.
     </p>
 
     <p class="home-lead">
-      The stillness, clarity, and strength you so often sought in other places have always been with you.
+      The stillness, clarity, and strength you so often sought have always been with you.
     </p>
 
     <hr class="home-divider">
