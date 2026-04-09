@@ -1,4 +1,52 @@
+<header class="site-header">
+  <div class="header-container">
+    
+    <div class="header-logo">
+      <a href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Beyourinner">
+      </a>
+    </div>
+
+    <nav class="nav-desktop">
+      {% if page.lang == 'en' %}
+        <a href="{{ '/en/about/' | relative_url }}">ABOUT ME</a>
+        <a href="{{ '/en/clarity/' | relative_url }}">CLARITY</a>
+        <a href="{{ '/en/contact/' | relative_url }}">CONTACT</a>
+        <a href="{{ '/' | relative_url }}">🌐 ES</a>
+      {% else %}
+        <a href="{{ '/sobre-mi/' | relative_url }}">SOBRE MÍ</a>
+        <a href="{{ '/claridad/' | relative_url }}">CLARIDAD</a>
+        <a href="{{ '/contacto/' | relative_url }}">CONTACTO</a>
+        <a href="{{ '/en/' | relative_url }}">🌐 EN</a>
+      {% endif %}
+    </nav>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+
+  <nav class="nav-overlay" id="nav-overlay">
+    <ul class="nav-list">
+      {% if page.lang == 'en' %}
+        <li><a href="{{ '/en/about/' | relative_url }}">ABOUT ME</a></li>
+        <li><a href="{{ '/en/clarity/' | relative_url }}">CLARITY</a></li>
+        <li><a href="{{ '/en/contact/' | relative_url }}">CONTACT</a></li>
+        <li><a href="{{ '/' | relative_url }}">🌐 ES</a></li>
+      {% else %}
+        <li><a href="{{ '/sobre-mi/' | relative_url }}">SOBRE MÍ</a></li>
+        <li><a href="{{ '/claridad/' | relative_url }}">CLARIDAD</a></li>
+        <li><a href="{{ '/contacto/' | relative_url }}">CONTACTO</a></li>
+        <li><a href="{{ '/en/' | relative_url }}">🌐 EN</a></li>
+      {% endif %}
+    </ul>
+  </nav>
+</header>
+
 <style>
+  /* CONFIGURACIÓN BASE */
   .header-container {
     display: flex;
     justify-content: space-between;
@@ -10,8 +58,12 @@
 
   .header-logo img { height: 45px; width: auto; }
 
-  /* --- ESTILOS PC (Menú horizontal clásico) --- */
-  .nav-desktop { display: flex; gap: 25px; }
+  /* ESTILOS ESCRITORIO (PC) */
+  .nav-desktop { 
+    display: flex !important; /* Forzamos que se vea en PC */
+    gap: 25px; 
+  }
+  
   .nav-desktop a {
     text-decoration: none;
     color: #424242;
@@ -19,20 +71,21 @@
     letter-spacing: 1.5px;
     font-weight: 500;
   }
-  .nav-desktop a:hover { color: #B5835A; }
-  .menu-toggle { display: none; } 
-  .nav-overlay { display: none; } 
 
-  /* --- ESTILOS MÓVIL (Menú hamburguesa corregido) --- */
+  /* Escondemos el botón hamburguesa y el overlay en PC */
+  .menu-toggle { display: none; }
+  .nav-overlay { display: none; }
+
+  /* ESTILOS MÓVIL */
   @media (max-width: 768px) {
-    .nav-desktop { display: none; } 
+    .nav-desktop { display: none !important; } /* Escondemos el menú horizontal en móvil */
     
     .menu-toggle {
       display: flex;
       flex-direction: column;
       background: transparent;
       border: none;
-      z-index: 1005; /* Por encima de todo */
+      z-index: 1005;
       cursor: pointer;
     }
 
@@ -45,51 +98,28 @@
     }
 
     .nav-overlay {
-      display: flex;
+      display: flex; /* Se activa con la clase .active */
       position: fixed;
       top: 0;
       right: -100%;
       width: 100%;
       height: 100vh;
-      background: rgba(255, 255, 255, 0.98); /* Blanco con ligerísima transparencia */
+      background: white;
       justify-content: center;
       align-items: center;
-      transition: right 0.5s ease-in-out;
+      transition: 0.5s;
       z-index: 1004;
     }
 
-    .nav-overlay.active { 
-      right: 0; 
-    }
+    .nav-overlay.active { right: 0; }
+    
+    .nav-list { list-style: none; padding: 0; text-align: center; }
+    .nav-list li { margin: 25px 0; }
+    .nav-list a { font-size: 1.5rem; font-family: 'Cormorant Garamond', serif; text-decoration: none; color: #424242; }
 
-    .nav-list { 
-      list-style: none; 
-      padding: 0; 
-      text-align: center;
-      margin-top: -50px; /* Sube un poco el menú para que no se vea tan abajo */
-    }
-
-    .nav-list li { 
-      margin: 20px 0; /* Espacio moderado entre enlaces */
-    }
-
-    .nav-list a { 
-      font-size: 1.4rem; /* Tamaño más elegante, no tan gigante */
-      font-family: 'Cormorant Garamond', serif; 
-      text-decoration: none; 
-      color: #1a1a1a;
-      letter-spacing: 2px;
-      text-transform: lowercase; /* Mantiene tu estética minimalista */
-    }
-
-    /* Animación del botón hamburguesa a X */
+    /* Animación del botón a X */
     .menu-toggle.active .bar:nth-child(1) { transform: rotate(-45deg) translate(-6px, 7px); }
     .menu-toggle.active .bar:nth-child(2) { opacity: 0; }
     .menu-toggle.active .bar:nth-child(3) { transform: rotate(45deg) translate(-6px, -7px); }
-    
-    /* Evita que se pueda hacer zoom out raro o scroll lateral */
-    body.menu-open {
-      overflow: hidden;
-    }
   }
 </style>
