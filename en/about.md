@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About Manel | Be Your Inner
-description: My purpose is not to teach you anything new, but to help you remember who you already are.
+description: You don’t need to become a better version of yourself. You’re just tired of being someone you’re not.
 lang: en
 permalink: /en/about/
 ---
@@ -47,9 +47,9 @@ permalink: /en/about/
 
   .sobre-intro {
     font-family: 'Lora', serif;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     line-height: 1.8;
-    color: #424242;
+    color: #1a1a1a;
     margin: 0;
   }
 
@@ -60,7 +60,7 @@ permalink: /en/about/
   }
 
   .sobre-block {
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
   }
 
   .sobre-block-label {
@@ -68,7 +68,7 @@ permalink: /en/about/
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #B5835A;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     display: block;
   }
 
@@ -83,12 +83,12 @@ permalink: /en/about/
   .sobre-quote {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     border-left: 2px solid #B5835A;
     padding-left: 1.5rem;
-    margin: 4rem 0;
+    margin: 4.5rem 0;
     color: #4a5944;
-    line-height: 1.4;
+    line-height: 1.3;
   }
 
   .sobre-ctas {
@@ -99,7 +99,6 @@ permalink: /en/about/
     flex-wrap: wrap;
   }
 
-  /* BOTONES IGUALES */
   .btn {
     display: inline-block;
     background: #4a5944; 
@@ -124,20 +123,9 @@ permalink: /en/about/
   }
 
   @media (max-width: 600px) {
-    .sobre-hero {
-      grid-template-columns: 1fr;
-      text-align: center;
-      gap: 2rem;
-    }
-    .sobre-photo {
-      margin: 0 auto;
-    }
-    .sobre-h1 {
-      font-size: 2.2rem;
-    }
-    .btn {
-      width: 100%;
-    }
+    .sobre-hero { grid-template-columns: 1fr; text-align: center; gap: 2rem; }
+    .sobre-photo { margin: 0 auto; }
+    .btn { width: 100%; }
   }
 </style>
 
@@ -146,14 +134,10 @@ permalink: /en/about/
   <p class="sobre-label">About me</p>
 
   <div class="sobre-hero">
-    <img
-      src="{{ site.baseurl }}/assets/images/manel.png"
-      alt="Manel"
-      class="sobre-photo"
-    >
+    <img src="{{ site.baseurl }}/assets/images/manel.png" alt="Manel" class="sobre-photo">
     <div>
       <h1 class="sobre-h1">Hi, I'm Manel</h1>
-      <p class="sobre-intro">My purpose is not to teach you anything new, but to help you remember who you already are, beyond the noise, the expectations, and the character you’ve learned to play.</p>
+      <p class="sobre-intro">You don’t need to become a better version of yourself. You’re just tired of being someone you’re not.</p>
     </div>
   </div>
 
@@ -162,35 +146,34 @@ permalink: /en/about/
   <div class="sobre-block">
     <p class="sobre-block-label">My journey</p>
     <p class="sobre-body">
-      For a long time, I looked outside for answers, trying to fix, improve, or become someone else. Until I realized there was nothing to become, only things to unlearn. My path hasn’t been about adding more, but about letting go of what was never truly me.
+      I spent years trying to fix myself, thinking something was missing, something was wrong. But there was nothing to fix. Just layers to drop. What I was looking for was never outside, and it was never something to achieve.
     </p>
   </div>
 
   <div class="sobre-block">
     <p class="sobre-block-label">Be Your Inner</p>
     <p class="sobre-body">
-      Be Your Inner was born from that understanding. This is not a space for perfect versions of yourself, nor for following formulas. It’s a space to reconnect with your truth, in your own way. Because no two paths are the same, and they’re not meant to be.
+      Be Your Inner isn’t about self-improvement. It’s about seeing through everything you’ve been taught to be, so you can return to what’s already there. No formulas. No roles to fit into. No pressure to become anything.
     </p>
   </div>
 
   <div class="sobre-block">
     <p class="sobre-block-label">My presence</p>
     <p class="sobre-body">
-      I don’t guide you by telling you who to be. I guide you back to yourself. Through presence, intuition, and deep listening, I help you see what’s already there, and release what no longer belongs to you.
+      I’m not here to guide you towards a goal. I’m here to help you see clearly. To question what you believe you are, and to let go of what doesn’t feel true anymore.
     </p>
   </div>
 
   <blockquote class="sobre-quote">
-    "Transformation isn’t something you force, it’s something you allow."
+    "Nothing to become. Just everything to remember."
   </blockquote>
 
   <p class="sobre-body" style="text-align: center; color: #888; font-style: italic;">
-    If something in you recognizes these words, then you already know.
+    If this resonates, you don’t need convincing. You already feel it.
   </p>
 
   <div class="sobre-ctas">
     <a href="{{ site.baseurl }}/en/encounters/" class="btn">Explore sessions</a>
     <a href="{{ site.baseurl }}/en/contact/" class="btn">Let's talk</a>
   </div>
-
 </div>
