@@ -6,26 +6,26 @@ permalink: /en/clarity/
 ---
 
 <style>
-  /* El CSS es idéntico, solo cambian los textos */
+  /* El CSS es idéntico para mantener la coherencia */
   .claridad-wrapper {
     width: 100%;
     max-width: 850px;
     margin: 0 auto;
-    padding: 4rem 1.2rem;
+    padding: 60px 1.2rem;
+    text-align: center;
   }
 
   .hero-card {
     background: #ffffff;
-    padding: clamp(2.5rem, 6vw, 4rem);
+    padding: 3rem 2rem;
     border-radius: 40px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.05);
     margin-bottom: 2.5rem;
-    text-align: center;
   }
 
   .byi-h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-size: 2.8rem;
     font-weight: 400;
     line-height: 1.2;
     color: #1a1a1a;
@@ -51,10 +51,9 @@ permalink: /en/clarity/
 
   .card {
     background: #ffffff; 
-    padding: clamp(2.5rem, 5vw, 3.5rem);
+    padding: 2.5rem 2rem;
     border-radius: 40px; 
     box-shadow: 0 10px 40px rgba(0,0,0,0.05);
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -84,18 +83,20 @@ permalink: /en/clarity/
     font: 600 0.8rem 'Lora', serif;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 1.1rem 2.5rem;
+    padding: 1rem 2.5rem;
     border-radius: 100px;
     text-decoration: none;
     transition: transform 0.3s ease;
     align-self: center;
   }
 
-  .btn:hover { transform: translateY(-2px); }
+  .btn:hover {
+    transform: translateY(-2px);
+  }
 
   @media (max-width: 768px) {
     .card-grid { grid-template-columns: 1fr; }
-    .hero-card { padding: 3rem 1.5rem; }
+    .byi-h1 { font-size: 2rem; }
   }
 </style>
 
