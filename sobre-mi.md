@@ -55,7 +55,7 @@ permalink: /sobre-mi/
   <div class="sobre-block">
     <p class="sobre-block-label">Mi presencia</p>
     <p class="sobre-body">
-      No estoy aquí para guiarte hacia una meta, sino para ayudarte a ver claro. Para cuestionar lo que crees ser y soltar aquello que ya no sientes como verdad.
+      No te diré qué hacer. No voy a darte las respuestas. Estoy aquí para ayudarte a ver claro. Para cuestionar lo que crees que eres y soltar aquello que ya no sientes como verdad.
     </p>
   </div>
 
