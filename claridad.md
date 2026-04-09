@@ -4,117 +4,120 @@ title: Claridad | Be Your Inner
 ---
 
 <style>
-  /* 1. Contenedor Principal */
+  /* 1. Contenedor Principal más compacto */
   .container {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    padding: 4rem 1.5rem;
+    padding: 2.5rem 1.2rem; /* Reducido para que no baje tanto el contenido */
     box-sizing: border-box;
-    text-align: center; /* Centra el texto de cabecera */
+    text-align: center;
   }
 
   .byi-h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 3rem;
+    font-size: 2.5rem; /* Un poco más pequeño */
     font-weight: 400;
     line-height: 1.2;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: #1a1a1a;
-    text-transform: lowercase; /* Mantiene tu estilo de minúsculas */
+    text-transform: lowercase;
   }
   
   .byi-body {
     font-family: 'Lora', serif;
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1rem;
+    line-height: 1.6;
     color: #555;
-    margin-bottom: 3rem;
-    max-width: 600px;
+    margin-bottom: 2rem;
+    max-width: 550px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* 2. Grid de Tarjetas (Bocadillos) */
+  /* 2. Grid de Tarjetas */
   .card-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas en PC */
-    gap: 2rem;
-    max-width: 900px;
-    margin: 0 auto 5rem;
-    padding: 0 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 850px;
+    margin: 0 auto 4rem;
+    padding: 0 1rem;
   }
 
   .card {
-    background: #faf9f7; /* Color arena muy suave */
-    padding: 3rem 2rem;
-    border-radius: 15px;
+    background: #faf9f7;
+    padding: 2rem 1.5rem; /* Padding reducido para que la tarjeta sea más pequeña */
+    border-radius: 12px; /* Bordes un poco más finos */
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 0.3s ease;
     border: 1px solid #f0efed;
-  }
-
-  .card:hover {
-    transform: translateY(-5px);
+    min-height: 250px; /* Asegura que no sean gigantescas pero quepan los textos */
   }
 
   .card h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.6rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    color: #1a1a1a;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
     text-transform: lowercase;
   }
 
   .card p {
     font-family: 'Lora', serif;
-    font-size: 0.95rem;
-    line-height: 1.7;
+    font-size: 0.9rem;
+    line-height: 1.5;
     color: #666;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
-  /* 3. Botón Estilizado */
+  /* 3. Botón más fino */
   .btn {
     display: inline-block;
     background: #4a5944; 
     color: #fff !important;
-    font-size: 0.8rem;
-    letter-spacing: 2px;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 50px;
     text-decoration: none;
-    transition: all 0.3s ease;
     border: none;
-    cursor: pointer;
   }
 
-  .btn:hover {
-    background: #3e4a39;
-    letter-spacing: 3px;
-  }
-
-  /* 4. Ajustes para Móvil */
+  /* 4. AJUSTES CLAVE PARA MÓVIL (Compacto) */
   @media (max-width: 768px) {
-    .card-grid {
-      grid-template-columns: 1fr; /* Una columna en móvil */
-      gap: 1.5rem;
+    .container {
+      padding: 1.5rem 1rem; /* Menos espacio arriba */
     }
-    
+
     .byi-h1 {
-      font-size: 2.2rem;
+      font-size: 1.8rem;
+    }
+
+    .card-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem; /* Tarjetas más pegadas entre sí */
+      padding: 0 1.5rem;
     }
 
     .card {
-      padding: 2.5rem 1.5rem;
+      padding: 1.5rem; /* Mucho más compacto en móvil */
+      min-height: auto; /* Que la tarjeta se adapte al texto sin sobrar espacio */
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+    }
+
+    .btn {
+      width: auto; /* Que el botón no ocupe todo el ancho si no quieres */
+      padding: 0.7rem 2rem;
     }
   }
 </style>
+
 
 <div class="container">
   <h1 class="byi-h1">encuentra tu claridad</h1>
