@@ -7,6 +7,20 @@
       </a>
     </div>
 
+    <nav class="nav-desktop">
+      {% if page.lang == 'en' %}
+        <a href="{{ '/en/about/' | relative_url }}">ABOUT ME</a>
+        <a href="{{ '/en/clarity/' | relative_url }}">CLARITY</a>
+        <a href="{{ '/en/contact/' | relative_url }}">CONTACT</a>
+        <a href="{{ '/' | relative_url }}">🌐 ES</a>
+      {% else %}
+        <a href="{{ '/sobre-mi/' | relative_url }}">SOBRE MÍ</a>
+        <a href="{{ '/claridad/' | relative_url }}">CLARIDAD</a>
+        <a href="{{ '/contacto/' | relative_url }}">CONTACTO</a>
+        <a href="{{ '/en/' | relative_url }}">🌐 EN</a>
+      {% endif %}
+    </nav>
+
     <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
       <span class="bar"></span>
       <span class="bar"></span>
@@ -20,96 +34,84 @@
         <li><a href="{{ '/en/about/' | relative_url }}">ABOUT ME</a></li>
         <li><a href="{{ '/en/clarity/' | relative_url }}">CLARITY</a></li>
         <li><a href="{{ '/en/contact/' | relative_url }}">CONTACT</a></li>
-        <li class="lang-switch"><a href="{{ '/' | relative_url }}">🌐 ES</a></li>
+        <li><a href="{{ '/' | relative_url }}">🌐 ES</a></li>
       {% else %}
         <li><a href="{{ '/sobre-mi/' | relative_url }}">SOBRE MÍ</a></li>
         <li><a href="{{ '/claridad/' | relative_url }}">CLARIDAD</a></li>
         <li><a href="{{ '/contacto/' | relative_url }}">CONTACTO</a></li>
-        <li class="lang-switch"><a href="{{ '/en/' | relative_url }}">🌐 EN</a></li>
+        <li><a href="{{ '/en/' | relative_url }}">🌐 EN</a></li>
       {% endif %}
     </ul>
   </nav>
 </header>
 
 <style>
-  /* Forzamos que el header ocupe todo el ancho y separe los elementos */
-  .site-header {
-    width: 100%;
-    position: relative;
-    z-index: 1002;
-  }
-
   .header-container {
     display: flex;
-    justify-content: space-between; /* LOGO a la izquierda | BOTÓN a la derecha */
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 5%; /* 5% de aire a los lados */
-    box-sizing: border-box;
+    padding: 20px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-  .header-logo img {
-    height: 50px; /* Tamaño del logo */
-    width: auto;
-    display: block;
-  }
+  .header-logo img { height: 45px; width: auto; }
 
-  /* El botón hamburguesa */
-  .menu-toggle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1003; /* Siempre por encima */
-  }
-
-  .bar {
-    width: 26px;
-    height: 1px;
-    background-color: #B5835A;
-    margin: 4px 0;
-    transition: all 0.4s ease;
-  }
-
-  /* Estilo del Menú Overlay */
-  .nav-overlay {
-    position: fixed;
-    top: 0;
-    right: -100%; 
-    width: 100%;
-    height: 100vh;
-    background: rgba(255, 255, 255, 0.98);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: right 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-    z-index: 1001;
-  }
-
-  .nav-overlay.active {
-    right: 0;
-  }
-
-  .nav-list {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-  }
-
-  .nav-list li { margin: 2rem 0; }
-
-  .nav-list a {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem;
-    color: #424242;
+  /* --- ESTILOS PC --- */
+  .nav-desktop { display: flex; gap: 25px; }
+  .nav-desktop a {
     text-decoration: none;
-    letter-spacing: 3px;
+    color: #424242;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    font-weight: 500;
   }
+  .nav-desktop a:hover { color: #B5835A; }
+  .menu-toggle { display: none; } /* Escondido en PC */
+  .nav-overlay { display: none; } /* Escondido en PC */
 
-  /* Animación X al abrir */
-  .menu-toggle.active .bar:nth-child(1) { transform: rotate(-45deg) translate(-6px, 7px); }
-  .menu-toggle.active .bar:nth-child(2) { opacity: 0; }
-  .menu-toggle.active .bar:nth-child(3) { transform: rotate(45deg) translate(-6px, -7px); }
+  /* --- ESTILOS MÓVIL --- */
+  @media (max-width: 768px) {
+    .nav-desktop { display: none; } /* Escondemos el menú horizontal */
+    
+    .menu-toggle {
+      display: flex;
+      flex-direction: column;
+      background: transparent;
+      border: none;
+      z-index: 1005;
+    }
+
+    .bar {
+      width: 25px;
+      height: 1px;
+      background-color: #B5835A;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    .nav-overlay {
+      display: flex;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      height: 100vh;
+      background: white;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s;
+      z-index: 1004;
+    }
+
+    .nav-overlay.active { right: 0; }
+    .nav-list { list-style: none; padding: 0; text-align: center; }
+    .nav-list li { margin: 25px 0; }
+    .nav-list a { font-size: 1.6rem; font-family: 'Cormorant Garamond', serif; text-decoration: none; color: #424242; }
+
+    /* Animación X */
+    .menu-toggle.active .bar:nth-child(1) { transform: rotate(-45deg) translate(-6px, 7px); }
+    .menu-toggle.active .bar:nth-child(2) { opacity: 0; }
+    .menu-toggle.active .bar:nth-child(3) { transform: rotate(45deg) translate(-6px, -7px); }
+  }
 </style>
