@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Returning Home | Be Your Inner
-description: A space of silence to reconnect with your internal compass and your own voice.
-lang: en
-permalink: /en/
+title: Volver a casa | Be Your Inner
+description: Un espacio de silencio para reconectar con tu brújula interna y tu propia voz.
+lang: es
+permalink: /
 ---
 
 <style>
@@ -15,6 +15,7 @@ permalink: /en/
     --radius-pill: 100px;
   }
 
+  /* Contenedor principal sin fondos de color */
   .main-wrapper {
     padding: 60px 20px;
     background: transparent;
@@ -22,6 +23,7 @@ permalink: /en/
     justify-content: center;
   }
 
+  /* TU RECUADRO BLANCO (Único protagonista) */
   .card-home {
     background: var(--white-pure);
     width: 100%;
@@ -42,11 +44,12 @@ permalink: /en/
     display: block;
   }
 
+  /* H1: Centrado, arriba del texto, SIN cursivas */
   .home-h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(2.2rem, 5vw, 3rem);
     font-weight: 400;
-    font-style: normal; /* Sin cursivas como pediste */
+    font-style: normal; /* Asegurado: Cero cursiva */
     line-height: 1.2;
     color: var(--text-main);
     margin-bottom: 2rem;
@@ -86,35 +89,4 @@ permalink: /en/
 
   .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(74, 89, 68, 0.2);
-    filter: brightness(1.1);
-  }
-
-  @media (max-width: 600px) {
-    .card-home {
-      padding: 2.5rem 1.5rem;
-      border-radius: 25px;
-    }
-  }
-</style>
-
-<div class="main-wrapper">
-  <div class="card-home">
-    <span class="home-label">Welcome</span>
-    <h1 class="home-h1">A space to return to yourself</h1>
-
-    <p class="home-lead">
-      Here, the noise fades away and the voice of your soul begins to be heard. You do not come to search outside for what is missing — you come to remember that everything you need is already within you.
-    </p>
-
-    <p class="home-lead">
-      The stillness, clarity, and strength you so often sought have always been with you.
-    </p>
-
-    <hr class="home-divider">
-
-    <div class="home-ctas">
-      <a href="{{ site.baseurl }}/en/clarity/" class="btn-primary">Clarity</a>
-    </div>
-  </div>
-</div>
+    box-shadow: 0 8px 20px rgba(74, 89,
