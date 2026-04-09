@@ -89,4 +89,36 @@ permalink: /
 
   .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(74, 89,
+    box-shadow: 0 8px 20px rgba(74, 89, 68, 0.2);
+    filter: brightness(1.1);
+  }
+
+  @media (max-width: 600px) {
+    .card-home {
+      padding: 2.5rem 1.5rem;
+      border-radius: 25px;
+    }
+  }
+</style>
+
+<div class="main-wrapper">
+  <div class="card-home">
+    <span class="home-label">Bienvenido</span>
+    
+    <h1 class="home-h1">Un espacio para volver a ti</h1>
+
+    <p class="home-lead">
+      Aquí el ruido se apaga y la voz de tu alma comienza a escucharse. No vienes a buscar fuera lo que falta — vienes a recordar que dentro de ti ya está todo lo que necesitas.
+    </p>
+
+    <p class="home-lead">
+      La calma, la claridad y la fuerza que tantas veces buscaste siempre estuvieron contigo.
+    </p>
+
+    <hr class="home-divider">
+
+    <div class="home-ctas">
+      <a href="{{ site.baseurl }}/claridad/" class="btn-primary">Claridad</a>
+    </div>
+  </div>
+</div>
