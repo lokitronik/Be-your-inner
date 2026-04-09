@@ -6,34 +6,32 @@ permalink: /en/clarity/
 ---
 
 <style>
-  .claridad-wrapper {
+  /* El CSS es idéntico para mantener la coherencia */
+  .container {
     width: 100%;
-    max-width: 850px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 60px 1.2rem;
+    padding: 3rem 1.2rem;
     text-align: center;
   }
 
-  /* EL BOCADILLO BLANCO: Protege todo el contenido para que sea legible */
-  .hero-card {
+  .hero-bocadillo {
     background: #ffffff;
-    padding: clamp(2.5rem, 6vw, 4rem);
+    padding: 3rem 2rem;
     border-radius: 40px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.05);
     margin-bottom: 3rem;
-    text-align: center;
   }
 
-  /* H1 DENTRO: Centrado, sin cursiva y estructurado */
   .byi-h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-size: 2.8rem;
     font-weight: 400;
-    font-style: normal; /* Cero cursiva */
+    font-style: normal;
     line-height: 1.2;
+    margin-bottom: 1.5rem;
     color: #1a1a1a;
     text-transform: lowercase;
-    margin: 0 0 1.5rem 0; /* Espacio con el texto de abajo */
   }
   
   .byi-body {
@@ -41,35 +39,37 @@ permalink: /en/clarity/
     font-size: 1.1rem;
     line-height: 1.7;
     color: #424242;
-    max-width: 600px;
+    max-width: 550px;
     margin: 0 auto;
   }
 
-  /* LAS DOS TARJETAS DE ABAJO */
   .card-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    max-width: 850px;
+    margin: 0 auto 4rem;
   }
 
   .card {
-    background: #ffffff; 
-    padding: 2.5rem 2rem;
-    border-radius: 40px; 
-    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    background: #ffffff;
+    padding: 2.5rem 1.5rem;
+    border-radius: 35px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 300px;
+    border: 1px solid #f0f0f0;
+    min-height: 280px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   }
 
-  .card h2 {
+  .card h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.6rem;
-    font-weight: 400;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #1a1a1a;
     text-transform: lowercase;
+    color: #1a1a1a;
   }
 
   .card p {
@@ -77,21 +77,21 @@ permalink: /en/clarity/
     font-size: 0.95rem;
     line-height: 1.6;
     color: #555;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .btn {
     display: inline-block;
     background: #4a5944; 
-    color: #ffffff !important;
-    font: 600 0.85rem 'Lora', serif;
+    color: #fff !important;
+    font-family: 'Lora', serif;
+    font-size: 0.75rem;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 1.1rem 2.5rem;
-    border-radius: 100px;
+    padding: 0.9rem 2rem;
+    border-radius: 50px;
     text-decoration: none;
-    transition: transform 0.3s ease;
-    align-self: center;
+    transition: transform 0.2s ease;
   }
 
   .btn:hover {
@@ -99,34 +99,33 @@ permalink: /en/clarity/
   }
 
   @media (max-width: 768px) {
-    .card-grid { grid-template-columns: 1fr; }
-    .hero-card { padding: 3rem 1.5rem; }
+    .byi-h1 { font-size: 2rem; }
+    .card-grid { grid-template-columns: 1fr; gap: 1.5rem; padding: 0 1rem; }
+    .hero-bocadillo { padding: 2.5rem 1.5rem; }
   }
 </style>
 
-<div class="claridad-wrapper">
-  <header class="hero-card">
+<div class="container">
+  <div class="hero-bocadillo">
     <h1 class="byi-h1">find your clarity</h1>
-    <p class="byi-body">
-      Sometimes the path isn't about moving faster, but about knowing how to stop. Here you will find tools to return to your center and listen to your own voice.
-    </p>
-  </header>
+    <p class="byi-body">Sometimes the path isn't about moving faster, but about knowing how to stop. Here you will find different tools to return to your center, through my guides or in one-on-one sessions with me.</p>
+  </div>
 
   <div class="card-grid">
     <div class="card">
       <div>
-        <h2>individual accompaniment</h2>
+        <h3>individual accompaniment</h3>
         <p>A space to go deeper and bring light where there is confusion, allowing your own inner wisdom to take the lead.</p>
       </div>
-      <a href="{{ site.baseurl }}/en/encounters/" class="btn">Learn more</a>
+      <a href="{{ site.baseurl }}/en/encounters/" class="btn">LEARN MORE</a>
     </div>
 
     <div class="card">
       <div>
-        <h2>self-knowledge guides</h2>
-        <p>Resources and guides designed for you to work at your own pace. Simple resources to return to yourself naturally.</p>
+        <h3>self-knowledge guides</h3>
+        <p>Tools to connect with your intuition and inner self. Resources and guides designed for you to work at your own pace.</p>
       </div>
-      <a href="{{ site.baseurl }}/en/free-resources/" class="btn">Explore</a>
+      <a href="{{ site.baseurl }}/en/free-resources/" class="btn">EXPLORE RESOURCES</a>
     </div>
   </div>
 </div>
