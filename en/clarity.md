@@ -6,8 +6,6 @@ permalink: /en/clarity/
 ---
 
 <style>
-  /* ELIMINAR EL RECUADRO BLANCO DEL LAYOUT GENERAL */
-  /* Ajustamos el main y el container de la web para que sean transparentes */
   main, .site-content, .wrapper { 
     background: transparent !important; 
     box-shadow: none !important;
@@ -20,10 +18,9 @@ permalink: /en/clarity/
     margin: 0 auto;
     padding: 3rem 1.2rem;
     text-align: center;
-    background: transparent !important; /* Aseguramos que el contenedor no tenga fondo */
+    background: transparent !important; 
   }
 
-  /* EL BOCADILLO BLANCO (Tus cajas blancas puras) */
   .hero-bocadillo {
     background: #ffffff;
     padding: 3.5rem 2.5rem;
@@ -116,14 +113,14 @@ permalink: /en/clarity/
 
 <div class="container">
   <div class="hero-bocadillo">
-    <h1 class="byi-h1">find your clarity</h1>
+    <h1 class="byi-h1">Find your clarity</h1>
     <p class="byi-body">Sometimes the path isn't about moving faster, but about knowing how to stop. Here you will find different tools to return to your center, through my guides or in one-on-one sessions with me.</p>
   </div>
 
   <div class="card-grid">
     <div class="card">
       <div>
-        <h3>individual accompaniment</h3>
+        <h3>Individual accompaniment</h3>
         <p>A space to go deeper and bring light where there is confusion, allowing your own inner wisdom to take the lead.</p>
       </div>
       <a href="{{ site.baseurl }}/en/encounters/" class="btn">LEARN MORE</a>
@@ -131,7 +128,7 @@ permalink: /en/clarity/
 
     <div class="card">
       <div>
-        <h3>self-knowledge guides</h3>
+        <h3>Self-knowledge guides</h3>
         <p>Tools to connect with your intuition and inner self. Resources and guides designed for you to work at your own pace.</p>
       </div>
       <a href="{{ site.baseurl }}/en/free-resources/" class="btn">EXPLORE RESOURCES</a>
