@@ -23,7 +23,6 @@ permalink: /
     justify-content: center;
   }
 
-  /* TU RECUADRO BLANCO (Único protagonista) */
   .card-home {
     background: var(--white-pure);
     width: 100%;
@@ -44,12 +43,11 @@ permalink: /
     display: block;
   }
 
-  /* H1: Centrado, arriba del texto, SIN cursivas */
   .home-h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(2.2rem, 5vw, 3rem);
     font-weight: 400;
-    font-style: normal; /* Asegurado: Cero cursiva */
+    font-style: normal;
     line-height: 1.2;
     color: var(--text-main);
     margin-bottom: 2rem;
@@ -105,7 +103,7 @@ permalink: /
   <div class="card-home">
     <span class="home-label">Bienvenido</span>
     
-    <h1 class="home-h1">Un espacio para volver a ti</h1>
+    <h1 class="home-h1">BE YOUR INNER |Un espacio para volver a ti</h1>
 
     <p class="home-lead">
       Aquí el ruido se apaga y la voz de tu alma comienza a escucharse. No vienes a buscar fuera lo que falta — vienes a recordar que dentro de ti ya está todo lo que necesitas.
