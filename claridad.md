@@ -6,7 +6,6 @@ permalink: /claridad/
 ---
 
 <style>
-  /* Sin fondo aquí para que se vea tu imagen de los árboles */
   .claridad-wrapper {
     width: 100%;
     max-width: 900px;
@@ -14,8 +13,6 @@ permalink: /claridad/
     padding: clamp(2rem, 5vw, 4rem) 1.2rem;
     text-align: center;
   }
-
-  /* ESTE ES EL BOCADILLO SUPERIOR PARA LA LEGIBILIDAD */
   .hero-card {
     background: #ffffff;
     padding: clamp(2rem, 5vw, 3.5rem);
