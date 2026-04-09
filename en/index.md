@@ -1,119 +1,131 @@
 ---
 layout: default
-title: Returning Home | Be Your Inner
-description: A space of silence to reconnect with your internal compass and your own voice.
+title: Clarity | Be Your Inner
 lang: en
-permalink: /en/
+permalink: /en/clarity/
 ---
 
 <style>
-  :root {
-    --text-main: #1a1a1a;
-    --text-muted: #424242;
-    --accent: #4a5944;
-    --white-pure: #ffffff;
-    --radius-pill: 100px;
-  }
-
-  .main-wrapper {
-    padding: 60px 20px;
-    background: transparent; 
-    display: flex;
-    justify-content: center;
-  }
-
-  .card-home {
-    background: var(--white-pure);
+  /* El CSS es idéntico para mantener la coherencia */
+  .container {
     width: 100%;
-    max-width: 700px;
-    padding: clamp(2rem, 8vw, 4rem);
-    border-radius: 40px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.04);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 1.2rem;
     text-align: center;
   }
 
-  .home-label {
-    font-family: 'Lora', serif;
-    font-size: 0.75rem;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 1.5rem;
-    display: block;
+  .hero-bocadillo {
+    background: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 40px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    margin-bottom: 3rem;
   }
 
-  .home-h1 {
+  .byi-h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2.2rem, 5vw, 3rem);
+    font-size: 2.8rem;
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
     line-height: 1.2;
-    color: var(--text-main);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+    text-transform: lowercase;
   }
-
-  .home-lead {
+  
+  .byi-body {
     font-family: 'Lora', serif;
     font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--text-muted);
+    line-height: 1.7;
+    color: #424242;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 850px;
+    margin: 0 auto 4rem;
+  }
+
+  .card {
+    background: #ffffff;
+    padding: 2.5rem 1.5rem;
+    border-radius: 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #f0f0f0;
+    min-height: 280px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  }
+
+  .card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: lowercase;
+    color: #1a1a1a;
+  }
+
+  .card p {
+    font-family: 'Lora', serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
     margin-bottom: 1.5rem;
   }
 
-  .home-divider {
-    border: 0;
-    height: 1px;
-    background: linear-gradient(to right, transparent, #e0e0e0, transparent);
-    margin: 2.5rem auto;
-    width: 60%;
-  }
-
-  .btn-primary {
+  .btn {
     display: inline-block;
-    background: var(--accent);
+    background: #4a5944; 
     color: #fff !important;
     font-family: 'Lora', serif;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 1.1rem 3.5rem;
-    border-radius: var(--radius-pill);
+    padding: 0.9rem 2rem;
+    border-radius: 50px;
     text-decoration: none;
-    transition: all 0.3s ease;
-    margin-top: 1rem;
+    transition: transform 0.2s ease;
   }
 
-  .btn-primary:hover {
+  .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(74, 89, 68, 0.2);
-    filter: brightness(1.1);
   }
 
-  @media (max-width: 600px) {
-    .card-home {
-      padding: 2.5rem 1.5rem;
-      border-radius: 25px;
-    }
+  @media (max-width: 768px) {
+    .byi-h1 { font-size: 2rem; }
+    .card-grid { grid-template-columns: 1fr; gap: 1.5rem; padding: 0 1rem; }
+    .hero-bocadillo { padding: 2.5rem 1.5rem; }
   }
 </style>
 
-<div class="main-wrapper">
-  <div class="card-home">
-    <span class="home-label">Welcome</span>
-    <h1 class="home-h1">A space to return to yourself</h1>
+<div class="container">
+  <div class="hero-bocadillo">
+    <h1 class="byi-h1">Find your clarity</h1>
+    <p class="byi-body">Sometimes the path isn't about moving faster, but about knowing how to stop. Here you will find different tools to return to your center, through my guides or in one-on-one sessions with me.</p>
+  </div>
 
-    <p class="home-lead">
-      Here, the noise fades away and the voice of your soul begins to be heard. You do not come to search outside for what is missing — you come to remember that everything you need is already within you.
-    </p>
+  <div class="card-grid">
+    <div class="card">
+      <div>
+        <h3>Individual accompaniment</h3>
+        <p>A space to go deeper and bring light where there is confusion, allowing your own inner wisdom to take the lead.</p>
+      </div>
+      <a href="{{ site.baseurl }}/en/encounters/" class="btn">LEARN MORE</a>
+    </div>
 
-    <p class="home-lead">
-      The stillness, clarity, and strength you so often sought in other places have always been with you.
-    </p>
-
-    <hr class="home-divider">
-
-    <div class="home-ctas">
-      <a href="{{ site.baseurl }}/en/clarity/" class="btn-primary">clarity</a>
+    <div class="card">
+      <div>
+        <h3>Self-knowledge guides</h3>
+        <p>Tools to connect with your intuition and inner self. Resources and guides designed for you to work at your own pace.</p>
+      </div>
+      <a href="{{ site.baseurl }}/en/free-resources/" class="btn">EXPLORE RESOURCES</a>
     </div>
   </div>
 </div>
