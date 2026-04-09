@@ -153,7 +153,7 @@ permalink: /en/about/
   <div class="sobre-block">
     <p class="sobre-block-label">Be Your Inner</p>
     <p class="sobre-body">
-      Be Your Inner isn’t about self-improvement. It’s about seeing through everything you’ve been taught to be, so you can return to what’s already there. No formulas. No roles to fit into. No pressure to become anything.
+      Be Your Inner isn't about becoming a better version of yourself. It's about stripping away everything you were told to be, so you can reconnect with what was always there. No frameworks. No molds to squeeze into. No pressure to become anything at all. Just who you truly are.
     </p>
   </div>
 
