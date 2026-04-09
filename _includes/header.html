@@ -1,5 +1,6 @@
 <header class="site-header">
   <div class="header-container">
+    
     <div class="header-logo">
       <a href="{{ '/' | relative_url }}">
         <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Beyourinner">
@@ -8,7 +9,7 @@
 
     <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
       <span class="bar"></span>
-      <span class="bar :active"></span>
+      <span class="bar"></span>
       <span class="bar"></span>
     </button>
   </div>
@@ -31,22 +32,28 @@
 </header>
 
 <style>
-  /* Ajustes de la cabecera para que el botón y logo convivan */
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px;
+  /* Forzamos que el header ocupe todo el ancho y separe los elementos */
+  .site-header {
+    width: 100%;
     position: relative;
     z-index: 1002;
   }
 
-  .header-logo img {
-    height: 45px; /* Ajusta según tu logo */
-    width: auto;
+  .header-container {
+    display: flex;
+    justify-content: space-between; /* LOGO a la izquierda | BOTÓN a la derecha */
+    align-items: center;
+    padding: 20px 5%; /* 5% de aire a los lados */
+    box-sizing: border-box;
   }
 
-  /* Botón Hamburguesa Estilizado */
+  .header-logo img {
+    height: 50px; /* Tamaño del logo */
+    width: auto;
+    display: block;
+  }
+
+  /* El botón hamburguesa */
   .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -55,7 +62,7 @@
     border: none;
     cursor: pointer;
     padding: 10px;
-    z-index: 1003;
+    z-index: 1003; /* Siempre por encima */
   }
 
   .bar {
@@ -66,11 +73,11 @@
     transition: all 0.4s ease;
   }
 
-  /* Menú Overlay Full Screen */
+  /* Estilo del Menú Overlay */
   .nav-overlay {
     position: fixed;
     top: 0;
-    right: -100%; /* Escondido */
+    right: -100%; 
     width: 100%;
     height: 100vh;
     background: rgba(255, 255, 255, 0.98);
@@ -91,9 +98,7 @@
     text-align: center;
   }
 
-  .nav-list li {
-    margin: 2rem 0;
-  }
+  .nav-list li { margin: 2rem 0; }
 
   .nav-list a {
     font-family: 'Cormorant Garamond', serif;
@@ -101,14 +106,9 @@
     color: #424242;
     text-decoration: none;
     letter-spacing: 3px;
-    transition: color 0.3s ease;
   }
 
-  .nav-list a:hover {
-    color: #B5835A;
-  }
-
-  /* Animación del botón al abrirse (X) */
+  /* Animación X al abrir */
   .menu-toggle.active .bar:nth-child(1) { transform: rotate(-45deg) translate(-6px, 7px); }
   .menu-toggle.active .bar:nth-child(2) { opacity: 0; }
   .menu-toggle.active .bar:nth-child(3) { transform: rotate(45deg) translate(-6px, -7px); }
