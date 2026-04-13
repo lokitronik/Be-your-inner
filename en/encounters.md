@@ -22,7 +22,6 @@ permalink: /en/encounters/
     box-sizing: border-box !important;
   }
 
-  /* 2. TYPOGRAPHY & HEADER */
   .byi-label {
     font-size: 11px;
     letter-spacing: 3px;
