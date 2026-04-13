@@ -6,108 +6,93 @@ permalink: /en/clarity/
 ---
 
 <style>
-  main, .site-content, .wrapper { 
-    background: transparent !important; 
-    box-shadow: none !important;
-    border: none !important;
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .container {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 3rem 1.2rem;
-    text-align: center;
-    background: transparent !important; 
+    width: 100% !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    padding: 2rem 1rem !important; 
+    box-sizing: border-box !important;
   }
 
-  .hero-bocadillo {
-    background: #ffffff;
-    padding: 3.5rem 2.5rem;
-    border-radius: 40px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.06);
-    margin-bottom: 3rem;
-  }
-
-  .byi-h1 {
+  h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2.8rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
-    color: #1a1a1a;
+    font-size: 2.2rem !important; 
+    text-align: center;
+    margin-bottom: 1rem !important;
     text-transform: lowercase;
   }
-  
-  .byi-body {
+
+  .container p {
     font-family: 'Lora', serif;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #424242;
-    max-width: 550px;
-    margin: 0 auto;
+    font-size: 1rem !important;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 2rem;
   }
 
   .card-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    max-width: 850px;
-    margin: 0 auto 4rem;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr; /* PC */
+    gap: 20px;
+    padding: 0 10px;
+    max-width: 900px;
+    margin: 0 auto;
   }
 
   .card {
-    background: #ffffff;
-    padding: 2.5rem 1.5rem;
-    border-radius: 35px;
+    background: #faf9f7;
+    padding: 2.5rem 1.5rem !important; 
+    border-radius: 12px;
+    border: 1px solid #f0efed;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid #f0f0f0;
-    min-height: 280px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-sizing: border-box !important;
   }
 
   .card h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.4rem !important;
+    margin-bottom: 0.8rem;
     text-transform: lowercase;
-    color: #1a1a1a;
   }
 
   .card p {
-    font-family: 'Lora', serif;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 1.5rem;
+    font-size: 0.9rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 1.5rem !important;
   }
 
-  .btn {
-    display: inline-block;
-    background: #4a5944; 
-    color: #fff !important;
-    font-family: 'Lora', serif;
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 0.9rem 2rem;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: transform 0.2s ease;
-  }
-
-  .btn:hover {
-    transform: translateY(-2px);
-  }
-
+  /* 5. FIX ESPECÍFICO PARA MÓVIL */
   @media (max-width: 768px) {
-    .byi-h1 { font-size: 2rem; }
-    .card-grid { grid-template-columns: 1fr; gap: 1.5rem; padding: 0 1rem; }
-    .hero-bocadillo { padding: 2.5rem 1.5rem; }
+    .card-grid {
+      grid-template-columns: 1fr !important; 
+      padding: 0 15px !important;
+    }
+
+    .card {
+      padding: 1.5rem !important; 
+      margin-bottom: 15px !important;
+      min-height: auto !important; 
+    }
+
+    h1 {
+      font-size: 1.8rem !important;
+    }
+
+    .btn {
+      width: 100% !important; 
+      padding: 0.8rem 1rem !important;
+      font-size: 0.75rem !important;
+    }
   }
 </style>
 
