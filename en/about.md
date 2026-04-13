@@ -7,6 +7,22 @@ permalink: /en/about/
 ---
 
 <style>
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+  }
+
+  .container {
+    width: 100% !important;
+    max-width: 750px !important;
+    margin: 0 auto !important;
+    padding: 4rem 1.5rem !important;
+    box-sizing: border-box !important;
+  }
+
   .sobre-label {
     font-size: 11px;
     letter-spacing: 3px;
@@ -115,21 +131,54 @@ permalink: /en/about/
     border: none;
     min-width: 200px;
     text-align: center;
+    box-sizing: border-box;
   }
 
   .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(74, 89, 68, 0.2);
   }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 2.5rem 1.2rem !important; /* Menos margen lateral para que no se vea "apretado" */
+    }
 
-  @media (max-width: 600px) {
-    .sobre-hero { grid-template-columns: 1fr; text-align: center; gap: 2rem; }
-    .sobre-photo { margin: 0 auto; }
-    .btn { width: 100%; }
+    .sobre-hero { 
+      grid-template-columns: 1fr; 
+      text-align: center; 
+      gap: 1.5rem; 
+    }
+
+    .sobre-photo { 
+      width: 150px; /* Foto más pequeña en móvil */
+      height: 150px;
+      margin: 0 auto; 
+    }
+
+    .sobre-h1 {
+      font-size: 2.2rem !important;
+      margin-bottom: 1rem;
+    }
+
+    .sobre-intro {
+      font-size: 1.1rem;
+    }
+
+    .sobre-quote {
+      font-size: 1.5rem;
+      margin: 3rem 0;
+      padding-left: 1rem;
+    }
+
+    .btn { 
+      width: 100%; 
+      min-width: unset;
+    }
   }
 </style>
 
-<div class="container" style="max-width: 750px; margin-top: 4rem; margin-bottom: 6rem;">
+<div class="container">
 
   <p class="sobre-label">About me</p>
 
@@ -160,7 +209,7 @@ permalink: /en/about/
   <div class="sobre-block">
     <p class="sobre-block-label">My presence</p>
     <p class="sobre-body">
-I won’t tell you what to do. I won’t give you answers. I’m here to help you see clearly. To question what you believe you are, and to let go of what doesn't feel true anymore.
+      I won’t tell you what to do. I won’t give you answers. I’m here to help you see clearly. To question what you believe you are, and to let go of what doesn't feel true anymore.
     </p>
   </div>
 
