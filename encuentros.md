@@ -7,188 +7,93 @@ permalink: /encuentros/
 ---
 
 <style>
-  /* Contenedor optimizado para legibilidad sobre el fondo */
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
   .container {
-    width: 100%;
-    max-width: 750px;
-    margin: 4rem auto 6rem;
-    padding: 3rem 2rem; /* Espaciado interno para la cápsula */
-    background: rgba(255, 255, 255, 0.95); /* Fondo blanco para legibilidad */
-    border-radius: 15px;
-    box-sizing: border-box;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100% !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    padding: 2rem 1rem !important; 
+    box-sizing: border-box !important;
   }
 
-  .byi-label {
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #B5835A;
-    margin-bottom: 1.2rem;
-    font-weight: 400;
-  }
-
-  .byi-h1 {
+  h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2.6rem;
-    font-weight: 400;
-    line-height: 1.2;
-    margin: 0 0 2.5rem;
-    color: #1a1a1a;
-  }
-
-  .byi-body {
-    font-family: 'Lora', serif;
-    font-size: 1.1rem;
-    line-height: 1.85;
-    color: #424242;
-    margin-bottom: 1.5rem;
-  }
-
-  .byi-quote {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 1.6rem;
-    border-left: 2px solid #B5835A;
-    padding-left: 1.5rem;
-    margin: 3rem 0;
-    color: #556B2F;
-    line-height: 1.4;
-  }
-
-  .byi-divider {
-    border: none;
-    border-top: 1px solid #eee;
-    margin: 3rem 0;
-  }
-
-  .byi-how-title,
-  .byi-faq-title {
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #B5835A;
-    margin-bottom: 1.5rem;
-  }
-
-  .byi-steps {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-
-  .byi-step {
-    background: #faf9f7;
-    border-radius: 12px;
-    padding: 1.5rem;
-    border: 1px solid #f0efed;
-  }
-
-  .byi-step-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2rem;
-    color: #B5835A;
-    line-height: 1;
-    margin-bottom: 0.6rem;
-  }
-
-  .byi-step-text {
-    font-size: 0.85rem;
-    color: #555;
-    line-height: 1.6;
-  }
-
-  .byi-pricing {
+    font-size: 2.2rem !important; 
     text-align: center;
-    padding: 1rem 0;
+    margin-bottom: 1rem !important;
+    text-transform: lowercase;
   }
 
-  .byi-price-old {
+  .container p {
     font-family: 'Lora', serif;
-    text-decoration: line-through;
-    color: #bbb;
-    font-size: 1.2rem;
+    font-size: 1rem !important;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 2rem;
   }
 
-  .byi-price-new {
+  .card-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr; /* PC */
+    gap: 20px;
+    padding: 0 10px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .card {
+    background: #faf9f7;
+    padding: 2.5rem 1.5rem !important; 
+    border-radius: 12px;
+    border: 1px solid #f0efed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box !important;
+  }
+
+  .card h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 4.5rem;
-    color: #556B2F;
-    line-height: 1;
-    margin: 0.5rem 0;
+    font-size: 1.4rem !important;
+    margin-bottom: 0.8rem;
+    text-transform: lowercase;
   }
 
-  .byi-price-tag {
-    font-size: 0.85rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #B5835A;
-    margin-bottom: 0.5rem;
+  .card p {
+    font-size: 0.9rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 1.5rem !important;
   }
 
-  .byi-price-note {
-    font-size: 0.85rem;
-    color: #999;
-    margin-bottom: 2.5rem;
-    font-style: italic;
-  }
-
-  .byi-btn {
-    display: inline-block;
-    background: #556B2F;
-    color: #fff !important;
-    font-size: 0.85rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 1.1rem 3rem;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-    cursor: pointer;
-  }
-
-  .byi-btn:hover { background: #3e5020; }
-
-  .byi-after {
-    font-size: 0.8rem;
-    color: #ccc;
-    margin-top: 1.2rem;
-    font-style: italic;
-  }
-
-  .byi-faq-item {
-    border-top: 1px solid #eee;
-    padding: 1.2rem 0;
-  }
-
-  .byi-faq-q {
-    font-family: 'Lora', serif;
-    font-size: 0.95rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: #333;
-  }
-
-  .byi-faq-a {
-    font-size: 0.9rem;
-    color: #666;
-    line-height: 1.7;
-  }
-
-  /* --- AJUSTES MÓVIL --- */
-  @media (max-width: 600px) {
-    .container {
-      margin: 2rem 1rem;
-      padding: 2rem 1.5rem;
+  /* 5. FIX ESPECÍFICO PARA MÓVIL */
+  @media (max-width: 768px) {
+    .card-grid {
+      grid-template-columns: 1fr !important; 
+      padding: 0 15px !important;
     }
-    .byi-steps { 
-      grid-template-columns: 1fr; 
-      gap: 1rem; 
+
+    .card {
+      padding: 1.5rem !important; 
+      margin-bottom: 15px !important;
+      min-height: auto !important; 
     }
-    .byi-h1 { font-size: 2.1rem; }
-    .byi-price-new { font-size: 3.5rem; }
-    .byi-step { padding: 1.2rem; }
-    .byi-btn { width: 100%; box-sizing: border-box; text-align: center; padding: 1.1rem 1rem; }
+
+    h1 {
+      font-size: 1.8rem !important;
+    }
+
+    .btn {
+      width: 100% !important; 
+      padding: 0.8rem 1rem !important;
+      font-size: 0.75rem !important;
+    }
   }
 </style>
 
